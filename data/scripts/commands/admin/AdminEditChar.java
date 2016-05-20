@@ -400,7 +400,7 @@ public class AdminEditChar implements IAdminCommandHandler, ScriptFile
 				final short classId = Short.parseShort(st.nextToken());
 				if( !player.addSubClass(classId, true))
 				{
-					activeChar.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.SubclassCouldNotBeAdded", activeChar));
+					activeChar.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.SubclassCouldNotBeAdded", activeChar));
 					return false;
 				}
 				player.sendPacket(new SystemMessage(SystemMessage.CONGRATULATIONS_YOU_HAVE_TRANSFERRED_TO_A_NEW_CLASS)); // Transfer to new class.
@@ -821,7 +821,7 @@ public class AdminEditChar implements IAdminCommandHandler, ScriptFile
 		}
 		else
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.NoSubAtThisTime", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.NoSubAtThisTime", activeChar));
 			return;
 		}
 		content.append("</body></html>");

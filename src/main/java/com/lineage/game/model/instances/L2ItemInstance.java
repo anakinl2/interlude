@@ -662,7 +662,7 @@ public final class L2ItemInstance extends L2Object
 			if((player.getClanPrivileges() & L2Clan.CP_CS_MERCENARIES) == L2Clan.CP_CS_MERCENARIES || player.isGM())
 			{
 				if(player.isInParty())
-					player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ItemInstance.NoMercInParty", player));
+					player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ItemInstance.NoMercInParty", player));
 				else
 					player.getAI().setIntention(CtrlIntention.AI_INTENTION_PICK_UP, this);
 			}

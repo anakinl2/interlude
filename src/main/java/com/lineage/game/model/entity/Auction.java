@@ -802,7 +802,7 @@ public class Auction
 			if(getMinClanLevel() == 2)
 				bidder.sendPacket(new SystemMessage(SystemMessage.ONLY_A_CLAN_LEADER_WHOSE_CLAN_IS_OF_LEVEL_2_OR_HIGHER_IS_ALLOWED_TO_PARTICIPATE_IN_A_CLAN_HALL_AUCTION));
 			else
-				bidder.sendMessage(new CustomMessage("l2d.game.model.entity.Auction.MinClanLevel", bidder).addNumber(getMinClanLevel()));
+				bidder.sendMessage(new CustomMessage("com.lineage.game.model.entity.Auction.MinClanLevel", bidder).addNumber(getMinClanLevel()));
 			return false;
 		}
 
@@ -827,7 +827,7 @@ public class Auction
 
 		if(bidder_clan.getMembersCount() < getMinClanMembers())
 		{
-			bidder.sendMessage(new CustomMessage("l2d.game.model.entity.Auction.MinClanMembers", bidder).addNumber(getMinClanMembers()));
+			bidder.sendMessage(new CustomMessage("com.lineage.game.model.entity.Auction.MinClanMembers", bidder).addNumber(getMinClanMembers()));
 			return false;
 		}
 
@@ -845,7 +845,7 @@ public class Auction
 			avg_level /= avg_level_count;
 			if(avg_level < getMinClanMembersAvgLevel())
 			{
-				bidder.sendMessage(new CustomMessage("l2d.game.model.entity.Auction.MinClanMembersAvgLevel", bidder).addNumber(getMinClanMembersAvgLevel()).addNumber((int) Math.ceil(avg_level)));
+				bidder.sendMessage(new CustomMessage("com.lineage.game.model.entity.Auction.MinClanMembersAvgLevel", bidder).addNumber(getMinClanMembersAvgLevel()).addNumber((int) Math.ceil(avg_level)));
 				return false;
 			}
 		}

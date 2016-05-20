@@ -87,14 +87,14 @@ public class L2CharacterAI extends AbstractAI
 		if(actor.isAttackingNow() && getAttackTarget() == object)
 		{
 			actor.abortAttack();
-			actor.sendMessage(new CustomMessage("l2d.game.model.L2Character.AttackAborted", actor));
+			actor.sendMessage(new CustomMessage("com.lineage.game.model.L2Character.AttackAborted", actor));
 			setIntention(CtrlIntention.AI_INTENTION_ACTIVE, null, null);
 		}
 
 		if(actor.isCastingNow() && getAttackTarget() == object)
 		{
 			actor.abortCast();
-			actor.sendMessage(new CustomMessage("l2d.game.model.L2Character.CastingAborted", actor));
+			actor.sendMessage(new CustomMessage("com.lineage.game.model.L2Character.CastingAborted", actor));
 		}
 
 		if(getAttackTarget() == object)

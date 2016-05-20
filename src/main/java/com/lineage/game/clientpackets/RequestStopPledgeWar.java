@@ -46,7 +46,7 @@ public class RequestStopPledgeWar extends L2GameClientPacket
 
 		if(clan == null)
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestStopPledgeWar.NoSuchClan", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestStopPledgeWar.NoSuchClan", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}

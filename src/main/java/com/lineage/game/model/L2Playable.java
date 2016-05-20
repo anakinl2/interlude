@@ -172,7 +172,7 @@ public abstract class L2Playable extends L2Character
 
 		if(getOwner().inObserverMode())
 		{
-			getOwner().sendMessage(new CustomMessage("l2d.game.model.L2Playable.OutOfControl.ObserverNoAttack", getOwner()));
+			getOwner().sendMessage(new CustomMessage("com.lineage.game.model.L2Playable.OutOfControl.ObserverNoAttack", getOwner()));
 			return;
 		}
 

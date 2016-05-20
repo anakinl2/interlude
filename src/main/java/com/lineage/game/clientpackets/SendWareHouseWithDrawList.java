@@ -87,7 +87,7 @@ public class SendWareHouseWithDrawList extends L2GameClientPacket
 
 			if(oldinst == null)
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.SendWareHouseWithDrawList.Changed", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.SendWareHouseWithDrawList.Changed", activeChar));
 				for(int f = 0; f < i; f++)
 					L2World.removeObject(olditems[i]); // FIXME don't sure...
 

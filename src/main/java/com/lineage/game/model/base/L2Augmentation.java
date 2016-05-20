@@ -76,7 +76,7 @@ public final class L2Augmentation
 	}
 
 	/**
-	 * Get the augmentation "id" used in serverpackets.
+	 * Get the augmentation "id" used in server.
 	 * 
 	 * @return augmentationId
 	 */

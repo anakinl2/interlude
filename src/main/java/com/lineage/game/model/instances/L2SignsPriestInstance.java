@@ -147,12 +147,12 @@ public class L2SignsPriestInstance extends L2NpcInstance
 
 					if(oldCabal != SevenSigns.CABAL_NULL)
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.AlreadyMember", player).addString(SevenSigns.getCabalName(cabal)));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.AlreadyMember", player).addString(SevenSigns.getCabalName(cabal)));
 						return;
 					}
 					if(player.getClassId().level() == 0)
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.YouAreNewbie", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.YouAreNewbie", player));
 						break;
 					}
 
@@ -162,7 +162,7 @@ public class L2SignsPriestInstance extends L2NpcInstance
 							{
 								if(cabal == SevenSigns.CABAL_DUSK)
 								{
-									player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.CastleOwning", player));
+									player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.CastleOwning", player));
 									return;
 								}
 							}
@@ -196,9 +196,9 @@ public class L2SignsPriestInstance extends L2NpcInstance
 								if(!allowJoinDawn)
 								{
 									if(Config.ALT_GAME_ALLOW_ADENA_DAWN)
-										player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.CastleOwningCertificate", player));
+										player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.CastleOwningCertificate", player));
 									else
-										player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.CastleOwningCertificate2", player));
+										player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.CastleOwningCertificate2", player));
 									return;
 								}
 							}
@@ -305,7 +305,7 @@ public class L2SignsPriestInstance extends L2NpcInstance
 
 						if(!stonesFound)
 						{
-							player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.DontHaveAnySSType", player));
+							player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.DontHaveAnySSType", player));
 							return;
 						}
 
@@ -446,7 +446,7 @@ public class L2SignsPriestInstance extends L2NpcInstance
 							player.sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_EARNED_S2_S1S).addNumber((int) ancientAdenaReward).addItemName(SevenSigns.ANCIENT_ADENA_ID));
 						}
 						else
-							player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.DontHaveAnySS", player));
+							player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.DontHaveAnySS", player));
 						break;
 					}
 
@@ -507,7 +507,7 @@ public class L2SignsPriestInstance extends L2NpcInstance
 					L2ItemInstance convertItem = player.getInventory().getItemByItemId(convertStoneId);
 					if(convertItem == null)
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.DontHaveAnySSType", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.DontHaveAnySSType", player));
 						break;
 					}
 
@@ -540,7 +540,7 @@ public class L2SignsPriestInstance extends L2NpcInstance
 						}
 					}
 					else
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2SignsPriestInstance.DontHaveSSAmount", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2SignsPriestInstance.DontHaveSSAmount", player));
 					break;
 				case 19: // Seal Information (for when joining a cabal)
 					int chosenSeal = Integer.parseInt(command.substring(16));

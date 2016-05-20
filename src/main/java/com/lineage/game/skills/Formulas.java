@@ -1655,7 +1655,7 @@ public class Formulas
 		env.value = Math.max(Math.min(env.value, Config.SKILLS_CHANCE_CAP), 1); // Применяем кап
 
 		if(Config.SKILLS_SHOW_CHANCE && env.character.isPlayer() && !((L2Player) env.character).getVarB("SkillsHideChance")) // Выводим сообщение с шансом
-			env.character.sendMessage(new CustomMessage("l2d.game.skills.Formulas.Chance", env.character).addString(env.skill.getName()).addNumber((int) env.value));
+			env.character.sendMessage(new CustomMessage("com.lineage.game.skills.Formulas.Chance", env.character).addString(env.skill.getName()).addNumber((int) env.value));
 		return Rnd.chance(env.value);
 	}
 	

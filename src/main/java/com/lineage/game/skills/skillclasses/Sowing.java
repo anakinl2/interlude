@@ -81,7 +81,7 @@ public class Sowing extends L2Skill
 				SuccessRate = 1;
 
 			if(Config.SKILLS_SHOW_CHANCE && !player.getVarB("SkillsHideChance"))
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Sowing.Chance", activeChar).addNumber((int) SuccessRate));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Sowing.Chance", activeChar).addNumber((int) SuccessRate));
 
 			if(Rnd.chance(SuccessRate))
 			{

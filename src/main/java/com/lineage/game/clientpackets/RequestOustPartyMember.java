@@ -23,9 +23,9 @@ public class RequestOustPartyMember extends L2GameClientPacket
 
 		if(activeChar.isInParty() && activeChar.getParty().isLeader(activeChar))
 			if(activeChar.getParty().isInDimensionalRift() && !activeChar.getParty().getDimensionalRift().getRevivedAtWaitingRoom().contains(activeChar.getObjectId()))
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestOustPartyMember.CantOustInRift", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestOustPartyMember.CantOustInRift", activeChar));
 			else if(activeChar.getParty().isInReflection())
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestOustPartyMember.CantOustInDungeon", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestOustPartyMember.CantOustInDungeon", activeChar));
 			else
 				activeChar.getParty().oustPartyMember(_name);
 	}

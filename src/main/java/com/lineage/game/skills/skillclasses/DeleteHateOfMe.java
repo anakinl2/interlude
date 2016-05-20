@@ -37,7 +37,7 @@ public class DeleteHateOfMe extends L2Skill
 			final boolean success = _id == SKILL_BLUFF ? false : Rnd.chance(getActivateRate());
 
 			if(_id != SKILL_BLUFF && Config.SKILLS_SHOW_CHANCE && activeChar.isPlayer() && !((L2Player) activeChar).getVarB("SkillsHideChance"))
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.Formulas.Chance", activeChar).addString(getName()).addNumber(getActivateRate()));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.Formulas.Chance", activeChar).addString(getName()).addNumber(getActivateRate()));
 
 			if(_id == SKILL_BLUFF ? Formulas.calcSkillSuccess(activeChar, target, this) : success)
 			{

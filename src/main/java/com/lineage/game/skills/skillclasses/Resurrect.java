@@ -94,7 +94,7 @@ public class Resurrect extends L2Skill
 				// Check to see if the player is in a festival.
 				if(((L2Player) target).isFestivalParticipant())
 				{
-					player.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Resurrect", player));
+					player.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Resurrect", player));
 					return false;
 				}
 			}

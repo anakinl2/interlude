@@ -149,7 +149,7 @@ public final class L2NpcTemplate extends L2CharTemplate
 		Class _this_class = null;
 		try
 		{
-			_this_class = Class.forName("l2d.game.model.instances." + type + "Instance");
+			_this_class = Class.forName("com.lineage.game.model.instances." + type + "Instance");
 		}
 		catch(final ClassNotFoundException e)
 		{

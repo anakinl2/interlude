@@ -3519,14 +3519,14 @@ public abstract class L2Character extends L2Object
 			{
 				abortAttack();
 				getAI().setIntention(AI_INTENTION_ACTIVE, null, null);
-				sendMessage(new CustomMessage("l2d.game.model.L2Character.AttackAborted", this));
+				sendMessage(new CustomMessage("com.lineage.game.model.L2Character.AttackAborted", this));
 				sendActionFailed();
 			}
 			if(isCastingNow() && canAbortCast() && getAI().getAttackTarget() == getTarget())
 			{
 				abortCast();
 				getAI().setIntention(AI_INTENTION_ACTIVE, null, null);
-				sendMessage(new CustomMessage("l2d.game.model.L2Character.CastingAborted", this));
+				sendMessage(new CustomMessage("com.lineage.game.model.L2Character.CastingAborted", this));
 				sendActionFailed();
 			}
 		}
@@ -4363,7 +4363,7 @@ public abstract class L2Character extends L2Object
 		if(attacker.getLevel() > max_attacker_level)
 		{
 			if(max_attacker_level > 0)
-				attacker.sendMessage(new CustomMessage("l2d.game.model.L2Character.ParalizeOnAttack", attacker).addCharName(this).addNumber(max_attacker_level));
+				attacker.sendMessage(new CustomMessage("com.lineage.game.model.L2Character.ParalizeOnAttack", attacker).addCharName(this).addNumber(max_attacker_level));
 			return true;
 		}
 

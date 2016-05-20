@@ -122,7 +122,7 @@ public class AdminSpawn implements IAdminCommandHandler, ScriptFile
 			try
 			{
 				if(!aiName.equalsIgnoreCase("npc"))
-					aiConstructor = Class.forName("l2d.game.ai." + aiName).getConstructors()[0];
+					aiConstructor = Class.forName("com.lineage.game.ai." + aiName).getConstructors()[0];
 			}
 			catch(Exception e)
 			{

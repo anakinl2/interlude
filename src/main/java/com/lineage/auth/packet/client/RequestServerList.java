@@ -1,7 +1,7 @@
-package com.lineage.auth.clientpackets;
+package com.lineage.auth.packet.client;
 
-import com.lineage.auth.serverpackets.LoginFail;
-import com.lineage.auth.serverpackets.ServerList;
+import com.lineage.auth.packet.server.LoginFail;
+import com.lineage.auth.packet.server.ServerList;
 import com.lineage.ext.network.ReceivablePacket;
 
 /**

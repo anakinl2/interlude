@@ -37,7 +37,7 @@ public class Escape implements IUserCommandHandler, ScriptFile
 		
 		if(activeChar.isInJail())
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Recall.Here", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Recall.Here", activeChar));
 			return false;
 		}
 

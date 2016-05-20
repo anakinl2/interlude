@@ -30,7 +30,7 @@ public class RequestRestart extends L2GameClientPacket
 
 		if(activeChar.isInOlympiadMode())
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestRestart.Olympiad", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestRestart.Olympiad", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
@@ -58,7 +58,7 @@ public class RequestRestart extends L2GameClientPacket
 
 		if(activeChar.isBlocked() && !activeChar.isFlying()) // Разрешаем выходить из игры если используется сервис HireWyvern. Вернет в начальную точку.
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestRestart.OutOfControl", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestRestart.OutOfControl", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
@@ -70,7 +70,7 @@ public class RequestRestart extends L2GameClientPacket
 		{
 			if(SevenSignsFestival.getInstance().isFestivalInitialized())
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestRestart.Festival", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestRestart.Festival", activeChar));
 				activeChar.sendActionFailed();
 				return;
 			}

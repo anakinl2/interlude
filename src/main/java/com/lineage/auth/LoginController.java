@@ -24,7 +24,7 @@ import com.lineage.auth.crypt.Crypt;
 import com.lineage.auth.crypt.ScrambledKeyPair;
 import com.lineage.auth.gameservercon.AttGS;
 import com.lineage.auth.gameservercon.GameServerInfo;
-import com.lineage.auth.serverpackets.LoginFail.LoginFailReason;
+import com.lineage.auth.packet.server.LoginFail.LoginFailReason;
 import com.lineage.db.DatabaseUtils;
 import com.lineage.db.FiltredPreparedStatement;
 import com.lineage.db.L2DatabaseFactory;
@@ -119,11 +119,11 @@ public class LoginController
 
 		try
 		{
-			DEFAULT_CRYPT = (Crypt) Class.forName("l2d.auth.crypt." + Config.DEFAULT_PASSWORD_ENCODING).getMethod("getInstance", new Class[0]).invoke(null, new Object[0]);
+			DEFAULT_CRYPT = (Crypt) Class.forName("com.lineage.auth.crypt." + Config.DEFAULT_PASSWORD_ENCODING).getMethod("getInstance", new Class[0]).invoke(null, new Object[0]);
 			ArrayList<Crypt> legacy = new ArrayList<Crypt>();
 			for(String method : Config.LEGACY_PASSWORD_ENCODING.split(";"))
 				if(!method.equalsIgnoreCase(Config.DEFAULT_PASSWORD_ENCODING))
-					legacy.add((Crypt) Class.forName("l2d.auth.crypt." + method).getMethod("getInstance", new Class[0]).invoke(null, new Object[0]));
+					legacy.add((Crypt) Class.forName("com.lineage.auth.crypt." + method).getMethod("getInstance", new Class[0]).invoke(null, new Object[0]));
 			LEGACY_CRYPT = legacy.toArray(new Crypt[legacy.size()]);
 		}
 		catch(ClassNotFoundException e)

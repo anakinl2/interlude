@@ -117,7 +117,7 @@ public class CoupleManager
 			if(partner != null)
 			{
 				if(partner.isPlayer())
-					((L2Player) partner).sendMessage(new CustomMessage("l2d.game.instancemanager.CoupleManager.PartnerEntered", partner));
+					((L2Player) partner).sendMessage(new CustomMessage("com.lineage.game.instancemanager.CoupleManager.PartnerEntered", partner));
 				else
 					_log.warning(cha + " partner is " + partner.getL2ClassShortName() + "?!!");
 			}

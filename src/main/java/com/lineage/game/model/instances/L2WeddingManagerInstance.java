@@ -69,10 +69,10 @@ public class L2WeddingManagerInstance extends L2NpcInstance
 			couple.marry();
 
 			// messages to the couple
-			player.sendMessage(new CustomMessage("l2d.game.model.instances.L2WeddingManagerMessage", player));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2WeddingManagerMessage", player));
 			player.setMaried(true);
 			player.setMaryRequest(false);
-			ptarget.sendMessage(new CustomMessage("l2d.game.model.instances.L2WeddingManagerMessage", ptarget));
+			ptarget.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2WeddingManagerMessage", ptarget));
 			ptarget.setMaried(true);
 			ptarget.setMaryRequest(false);
 

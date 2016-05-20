@@ -107,7 +107,7 @@ public class RequestJoinParty extends L2GameClientPacket
 
 		if(activeChar.getParty().isInDimensionalRift())
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestJoinParty.InDimensionalRift", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestJoinParty.InDimensionalRift", activeChar));
 			activeChar.sendActionFailed();
 		}
 

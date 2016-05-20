@@ -1,4 +1,4 @@
-package com.lineage.auth.clientpackets;
+package com.lineage.auth.packet.client;
 
 import java.util.logging.Logger;
 

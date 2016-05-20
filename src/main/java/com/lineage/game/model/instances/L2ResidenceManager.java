@@ -67,7 +67,7 @@ public abstract class L2ResidenceManager extends L2NpcInstance
 		{
 			if(!isHaveRigths(player, getPrivDismiss()))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			getResidence().banishForeigner(player);
@@ -117,7 +117,7 @@ public abstract class L2ResidenceManager extends L2NpcInstance
 				sendHtmlMessage(player, html);
 			}
 			else
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 		}
 		else if(actualCommand.equalsIgnoreCase("functions"))
 		{
@@ -205,7 +205,7 @@ public abstract class L2ResidenceManager extends L2NpcInstance
 		{
 			if(!isHaveRigths(player, getPrivFunctions()))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 

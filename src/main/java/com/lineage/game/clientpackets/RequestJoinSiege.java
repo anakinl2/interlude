@@ -44,14 +44,14 @@ public class RequestJoinSiege extends L2GameClientPacket
 					for(Castle temp : CastleManager.getInstance().getCastles().values())
 						if(temp.getSiege().checkIsClanRegistered(activeChar.getClanId()))
 						{
-							activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestJoinSiege.AlreadyRegistered", activeChar).addString(temp.getName()));
+							activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestJoinSiege.AlreadyRegistered", activeChar).addString(temp.getName()));
 							return;
 						}
 				if(siegeUnit instanceof ClanHall)
 					for(ClanHall temp : ClanHallManager.getInstance().getClanHalls().values())
 						if(temp.getSiege() != null && temp.getSiege().checkIsClanRegistered(activeChar.getClanId()))
 						{
-							activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestJoinSiege.AlreadyRegistered", activeChar).addString(temp.getName()));
+							activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestJoinSiege.AlreadyRegistered", activeChar).addString(temp.getName()));
 							return;
 						}
 

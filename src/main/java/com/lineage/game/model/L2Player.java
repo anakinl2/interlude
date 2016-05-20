@@ -1094,7 +1094,7 @@ public final class L2Player extends L2Playable {
                 }
 
                 if (Config.ENABLE_OLYMPIAD && ZoneManager.getInstance().checkIfInZone(L2Zone.ZoneType.OlympiadStadia, player)) {
-                    player.sendMessage(new CustomMessage("l2d.game.clientpackets.EnterWorld.TeleportedReasonOlympiad", player));
+                    player.sendMessage(new CustomMessage("com.lineage.game.clientpackets.EnterWorld.TeleportedReasonOlympiad", player));
                     final Location loc = MapRegion.getTeleToClosestTown(player);
                     player.setXYZInvisible(loc.x, loc.y, loc.z);
                 }
@@ -1106,7 +1106,7 @@ public final class L2Player extends L2Playable {
                     final long curr_time = System.currentTimeMillis() / 1000;
 
                     if (curr_time - last_time > allowed_time) {
-                        player.sendMessage(new CustomMessage("l2d.game.clientpackets.EnterWorld.TeleportedReasonNoRestart", player));
+                        player.sendMessage(new CustomMessage("com.lineage.game.clientpackets.EnterWorld.TeleportedReasonNoRestart", player));
                         final Location loc = MapRegion.getTeleToClosestTown(player);
                         player.setXYZInvisible(loc.x, loc.y, loc.z);
                     }
@@ -4970,9 +4970,9 @@ public final class L2Player extends L2Playable {
         if (ptarget != null)
             if (answer == 1) {
                 CoupleManager.getInstance().createCouple(ptarget, this);
-                ptarget.sendMessage(new CustomMessage("l2d.game.model.L2Player.EngageAnswerYes", this));
+                ptarget.sendMessage(new CustomMessage("com.lineage.game.model.L2Player.EngageAnswerYes", this));
             } else
-                ptarget.sendMessage(new CustomMessage("l2d.game.model.L2Player.EngageAnswerNo", this));
+                ptarget.sendMessage(new CustomMessage("com.lineage.game.model.L2Player.EngageAnswerNo", this));
     }
 
     public void setEngageRequest(final boolean state, final int playerid) {

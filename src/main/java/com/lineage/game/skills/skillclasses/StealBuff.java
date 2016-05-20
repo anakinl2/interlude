@@ -84,7 +84,7 @@ public class StealBuff extends L2Skill
 
 			if(update)
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.StealBuff.Success", activeChar).addNumber(counter));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.StealBuff.Success", activeChar).addNumber(counter));
 				activeChar.sendChanges();
 				activeChar.updateEffectIcons();
 			}

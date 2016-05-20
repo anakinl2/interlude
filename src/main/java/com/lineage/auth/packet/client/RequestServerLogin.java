@@ -1,9 +1,9 @@
-package com.lineage.auth.clientpackets;
+package com.lineage.auth.packet.client;
 
 import com.lineage.auth.LoginController;
 import com.lineage.auth.SessionKey;
-import com.lineage.auth.serverpackets.LoginFail;
-import com.lineage.auth.serverpackets.PlayOk;
+import com.lineage.auth.packet.server.PlayOk;
+import com.lineage.auth.packet.server.LoginFail;
 import com.lineage.Config;
 import com.lineage.ext.network.ReceivablePacket;
 

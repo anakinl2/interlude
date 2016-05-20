@@ -1765,7 +1765,7 @@ public class L2Clan
 				if(temp.isOnline())
 				{
 					L2Player tempPlayer = temp.getPlayer();
-					tempPlayer.sendMessage(new CustomMessage("l2d.game.model.L2Clan.L2ClanGate.Activated", tempPlayer));
+					tempPlayer.sendMessage(new CustomMessage("com.lineage.game.model.L2Clan.L2ClanGate.Activated", tempPlayer));
 				}
 	}
 }

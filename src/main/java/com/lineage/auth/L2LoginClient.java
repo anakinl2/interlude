@@ -8,10 +8,10 @@ import java.util.logging.Logger;
 
 import com.lineage.auth.crypt.LoginCrypt;
 import com.lineage.auth.crypt.ScrambledKeyPair;
-import com.lineage.auth.serverpackets.AccountKicked;
-import com.lineage.auth.serverpackets.LoginFail;
+import com.lineage.auth.packet.server.AccountKicked;
+import com.lineage.auth.packet.server.LoginFail;
 import com.lineage.Config;
-import com.lineage.auth.serverpackets.L2LoginServerPacket;
+import com.lineage.auth.packet.server.L2LoginServerPacket;
 import com.lineage.ext.network.MMOClient;
 import com.lineage.ext.network.MMOConnection;
 import com.lineage.game.templates.StatsSet;

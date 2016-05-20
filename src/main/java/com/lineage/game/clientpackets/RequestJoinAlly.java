@@ -77,7 +77,7 @@ public class RequestJoinAlly extends L2GameClientPacket
 			return;
 		}
 		if(!activeChar.getAlliance().canInvite())
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestJoinAlly.InvitePenalty", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestJoinAlly.InvitePenalty", activeChar));
 		if(activeChar.isTransactionInProgress())
 		{
 			activeChar.sendPacket(Msg.WAITING_FOR_ANOTHER_REPLY);

@@ -1,4 +1,4 @@
-package com.lineage.auth.clientpackets;
+package com.lineage.auth.packet.client;
 
 import java.security.GeneralSecurityException;
 
@@ -7,10 +7,10 @@ import javax.crypto.Cipher;
 import com.lineage.auth.L2LoginClient;
 import com.lineage.auth.LoginController;
 import com.lineage.auth.gameservercon.GameServerInfo;
-import com.lineage.auth.serverpackets.AccountKicked;
-import com.lineage.auth.serverpackets.LoginFail;
-import com.lineage.auth.serverpackets.LoginOk;
-import com.lineage.auth.serverpackets.ServerList;
+import com.lineage.auth.packet.server.LoginOk;
+import com.lineage.auth.packet.server.ServerList;
+import com.lineage.auth.packet.server.AccountKicked;
+import com.lineage.auth.packet.server.LoginFail;
 import com.lineage.Config;
 
 /**

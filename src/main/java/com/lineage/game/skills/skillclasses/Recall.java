@@ -69,27 +69,27 @@ public class Recall extends L2Skill
 			L2Player p = (L2Player) activeChar;
 			if(p.isInOlympiadMode())
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Recall.Here", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Recall.Here", activeChar));
 				return false;
 			}
 
 			// SOE из тюрьмы? гг
 			if(p.isInJail())
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Recall.Here", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Recall.Here", activeChar));
 				return false;
 			}
 		}
 
 		if(activeChar.isInZone(ZoneType.no_escape))
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Recall.Here", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Recall.Here", activeChar));
 			return false;
 		}
 
 		if(activeChar.isInZone(ZoneType.offshore) && activeChar.getReflection().getId() != 0)
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Recall.Here", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Recall.Here", activeChar));
 			return false;
 		}
 
@@ -116,7 +116,7 @@ public class Recall extends L2Skill
 
 			if(pcTarget.isFestivalParticipant())
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Recall.Festival", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Recall.Festival", activeChar));
 				continue;
 			}
 			if(pcTarget.isInOlympiadMode())

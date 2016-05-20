@@ -47,7 +47,7 @@ public class RequestDropItem extends L2GameClientPacket
 
 		if(!Config.ALLOW_DISCARDITEM)
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestDropItem.Disallowed", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestDropItem.Disallowed", activeChar));
 			return;
 		}
 

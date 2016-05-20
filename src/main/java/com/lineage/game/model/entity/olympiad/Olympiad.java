@@ -273,7 +273,7 @@ public class Olympiad
 
 		if(noble.isCursedWeaponEquipped())
 		{
-			noble.sendMessage(new CustomMessage("l2d.game.model.entity.Olympiad.Cursed", noble));
+			noble.sendMessage(new CustomMessage("com.lineage.game.model.entity.Olympiad.Cursed", noble));
 			return false;
 		}
 
@@ -314,7 +314,7 @@ public class Olympiad
 
 		if(getNoblePoints(noble.getObjectId()) < 3)
 		{
-			noble.sendMessage(new CustomMessage("l2d.game.model.entity.Olympiad.LessPoints", noble));
+			noble.sendMessage(new CustomMessage("com.lineage.game.model.entity.Olympiad.LessPoints", noble));
 			return false;
 		}
 

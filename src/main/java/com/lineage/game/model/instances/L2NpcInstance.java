@@ -181,7 +181,7 @@ public class L2NpcInstance extends L2Character
 		try
 		{
 			if(!implementationName.equalsIgnoreCase("npc"))
-				_ai_constructor = Class.forName("l2d.game.ai." + implementationName).getConstructors()[0];
+				_ai_constructor = Class.forName("com.lineage.game.ai." + implementationName).getConstructors()[0];
 		}
 		catch(final Exception e)
 		{
@@ -1668,7 +1668,7 @@ public class L2NpcInstance extends L2Character
 			final NpcHtmlMessage html = new NpcHtmlMessage(player, this);
 			final TextBuilder sb = new TextBuilder();
 			sb.append("<html><head><body>");
-			sb.append(new CustomMessage("l2d.game.model.instances.L2NpcInstance.WrongTeacherClass", player));
+			sb.append(new CustomMessage("com.lineage.game.model.instances.L2NpcInstance.WrongTeacherClass", player));
 			sb.append("</body></html>");
 			html.setHtml(sb.toString());
 			player.sendPacket(html);
@@ -1843,7 +1843,7 @@ public class L2NpcInstance extends L2Character
 			final NpcHtmlMessage html = new NpcHtmlMessage(player, this);
 			final TextBuilder sb = new TextBuilder();
 			sb.append("<html><head><body>");
-			sb.append(new CustomMessage("l2d.game.model.instances.L2NpcInstance.WrongTeacherClass", player));
+			sb.append(new CustomMessage("com.lineage.game.model.instances.L2NpcInstance.WrongTeacherClass", player));
 			sb.append("</body></html>");
 			html.setHtml(sb.toString());
 			player.sendPacket(html);

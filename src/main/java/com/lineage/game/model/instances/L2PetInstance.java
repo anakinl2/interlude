@@ -55,7 +55,7 @@ public class L2PetInstance extends L2Summon
 					setCurrentFed((int) (0.10 * getMaxFed()));
 					stopFeed();
 					if(owner != null)
-						owner.sendMessage(new CustomMessage("l2d.game.model.instances.L2PetInstance.UnSummonHungryPet", owner));
+						owner.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2PetInstance.UnSummonHungryPet", owner));
 					unSummon();
 					return;
 				}
@@ -348,7 +348,7 @@ public class L2PetInstance extends L2Summon
 
 		if(old_level > _level)
 		{
-			owner.sendMessage(new CustomMessage("l2d.game.model.instances.L2PetInstance.PetLevelUp", owner).addNumber(_level));
+			owner.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2PetInstance.PetLevelUp", owner).addNumber(_level));
 			broadcastPacket(new SocialAction(getObjectId(), 15));
 			setCurrentHpMp(getMaxHp(), getMaxMp());
 			needStatusUpdate = false;

@@ -7,7 +7,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import com.lineage.auth.serverpackets.Init;
+import com.lineage.auth.packet.server.Init;
 import com.lineage.ext.network.HeaderInfo;
 import com.lineage.ext.network.IAcceptFilter;
 import com.lineage.ext.network.IClientFactory;

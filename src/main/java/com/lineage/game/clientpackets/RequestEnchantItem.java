@@ -96,7 +96,7 @@ public class RequestEnchantItem extends L2GameClientPacket
 
 		if(itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX)
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestEnchantItem.MaxLevel", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestEnchantItem.MaxLevel", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}

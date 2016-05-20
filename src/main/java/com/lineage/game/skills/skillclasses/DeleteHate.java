@@ -31,7 +31,7 @@ public class DeleteHate extends L2Skill
 			if(getActivateRate() > 0)
 			{
 				if(Config.SKILLS_SHOW_CHANCE && activeChar.isPlayer() && !((L2Player) activeChar).getVarB("SkillsHideChance"))
-					activeChar.sendMessage(new CustomMessage("l2d.game.skills.Formulas.Chance", activeChar).addString(getName()).addNumber(getActivateRate()));
+					activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.Formulas.Chance", activeChar).addString(getName()).addNumber(getActivateRate()));
 
 				if(!Rnd.chance(getActivateRate()))
 					return;

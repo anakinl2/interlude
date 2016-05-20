@@ -3,10 +3,10 @@ package com.lineage.auth;
 import java.nio.ByteBuffer;
 
 import com.lineage.auth.L2LoginClient.LoginClientState;
-import com.lineage.auth.clientpackets.AuthGameGuard;
-import com.lineage.auth.clientpackets.RequestAuthLogin;
-import com.lineage.auth.clientpackets.RequestServerList;
-import com.lineage.auth.clientpackets.RequestServerLogin;
+import com.lineage.auth.packet.client.AuthGameGuard;
+import com.lineage.auth.packet.client.RequestAuthLogin;
+import com.lineage.auth.packet.client.RequestServerList;
+import com.lineage.auth.packet.client.RequestServerLogin;
 import com.lineage.ext.network.IPacketHandler;
 import com.lineage.ext.network.ReceivablePacket;
 

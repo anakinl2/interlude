@@ -240,17 +240,17 @@ public abstract class Siege
 	private boolean checkIfCanRegister(L2Player player)
 	{
 		if(isRegistrationOver())
-			player.sendMessage(new CustomMessage("l2d.game.model.entity.siege.Siege.DeadlinePassed", player).addString(getSiegeUnit().getName()));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.entity.siege.Siege.DeadlinePassed", player).addString(getSiegeUnit().getName()));
 		else if(isInProgress())
-			player.sendMessage(new CustomMessage("l2d.game.model.entity.siege.Siege.NotTimeToCancel", player));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.entity.siege.Siege.NotTimeToCancel", player));
 		else if(player.getClan() == null || player.getClan().getLevel() < getSiegeClanMinLevel())
-			player.sendMessage(new CustomMessage("l2d.game.model.entity.siege.Siege.ClanLevelToSmall", player).addNumber(getSiegeClanMinLevel()));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.entity.siege.Siege.ClanLevelToSmall", player).addNumber(getSiegeClanMinLevel()));
 		else if(player.getClan().getHasCastle() > 0)
 			player.sendPacket(new SystemMessage(SystemMessage.A_CLAN_THAT_OWNS_A_CASTLE_CANNOT_PARTICIPATE_IN_ANOTHER_SIEGE));
 		else if(player.getClan().getClanId() == getSiegeUnit().getOwnerId())
 			player.sendPacket(new SystemMessage(SystemMessage.THE_CLAN_THAT_OWNS_THE_CASTLE_IS_AUTOMATICALLY_REGISTERED_ON_THE_DEFENDING_SIDE));
 		else if(SiegeDatabase.checkIsRegistered(player.getClan(), getSiegeUnit().getId()))
-			player.sendMessage(new CustomMessage("l2d.game.model.entity.siege.Siege.AlreadyRegistered", player));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.entity.siege.Siege.AlreadyRegistered", player));
 		else
 			return true;
 		return false;
@@ -302,7 +302,7 @@ public abstract class Siege
 	public void registerDefender(L2Player player, boolean force)
 	{
 		if(getSiegeUnit().getOwnerId() <= 0)
-			player.sendMessage(new CustomMessage("l2d.game.model.entity.siege.Siege.OwnedByNPC", player).addString(getSiegeUnit().getName()));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.entity.siege.Siege.OwnedByNPC", player).addString(getSiegeUnit().getName()));
 		else if(force || checkIfCanRegister(player))
 			_database.saveSiegeClan(player.getClan(), 2, false); // Save to database
 	}

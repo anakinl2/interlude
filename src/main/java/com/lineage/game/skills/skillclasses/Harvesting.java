@@ -64,7 +64,7 @@ public class Harvesting extends L2Skill
 				SuccessRate = 1;
 
 			if(Config.SKILLS_SHOW_CHANCE && !player.getVarB("SkillsHideChance"))
-				player.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Harvesting.Chance", player).addNumber((int) SuccessRate));
+				player.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Harvesting.Chance", player).addNumber((int) SuccessRate));
 
 			if(!Rnd.chance(SuccessRate))
 			{

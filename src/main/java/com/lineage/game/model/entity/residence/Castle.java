@@ -403,7 +403,7 @@ public class Castle extends Residence
 		}
 
 		if(activeChar != null)
-			activeChar.sendMessage(new CustomMessage("l2d.game.model.entity.Castle.OutOfControl.CastleTaxChangetTo", activeChar).addString(getName()).addNumber(taxPercent));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.model.entity.Castle.OutOfControl.CastleTaxChangetTo", activeChar).addString(getName()).addNumber(taxPercent));
 	}
 
 	public double getTaxRate()

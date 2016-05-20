@@ -53,12 +53,12 @@ public class RequestPledgeSetAcademyMaster extends L2GameClientPacket
 				{
 					if(sponsor.hasApprentice())
 					{
-						activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestOustAlly.MemberAlreadyHasApprentice", activeChar));
+						activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestOustAlly.MemberAlreadyHasApprentice", activeChar));
 						return;
 					}
 					if(apprentice.hasSponsor())
 					{
-						activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestOustAlly.ApprenticeAlreadyHasSponsor", activeChar));
+						activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestOustAlly.ApprenticeAlreadyHasSponsor", activeChar));
 						return;
 					}
 					sponsor.setApprentice(apprentice.getObjectId());
@@ -69,7 +69,7 @@ public class RequestPledgeSetAcademyMaster extends L2GameClientPacket
 				{
 					if(!sponsor.hasApprentice())
 					{
-						activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestOustAlly.MemberHasNoApprentice", activeChar));
+						activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestOustAlly.MemberHasNoApprentice", activeChar));
 						return;
 					}
 					sponsor.setApprentice(0);
@@ -82,6 +82,6 @@ public class RequestPledgeSetAcademyMaster extends L2GameClientPacket
 			}
 		}
 		else
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestOustAlly.NoMasterRights", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestOustAlly.NoMasterRights", activeChar));
 	}
 }

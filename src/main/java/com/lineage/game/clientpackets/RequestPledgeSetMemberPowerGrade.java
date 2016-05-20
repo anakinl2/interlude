@@ -49,9 +49,9 @@ public class RequestPledgeSetMemberPowerGrade extends L2GameClientPacket
 					member.getPlayer().sendUserInfo(false);
 			}
 			else
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeSetMemberPowerGrade.NotBelongClan", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeSetMemberPowerGrade.NotBelongClan", activeChar));
 		}
 		else
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeSetMemberPowerGrade.HaveNotAuthority", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeSetMemberPowerGrade.HaveNotAuthority", activeChar));
 	}
 }

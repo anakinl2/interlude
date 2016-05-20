@@ -127,7 +127,7 @@ public final class L2FestivalGuideInstance extends L2NpcInstance
 					// Check if a festival is in progress, then don't allow registration yet.
 					if(SevenSignsFestival.getInstance().isFestivalInitialized())
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2FestivalGuideInstance.InProgress", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2FestivalGuideInstance.InProgress", player));
 						return;
 					}
 
@@ -198,7 +198,7 @@ public final class L2FestivalGuideInstance extends L2NpcInstance
 
 					if(stoneCount < stonesNeeded)
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2FestivalGuideInstance.NotEnoughSSType", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2FestivalGuideInstance.NotEnoughSSType", player));
 						return;
 					}
 
@@ -225,7 +225,7 @@ public final class L2FestivalGuideInstance extends L2NpcInstance
 					// Check if a festival is in progress, if it is don't register the score.
 					if(SevenSignsFestival.getInstance().isFestivalInProgress())
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2FestivalGuideInstance.InProgressPoints", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2FestivalGuideInstance.InProgressPoints", player));
 						return;
 					}
 
@@ -262,7 +262,7 @@ public final class L2FestivalGuideInstance extends L2NpcInstance
 					// Check if the player collected any blood offerings during the festival.
 					if(bloodOfferings == null)
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2FestivalGuideInstance.BloodOfferings", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2FestivalGuideInstance.BloodOfferings", player));
 						return;
 					}
 

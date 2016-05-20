@@ -52,7 +52,7 @@ public class Logout extends L2GameClientPacket
 
 		if(activeChar.isBlocked())
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.Logout.OutOfControl", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.Logout.OutOfControl", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
@@ -74,14 +74,14 @@ public class Logout extends L2GameClientPacket
 
 		if(activeChar.isInOlympiadMode() || Olympiad.isRegistered(activeChar))
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.Logout.Olympiad", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.Logout.Olympiad", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		if(activeChar.inObserverMode())
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.Logout.Observer", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.Logout.Observer", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}

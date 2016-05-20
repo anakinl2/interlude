@@ -245,12 +245,12 @@ public class RecipeController
 		player.resetWaitSitTime();
 		int success = 0;
 
-		player.sendMessage(new CustomMessage("l2d.game.RecipeController.GotOrder", player).addString(recipeList.getRecipeName()));
+		player.sendMessage(new CustomMessage("com.lineage.game.RecipeController.GotOrder", player).addString(recipeList.getRecipeName()));
 
 		if(recipeList.getRecipes().length == 0)
 		{
-			player.sendMessage(new CustomMessage("l2d.game.RecipeController.NoRecipe", player).addString(recipeList.getRecipeName()));
-			employer.sendMessage(new CustomMessage("l2d.game.RecipeController.NoRecipe", player).addString(recipeList.getRecipeName()));
+			player.sendMessage(new CustomMessage("com.lineage.game.RecipeController.NoRecipe", player).addString(recipeList.getRecipeName()));
+			employer.sendMessage(new CustomMessage("com.lineage.game.RecipeController.NoRecipe", player).addString(recipeList.getRecipeName()));
 			return;
 		}
 

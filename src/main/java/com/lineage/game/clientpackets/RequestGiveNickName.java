@@ -67,7 +67,7 @@ public class RequestGiveNickName extends L2GameClientPacket
 			}
 		}
 		else
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestGiveNickName.NotInClan", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestGiveNickName.NotInClan", activeChar));
 
 	}
 }

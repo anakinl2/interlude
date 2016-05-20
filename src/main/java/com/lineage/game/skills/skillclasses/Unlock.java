@@ -107,11 +107,11 @@ public class Unlock extends L2Skill
 				chance = 1;
 
 			if(chance < 100)
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Unlock.Chance", activeChar).addString(getName()).addNumber((int) chance));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Unlock.Chance", activeChar).addString(getName()).addNumber((int) chance));
 
 			if(Rnd.chance(chance))
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Unlock.Success", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Unlock.Success", activeChar));
 				target.onOpen((L2Player) activeChar);
 			}
 			else

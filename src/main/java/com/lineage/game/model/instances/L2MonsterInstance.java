@@ -1256,7 +1256,7 @@ public class L2MonsterInstance extends L2NpcInstance
 								newCrystalLvl = 13;
 								break;
 						}
-						final CustomMessage cm = new CustomMessage("l2d.game.model.instances.L2MonsterInstance.levelSoulCrystals", player);
+						final CustomMessage cm = new CustomMessage("com.lineage.game.model.instances.L2MonsterInstance.levelSoulCrystals", player);
 						cm.addCharName(player).addString(newCrystalColor).addNumber(newCrystalLvl);
 						player.broadcastPacketToOthers(SystemMessage.sendString(cm.toString()));
 					}
@@ -1443,7 +1443,7 @@ public class L2MonsterInstance extends L2NpcInstance
 			for(final L2ItemInstance drop : _inventory)
 				if(drop != null)
 				{
-					player.sendMessage(new CustomMessage("l2d.game.model.instances.L2MonsterInstance.ItemBelongedToOther", player).addString(drop.getItem().getName()));
+					player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2MonsterInstance.ItemBelongedToOther", player).addString(drop.getItem().getName()));
 					dropItem(player, drop);
 				}
 			truncateInventory();

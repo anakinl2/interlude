@@ -1,4 +1,4 @@
-package com.lineage.auth.serverpackets;
+package com.lineage.auth.packet.server;
 
 import com.lineage.auth.L2LoginClient;
 import com.lineage.ext.network.SendablePacket;

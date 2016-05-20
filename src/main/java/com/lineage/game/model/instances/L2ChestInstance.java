@@ -32,7 +32,7 @@ public class L2ChestInstance extends L2MonsterInstance
 	{
 		if(_fake)
 		{
-			opener.sendMessage(new CustomMessage("l2d.game.model.instances.L2ChestInstance.Fake", opener));
+			opener.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ChestInstance.Fake", opener));
 			getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, opener, 100);
 		}
 		else

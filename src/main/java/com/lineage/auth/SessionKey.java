@@ -1,11 +1,13 @@
 package com.lineage.auth;
 
 import com.lineage.Config;
+import com.lineage.auth.packet.server.LoginOk;
+import com.lineage.auth.packet.server.PlayOk;
 
 /**
  * <p>This class is used to represent session keys used by the client to authenticate in the gameserver</p>
- * <p>A SessionKey is made up of two 8 bytes keys. One is send in the {@link com.lineage.auth.serverpackets.LoginOk LoginOk}
- * packet and the other is sent in {@link com.lineage.auth.serverpackets.PlayOk PlayOk}</p>
+ * <p>A SessionKey is made up of two 8 bytes keys. One is send in the {@link LoginOk LoginOk}
+ * packet and the other is sent in {@link PlayOk PlayOk}</p>
  * @author -Wooden-
  *
  */

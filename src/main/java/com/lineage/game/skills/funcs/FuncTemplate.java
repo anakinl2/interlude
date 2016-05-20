@@ -26,7 +26,7 @@ public final class FuncTemplate
 		_value = value;
 		try
 		{
-			_func = Class.forName("Func" + func);
+			_func = Class.forName(this.getClass().getPackage().getName()+".Func" + func);
 		}
 		catch(final ClassNotFoundException e)
 		{

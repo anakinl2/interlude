@@ -17,7 +17,7 @@ public class RequestWithDrawalParty extends L2GameClientPacket
 			return;
 		if(activeChar.isInParty())
 			if(activeChar.getParty().isInDimensionalRift() && !activeChar.getParty().getDimensionalRift().getRevivedAtWaitingRoom().contains(activeChar.getObjectId()))
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestWithDrawalParty.Rift", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestWithDrawalParty.Rift", activeChar));
 			else if(activeChar.getParty().isInReflection() && activeChar.isInCombat())
 				activeChar.sendMessage("Вы не можете сейчас выйти из группы.");
 			else

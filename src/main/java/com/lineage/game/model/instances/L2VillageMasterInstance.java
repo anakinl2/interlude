@@ -164,7 +164,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 					}
 					else
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.NoSubAtThisTime", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.NoSubAtThisTime", player));
 						return;
 					}
 					break;
@@ -215,7 +215,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 					// Проверка хватает ли уровня
 					if(player.getLevel() < Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS)
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.NoSubBeforeLevel", player).addNumber(Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.NoSubBeforeLevel", player).addNumber(Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS));
 						allowAddition = false;
 					}
 
@@ -223,7 +223,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 						for(L2SubClass subClass : playerClassList.values())
 							if(subClass.getLevel() < Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS)
 							{
-								player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.NoSubBeforeLevel", player).addNumber(Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS));
+								player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.NoSubBeforeLevel", player).addNumber(Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS));
 								allowAddition = false;
 								break;
 							}
@@ -249,10 +249,10 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 							qs = player.getQuestState("_235_MimirsElixir");
 							allowAddition = qs != null && qs.isCompleted();
 							if(!allowAddition)
-								player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.QuestMimirsElixir", player));
+								player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.QuestMimirsElixir", player));
 						}
 						else
-							player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.QuestFatesWhisper", player));
+							player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.QuestFatesWhisper", player));
 					}
 
 					if(allowAddition)
@@ -265,7 +265,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 
 						if(!player.addSubClass(classId, true))
 						{
-							player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.SubclassCouldNotBeAdded", player));
+							player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.SubclassCouldNotBeAdded", player));
 							return;
 						}
 
@@ -316,7 +316,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 							content.append("<a action=\"bypass -h npc_" + getObjectId() + "_Subclass 7 " + classId + " " + subClass.ordinal() + "\">" + formatClassForDisplay(subClass) + "</a><br>");
 					else
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.NoSubAtThisTime", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.NoSubAtThisTime", player));
 						return;
 					}
 					break;
@@ -346,7 +346,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 					}
 					else
 					{
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.SubclassCouldNotBeAdded", player));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.SubclassCouldNotBeAdded", player));
 						return;
 					}
 					break;
@@ -446,7 +446,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 		L2ClanMember member = clan.getClanMember(name);
 		if(member == null)
 		{
-			player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.S1IsNotMemberOfTheClan", player).addString(name));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.S1IsNotMemberOfTheClan", player).addString(name));
 			showChatWindow(player, "data/html/villagemaster/clan-20.htm");
 			return;
 		}
@@ -456,7 +456,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 		clan.broadcastClanStatus(true, true);
 		clan.updateClanInDB();
 
-		player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.ClanLeaderWillBeChangedFromS1ToS2", player).addString(player.getName()).addString(name));
+		player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.ClanLeaderWillBeChangedFromS1ToS2", player).addString(player.getName()).addString(name));
 	}
 
 	public void createSubPledge(L2Player player, String clanName, int pledgeType, int minClanLvl, String leaderName)
@@ -515,12 +515,12 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 			subLeader = clan.getClanMember(leaderName);
 			if(subLeader == null || subLeader.getPledgeType() != L2Clan.SUBUNIT_NONE)
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.PlayerCantBeAssignedAsSubUnitLeader", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.PlayerCantBeAssignedAsSubUnitLeader", player));
 				return;
 			}
 			else if(subLeader.isClanLeader())
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.YouCantBeASubUnitLeader", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.YouCantBeASubUnitLeader", player));
 				return;
 			}
 			else
@@ -571,7 +571,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 
 		if(clan == null)
 		{
-			player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.ClanDoesntExist", player));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.ClanDoesntExist", player));
 			return;
 		}
 
@@ -591,20 +591,20 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 			}
 		if(match < 0)
 		{
-			player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.SubUnitNotFound", player));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.SubUnitNotFound", player));
 			return;
 		}
 
 		L2ClanMember subLeader = clan.getClanMember(leaderName);
 		if(subLeader == null || subLeader.getPledgeType() != L2Clan.SUBUNIT_NONE)
 		{
-			player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.PlayerCantBeAssignedAsSubUnitLeader", player));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.PlayerCantBeAssignedAsSubUnitLeader", player));
 			return;
 		}
 
 		if(subLeader.isClanLeader())
 		{
-			player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.YouCantBeASubUnitLeader", player));
+			player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.YouCantBeASubUnitLeader", player));
 			return;
 		}
 
@@ -618,7 +618,7 @@ public final class L2VillageMasterInstance extends L2NpcInstance
 			subLeader.getPlayer().broadcastUserInfo(true);
 		}
 
-		player.sendMessage(new CustomMessage("l2d.game.model.instances.L2VillageMasterInstance.NewSubUnitLeaderHasBeenAssigned", player));
+		player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2VillageMasterInstance.NewSubUnitLeaderHasBeenAssigned", player));
 	}
 
 	private void dissolveClan(L2Player player)

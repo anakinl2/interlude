@@ -45,7 +45,7 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 
 		if(!activeChar.isClanLeader())
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.ChangeAffiliations", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.ChangeAffiliations", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
@@ -53,28 +53,28 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 		L2ClanMember subject = clan.getClanMember(_subjectName);
 		if(subject == null)
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.NotInYourClan", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.NotInYourClan", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		if(subject.getPledgeType() == _targetUnit)
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.AlreadyInThatCombatUnit", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.AlreadyInThatCombatUnit", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		if(_targetUnit != 0 && clan.getSubPledge(_targetUnit) == null)
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.NoSuchCombatUnit", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.NoSuchCombatUnit", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		if(clan.isAcademy(_targetUnit))
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.AcademyViaInvitation", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.AcademyViaInvitation", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
@@ -84,7 +84,7 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 		 */
 		if(clan.isAcademy(subject.getPledgeType()))
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.CantMoveAcademyMember", activeChar));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.CantMoveAcademyMember", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
@@ -96,19 +96,19 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 			replacement = clan.getClanMember(_replaceName);
 			if(replacement == null)
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.CharacterNotBelongClan", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.CharacterNotBelongClan", activeChar));
 				activeChar.sendActionFailed();
 				return;
 			}
 			if(replacement.getPledgeType() != _targetUnit)
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.CharacterNotBelongCombatUnit", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.CharacterNotBelongCombatUnit", activeChar));
 				activeChar.sendActionFailed();
 				return;
 			}
 			if(replacement.isSubLeader() != 0)
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.CharacterLeaderAnotherCombatUnit", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.CharacterLeaderAnotherCombatUnit", activeChar));
 				activeChar.sendActionFailed();
 				return;
 			}
@@ -126,7 +126,7 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 			}
 			if(subject.isSubLeader() != 0)
 			{
-				activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestPledgeReorganizeMember.MemberLeaderAnotherUnit", activeChar));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestPledgeReorganizeMember.MemberLeaderAnotherUnit", activeChar));
 				activeChar.sendActionFailed();
 				return;
 			}

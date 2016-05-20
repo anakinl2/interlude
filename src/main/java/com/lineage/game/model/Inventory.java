@@ -526,7 +526,7 @@ public abstract class Inventory
 			if(Arrays.asList(_castleLordCirclets).contains(itemId))
 				if(ownersClan == null || itemId != _castleLordCirclets[ownersClan.getHasCastle()])
 				{
-					owner.sendMessage(new CustomMessage("l2d.game.model.Inventory.CircletWorn", owner).addString(CastleManager.getInstance().getCastleByIndex(Arrays.asList(_castleLordCirclets).indexOf(itemId)).getName()));
+					owner.sendMessage(new CustomMessage("com.lineage.game.model.Inventory.CircletWorn", owner).addString(CastleManager.getInstance().getCastleByIndex(Arrays.asList(_castleLordCirclets).indexOf(itemId)).getName()));
 					return;
 				}
 		}

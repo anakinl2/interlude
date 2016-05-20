@@ -16,7 +16,7 @@ public class Default extends L2Skill
 	@Override
 	public void useSkill(L2Character activeChar, FastList<L2Character> targets)
 	{
-		activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Default.NotImplemented", activeChar).addNumber(getId()).addString("" + getSkillType()));
+		activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Default.NotImplemented", activeChar).addNumber(getId()).addString("" + getSkillType()));
 		activeChar.sendActionFailed();
 	}
 }

@@ -44,7 +44,7 @@ public class L2AdventurerInstance extends L2NpcInstance
 						player.sendPacket(new RadarControl(0, 1, spawn.getLoc()));
 						break;
 					case UNDEFINED:
-						player.sendMessage(new CustomMessage("l2d.game.model.instances.L2AdventurerInstance.BossNotInGame", player).addNumber(bossId));
+						player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2AdventurerInstance.BossNotInGame", player).addNumber(bossId));
 						break;
 				}
 			}

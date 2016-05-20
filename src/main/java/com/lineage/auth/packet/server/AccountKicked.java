@@ -1,4 +1,4 @@
-package com.lineage.auth.serverpackets;
+package com.lineage.auth.packet.server;
 
 public final class AccountKicked extends L2LoginServerPacket
 {

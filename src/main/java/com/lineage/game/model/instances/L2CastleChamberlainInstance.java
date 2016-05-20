@@ -67,7 +67,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_DISMISS))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			if(!val.equals(""))
@@ -87,7 +87,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_MANAGE_SIEGE))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			getCastle().getSiege().listRegisterClan(player);
@@ -96,7 +96,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_SET_FUNCTIONS))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			NpcHtmlMessage html = new NpcHtmlMessage(player, this);
@@ -107,7 +107,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!player.isClanLeader())
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			NpcHtmlMessage html = new NpcHtmlMessage(player, this);
@@ -121,7 +121,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!player.isClanLeader())
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			if(!val.equals(""))
@@ -180,7 +180,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_MANOR_ADMIN))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			String filename = "";
@@ -217,7 +217,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_MANOR_ADMIN))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			// input string format:
@@ -277,7 +277,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_OPEN_DOOR))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			if(!val.equals(""))
@@ -296,7 +296,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_TAXES))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			if(!val.equals(""))
@@ -330,7 +330,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_MANAGE_SIEGE))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			NpcHtmlMessage html = new NpcHtmlMessage(player, this);
@@ -341,7 +341,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_MANAGE_SIEGE))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			NpcHtmlMessage html = new NpcHtmlMessage(player, this);
@@ -352,7 +352,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_OPEN_DOOR))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			NpcHtmlMessage html = new NpcHtmlMessage(player, this);
@@ -365,7 +365,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_MANAGE_SIEGE))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			int id = Integer.parseInt(val);
@@ -385,7 +385,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_MANAGE_SIEGE))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			int id = Integer.parseInt(val);
@@ -426,7 +426,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!isHaveRigths(player, L2Clan.CP_CS_USE_FUNCTIONS))
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			String ssq_period;
@@ -452,7 +452,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!player.isClanLeader())
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			NpcHtmlMessage html = new NpcHtmlMessage(player, this);
@@ -464,7 +464,7 @@ public class L2CastleChamberlainInstance extends L2ResidenceManager
 		{
 			if(!player.isClanLeader())
 			{
-				player.sendMessage(new CustomMessage("l2d.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
+				player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2ResidenceManager.NotAuthorizedToDoThis", player));
 				return;
 			}
 			if(player.getInventory().getItemByItemId(6841) == null)

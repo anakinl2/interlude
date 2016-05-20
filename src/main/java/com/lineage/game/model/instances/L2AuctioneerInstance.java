@@ -422,7 +422,7 @@ public final class L2AuctioneerInstance extends L2NpcInstance
 					penalty.add(Calendar.DAY_OF_MONTH, 7);
 					ServerVariables.set("auction_penalty_ch" + auction.getId(), penalty.getTimeInMillis());
 					auction.cancelAuction();
-					player.sendMessage(new CustomMessage("l2d.game.model.instances.L2AuctioneerInstance.CanceledAuction", player));
+					player.sendMessage(new CustomMessage("com.lineage.game.model.instances.L2AuctioneerInstance.CanceledAuction", player));
 				}
 				return;
 			}

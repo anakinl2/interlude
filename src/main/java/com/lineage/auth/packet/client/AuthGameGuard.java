@@ -1,9 +1,9 @@
-package com.lineage.auth.clientpackets;
+package com.lineage.auth.packet.client;
 
-import com.lineage.auth.serverpackets.LoginFail;
+import com.lineage.auth.packet.server.LoginFail;
 import com.lineage.Config;
 import com.lineage.auth.L2LoginClient.LoginClientState;
-import com.lineage.auth.serverpackets.GGAuth;
+import com.lineage.auth.packet.server.GGAuth;
 import com.lineage.ext.network.ReceivablePacket;
 
 /**

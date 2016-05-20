@@ -302,7 +302,7 @@ public class L2TradeList
 			{
 				_log.warning("Integer Overflow on Cost. Possible Exploit attempt between " + buyer.getName() + " and " + seller.getName() + ".");
 				_log.warning(buyer.getName() + " try to use exploit, ban this player!");
-				seller.sendMessage(new CustomMessage("l2d.game.model.L2TradeList.BuyerExploit", seller));
+				seller.sendMessage(new CustomMessage("com.lineage.game.model.L2TradeList.BuyerExploit", seller));
 				return;
 			}
 			sum = (long) sellerItemCount * sellerTradeItem.getOwnersPrice();
@@ -310,7 +310,7 @@ public class L2TradeList
 			{
 				_log.warning("Integer Overflow on Cost. Possible Exploit attempt between " + buyer.getName() + " and " + seller.getName() + ".");
 				_log.warning(seller.getName() + " try to use exploit, ban this player!");
-				buyer.sendMessage(new CustomMessage("l2d.game.model.L2TradeList.SellerExploit", buyer));
+				buyer.sendMessage(new CustomMessage("com.lineage.game.model.L2TradeList.SellerExploit", buyer));
 				return;
 			}
 

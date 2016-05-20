@@ -43,7 +43,7 @@ public class AdminCommandHandler
 	{
 		if(!(activeChar.getPlayerAccess().IsGM || activeChar.getPlayerAccess().CanUseGMCommand))
 		{
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.SendBypassBuildCmd.NoCommandOrAccess", activeChar).addString(adminCommand));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.SendBypassBuildCmd.NoCommandOrAccess", activeChar).addString(adminCommand));
 			//activeChar.illegalAction(activeChar.getName() + " user use adm command " + adminCommand, 200);
 			return;
 		}

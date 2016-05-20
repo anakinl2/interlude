@@ -75,7 +75,7 @@ public class Keys implements IItemHandler, ScriptFile
 
 		L2ItemInstance ri = player.getInventory().destroyItem(item, 1, true);
 		player.sendPacket(new SystemMessage(SystemMessage.S1_HAS_DISAPPEARED).addItemName(ri.getItemId()));
-		player.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Unlock.Success", player));
+		player.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Unlock.Success", player));
 		door.openMe();
 		door.onOpen();
 	}

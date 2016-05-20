@@ -692,7 +692,7 @@ public class L2DarknessFestival
 			for(L2Player participant : _participants)
 			{
 				relocatePlayer(participant, false);
-				participant.sendMessage(new CustomMessage("l2d.game.model.entity.SevenSignsFestival.Ended", participant));
+				participant.sendMessage(new CustomMessage("com.lineage.game.model.entity.SevenSignsFestival.Ended", participant));
 			}
 			if(_cabal == SevenSigns.CABAL_DAWN)
 				SevenSignsFestival.getDawnPreviousParticipants().put(_levelRange, _participants);
@@ -721,6 +721,6 @@ public class L2DarknessFestival
 			// If an exception occurs, just move the player to the nearest town.
 			participant.teleToClosestTown();
 		}
-		participant.sendMessage(new CustomMessage("l2d.game.model.entity.SevenSignsFestival.Removed", participant));
+		participant.sendMessage(new CustomMessage("com.lineage.game.model.entity.SevenSignsFestival.Removed", participant));
 	}
 }

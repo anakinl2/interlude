@@ -86,7 +86,7 @@ public class Spoil extends L2Skill
 				else if(rateOfSpoil > 99.)
 					rateOfSpoil = 99.;
 
-				activeChar.sendMessage(new CustomMessage("l2d.game.skills.skillclasses.Spoil.Chance", activeChar).addNumber((int) rateOfSpoil));
+				activeChar.sendMessage(new CustomMessage("com.lineage.game.skills.skillclasses.Spoil.Chance", activeChar).addNumber((int) rateOfSpoil));
 				success = Rnd.chance((int) rateOfSpoil);
 			}
 			else

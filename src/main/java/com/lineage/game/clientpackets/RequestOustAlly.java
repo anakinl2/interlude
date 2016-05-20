@@ -71,7 +71,7 @@ public class RequestOustAlly extends L2GameClientPacket
 			alliance.broadcastAllyStatus();
 			alliance.removeAllyMember(clan.getClanId());
 			alliance.setExpelledMember();
-			activeChar.sendMessage(new CustomMessage("l2d.game.clientpackets.RequestOustAlly.ClanDismissed", activeChar).addString(clan.getName()).addString(alliance.getAllyName()));
+			activeChar.sendMessage(new CustomMessage("com.lineage.game.clientpackets.RequestOustAlly.ClanDismissed", activeChar).addString(clan.getName()).addString(alliance.getAllyName()));
 		}
 	}
 }
