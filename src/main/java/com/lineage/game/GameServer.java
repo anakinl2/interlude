@@ -79,23 +79,6 @@ public class GameServer {
     }
 
     public GameServer() throws Exception {
-        System.out.print("\n\r");
-        System.out.print(" _     ____  ____                           \n\r");
-        System.out.print("| |   |___ \\|  _ \\ _ __ ___  __ _ _ __ ___  \n\r");
-        System.out.print("| |     __) | | | | '__/ _ \\/ _` | '_ ` _ \\ \n\r");
-        System.out.print("| |___ / __/| |_| | | |  __/ (_| | | | | | |\n\r");
-        System.out.print("|_____|_____|____/|_|  \\___|\\__,_|_| |_| |_|\n\r\n");
-        System.out.print("Interlute(INTERLUDE,T0) Emulator.\n\r");
-        System.out.print("************COPYRIGHT************\n\r");
-        System.out.print("Powered by Midnex (C) 2010.\n\r");
-        System.out.print("[Skype]: x.midnex\n\r");
-        System.out.print("[email]: x.midnex@gmail.com\n\r");
-        System.out.print("[Revision]: " + Config.SERVER_VERSION + ".\n\r");
-        System.out.print("[Build Date]: " + Config.SERVER_BUILD_DATE + ".\n\r");
-        System.out.print("[Build FOR]: " + GsaTr.Buyler + ".\n\r");
-        System.out.print("[Build type]: " + GsaTr.Type + ".\n\r");
-        System.out.print("************COPYRIGHT************\n\r");
-        System.out.print("\n\r");
 
         Server.gameServer = this;
 
