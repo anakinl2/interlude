@@ -772,7 +772,7 @@ public abstract class L2Object
 	public void onSpawn()
 	{}
 
-	protected void pickupMe(L2Character target)
+	public void pickupMe(L2Character target)
 	{
 		// Create a server->client GetItem packet to pick up the L2ItemInstance
 		//player.broadcastPacket(new GetItem((L2ItemInstance) this, player.getObjectId()));
@@ -807,7 +807,7 @@ public abstract class L2Object
 		L2World.removeVisibleObject(this);
 	}
 
-	void refreshID()
+	protected void refreshID()
 	{
 		int newObjectId = IdFactory.getInstance().getNextId();
 		int oldObjectId = getObjectId();

@@ -378,7 +378,6 @@ public class L2PetInstance extends L2Summon
 
 	/**
 	 * Remove the Pet from DB and its associated item from the player inventory
-	 * @param owner The owner from whose inventory we should delete the item
 	 */
 	private void destroyControlItem()
 	{
