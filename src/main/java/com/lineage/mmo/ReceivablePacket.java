@@ -1,4 +1,4 @@
-package com.lineage.ext.network;
+package com.lineage.mmo;
 
 import javolution.text.TextBuilder;
 

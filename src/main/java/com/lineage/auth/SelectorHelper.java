@@ -8,13 +8,13 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import com.lineage.auth.packet.server.Init;
-import com.lineage.ext.network.HeaderInfo;
-import com.lineage.ext.network.IAcceptFilter;
-import com.lineage.ext.network.IClientFactory;
-import com.lineage.ext.network.IMMOExecutor;
-import com.lineage.ext.network.MMOConnection;
-import com.lineage.ext.network.ReceivablePacket;
-import com.lineage.ext.network.TCPHeaderHandler;
+import com.lineage.mmo.HeaderInfo;
+import com.lineage.mmo.IAcceptFilter;
+import com.lineage.mmo.IClientFactory;
+import com.lineage.mmo.IMMOExecutor;
+import com.lineage.mmo.MMOConnection;
+import com.lineage.mmo.ReceivablePacket;
+import com.lineage.mmo.TCPHeaderHandler;
 
 public class SelectorHelper extends TCPHeaderHandler<L2LoginClient> implements IMMOExecutor<L2LoginClient>, IClientFactory<L2LoginClient>, IAcceptFilter
 {

@@ -1,7 +1,7 @@
 package com.lineage.auth.packet.server;
 
 import com.lineage.auth.SessionKey;
-import com.lineage.ext.network.SendablePacket;
+import com.lineage.mmo.SendablePacket;
 
 /**
  * Format: dddddddd

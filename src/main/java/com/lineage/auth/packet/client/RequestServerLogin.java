@@ -5,7 +5,7 @@ import com.lineage.auth.SessionKey;
 import com.lineage.auth.packet.server.PlayOk;
 import com.lineage.auth.packet.server.LoginFail;
 import com.lineage.Config;
-import com.lineage.ext.network.ReceivablePacket;
+import com.lineage.mmo.ReceivablePacket;
 
 /**
  * Fromat is ddc

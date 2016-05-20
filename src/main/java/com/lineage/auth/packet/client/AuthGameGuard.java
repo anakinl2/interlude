@@ -4,7 +4,7 @@ import com.lineage.auth.packet.server.LoginFail;
 import com.lineage.Config;
 import com.lineage.auth.L2LoginClient.LoginClientState;
 import com.lineage.auth.packet.server.GGAuth;
-import com.lineage.ext.network.ReceivablePacket;
+import com.lineage.mmo.ReceivablePacket;
 
 /**
  * @author -Wooden-

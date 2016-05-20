@@ -3,7 +3,7 @@ package com.lineage.game.clientpackets;
 import java.util.logging.Logger;
 
 import com.lineage.Config;
-import com.lineage.ext.network.ReceivablePacket;
+import com.lineage.mmo.ReceivablePacket;
 import com.lineage.game.model.L2Player;
 import com.lineage.game.network.L2GameClient;
 import com.lineage.game.serverpackets.L2GameServerPacket;

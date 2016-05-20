@@ -12,8 +12,8 @@ import com.lineage.auth.packet.server.AccountKicked;
 import com.lineage.auth.packet.server.LoginFail;
 import com.lineage.Config;
 import com.lineage.auth.packet.server.L2LoginServerPacket;
-import com.lineage.ext.network.MMOClient;
-import com.lineage.ext.network.MMOConnection;
+import com.lineage.mmo.MMOClient;
+import com.lineage.mmo.MMOConnection;
 import com.lineage.game.templates.StatsSet;
 
 /**

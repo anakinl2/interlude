@@ -1,4 +1,4 @@
-package com.lineage.ext.network;
+package com.lineage.mmo;
 
 import java.nio.ByteBuffer;
 import java.nio.channels.CancelledKeyException;

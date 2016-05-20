@@ -2,7 +2,7 @@ package com.lineage.auth.packet.client;
 
 import com.lineage.auth.packet.server.LoginFail;
 import com.lineage.auth.packet.server.ServerList;
-import com.lineage.ext.network.ReceivablePacket;
+import com.lineage.mmo.ReceivablePacket;
 
 /**
  * Format: ddc

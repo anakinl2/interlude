@@ -1,4 +1,4 @@
-package com.lineage.ext.network;
+package com.lineage.mmo;
 
 public abstract class SendablePacket<T extends MMOClient<?>> extends AbstractPacket<T>
 {

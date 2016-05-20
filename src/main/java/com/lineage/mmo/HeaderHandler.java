@@ -1,4 +1,4 @@
-package com.lineage.ext.network;
+package com.lineage.mmo;
 
 public abstract class HeaderHandler<T extends MMOClient<?>, H extends HeaderHandler<T, H>>
 {

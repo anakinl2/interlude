@@ -7,8 +7,8 @@ import com.lineage.auth.packet.client.AuthGameGuard;
 import com.lineage.auth.packet.client.RequestAuthLogin;
 import com.lineage.auth.packet.client.RequestServerList;
 import com.lineage.auth.packet.client.RequestServerLogin;
-import com.lineage.ext.network.IPacketHandler;
-import com.lineage.ext.network.ReceivablePacket;
+import com.lineage.mmo.IPacketHandler;
+import com.lineage.mmo.ReceivablePacket;
 
 /**
  * Handler for packets received by Login Server

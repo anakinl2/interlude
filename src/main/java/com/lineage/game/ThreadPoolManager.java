@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
 import com.lineage.Config;
-import com.lineage.ext.network.ReceivablePacket;
+import com.lineage.mmo.ReceivablePacket;
 import com.lineage.game.network.L2GameClient;
 
 public class ThreadPoolManager

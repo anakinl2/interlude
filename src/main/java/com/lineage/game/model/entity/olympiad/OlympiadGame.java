@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import com.lineage.Config;
-import com.lineage.ext.network.MMOConnection;
+import com.lineage.mmo.MMOConnection;
 import com.lineage.game.instancemanager.ZoneManager;
 import com.lineage.game.model.Inventory;
 import com.lineage.game.model.L2Party;

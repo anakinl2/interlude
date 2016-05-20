@@ -1,4 +1,4 @@
-package com.lineage.ext.network;
+package com.lineage.mmo;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

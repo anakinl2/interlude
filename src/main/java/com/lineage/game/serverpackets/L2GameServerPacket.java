@@ -1,6 +1,6 @@
 package com.lineage.game.serverpackets;
 
-import com.lineage.ext.network.SendablePacket;
+import com.lineage.mmo.SendablePacket;
 import com.lineage.game.network.L2GameClient;
 
 public abstract class L2GameServerPacket extends SendablePacket<L2GameClient>

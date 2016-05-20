@@ -1,4 +1,4 @@
-package com.lineage.ext.network;
+package com.lineage.mmo;
 
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;

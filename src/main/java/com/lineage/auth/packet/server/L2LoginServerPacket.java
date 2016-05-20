@@ -1,7 +1,7 @@
 package com.lineage.auth.packet.server;
 
 import com.lineage.auth.L2LoginClient;
-import com.lineage.ext.network.SendablePacket;
+import com.lineage.mmo.SendablePacket;
 
 /**
  * @author KenM

@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 import com.lineage.Config;
 import com.lineage.auth.L2LoginClient;
-import com.lineage.ext.network.ReceivablePacket;
+import com.lineage.mmo.ReceivablePacket;
 
 /**
  *

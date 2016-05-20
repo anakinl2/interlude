@@ -1,7 +1,7 @@
 package com.lineage.game.loginservercon.gspackets;
 
 import com.lineage.Config;
-import com.lineage.ext.network.MMOSocket;
+import com.lineage.mmo.MMOSocket;
 import com.lineage.game.loginservercon.AdvIP;
 import com.lineage.util.GsaTr;
 

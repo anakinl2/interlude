@@ -1,4 +1,4 @@
-package com.lineage.ext.network;
+package com.lineage.mmo;
 
 public interface IMMOExecutor<T extends MMOClient<?>>
 {
