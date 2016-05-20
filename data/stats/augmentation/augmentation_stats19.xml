@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<stat name="mDef">
+		<table name="#soloValues">2.5 2.5 2.5 2.5</table>
+		<table name="#combinedValues">1.25 1.5 1.8 2.1</table>
+	</stat>
+	<stat name="maxHp">
+		<table name="#soloValues">27.0 27.0 27.0 27.0</table>
+		<table name="#combinedValues">13.5 15.5 19.0 22.0</table>
+	</stat>
+	<stat name="maxMp">
+		<table name="#soloValues">16.0 16.0 16.0 16.0</table>
+		<table name="#combinedValues">8.0 10.0 12.0 14.0</table>
+	</stat>
+	<stat name="mAtk">
+		<table name="#soloValues">3.8 3.8 3.8 3.8</table>
+		<table name="#combinedValues">1.9 2.2 2.7 3.2</table>
+	</stat>
+	<stat name="regHp">
+		<table name="#soloValues">0.12 0.12 0.12 0.12</table>
+		<table name="#combinedValues">0.06 0.75 0.09 0.1</table>
+	</stat>
+	<stat name="regMp">
+		<table name="#soloValues">0.04 0.04 0.04 0.04</table>
+		<table name="#combinedValues">0.05 0.06 0.07</table>
+	</stat>
+	<stat name="earthRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="fireRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="sacredRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="unholyRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="waterRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="windRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="bleedPower">
+		<table name="#soloValues">6</table>
+		<table name="#combinedValues">6</table>
+	</stat>
+	<stat name="bleedRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="mentalPower">
+		<table name="#soloValues">6</table>
+		<table name="#combinedValues">6</table>
+	</stat>
+	<stat name="mentalRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="paralyzePower">
+		<table name="#soloValues">6</table>
+		<table name="#combinedValues">6</table>
+	</stat>
+	<stat name="paralyzeRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="poisonPower">
+		<table name="#soloValues">6</table>
+		<table name="#combinedValues">6</table>
+	</stat>
+	<stat name="poisonRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="stunPower">
+		<table name="#soloValues">6</table>
+		<table name="#combinedValues">6</table>
+	</stat>
+	<stat name="stunRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+	<stat name="sleepPower">
+		<table name="#soloValues">6</table>
+		<table name="#combinedValues">6</table>
+	</stat>
+	<stat name="sleepRcpt">
+		<table name="#soloValues">-6</table>
+		<table name="#combinedValues">-6</table>
+	</stat>
+</list>

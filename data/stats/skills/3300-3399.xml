@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="3360" levels="25" name="Cheap Shot">
+		<!--  Общий скилл для всех SA луков, ибо НЦСофт такого сделать почему-то не удосужилась.
+			Description: Decreases MP consumption.
+			Miser (1-10)
+			Cheap Shot (11-20)
+			Quick Recovery (21-25)
+		-->
+		<table name="#miser">7 8 9 2 4 4 5 1 99 99</table>
+		<table name="#miserChance">30 30 30 30 40 32 37 19 0 0</table>
+		<table name="#cheapShot">0 0 0 0 0 0 0 0 0 0 2 1 2 2 2 1 2 0 0 0</table>
+		<table name="#cheapShotChance">0 0 0 0 0 0 0 0 0 0 46 34 42 38 36 26 38 0 0 0</table>
+		<table name="#mpConsumePhysical">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .88 1</table>
+		<table name="#atkReuse">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9 .87 .85 .83 .8</table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="displayLevel" val="1"/>
+		<for>
+			<set val="#miser" order="0x08" stat="miser"/>
+			<set val="#miserChance" order="0x08" stat="miserChance"/>
+			<set val="#cheapShot" order="0x08" stat="cheapShot"/>
+			<set val="#cheapShotChance" order="0x08" stat="cheapShotChance"/>
+			<mul val="#mpConsumePhysical" order="0x30" stat="mpConsumePhysical"/>
+			<mul val="#atkReuse" order="0x50" stat="atkReuse"/>
+		</for>
+	</skill>
+</list>

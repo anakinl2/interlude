@@ -1,0 +1,1 @@
+mysql -u root -p l2d < l2d_clean_with_2Gms.sql

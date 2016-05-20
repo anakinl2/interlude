@@ -1,0 +1,1809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="301" levels="5" name="Summon Big Boom">
+		<!-- Done by L2Dream -->
+		<table name="#magicLevel">58 62 66 70 74</table>
+		<table name="#itemConsumeCount">3 3 4 4 5</table>
+		<table name="#itemConsumeCountInTime">5</table>
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="itemConsumeId" val="1458" />
+		<set name="itemConsumeCount" val="#itemConsumeCount" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="itemConsumeIdInTime" val="1458" />
+		<set name="itemConsumeCountInTime" val="#itemConsumeCountInTime" />
+		<set name="reuseDelay" val="20000" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<!-- Summon-specific -->
+		<table name="#npcIds">14702 14703 14704 14705 14706</table>
+		<set name="npcId" val="#npcIds" />
+		<set name="expPenalty" val="0.3" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Power">
+			<table name="#npcIds">14707 14708 14709 14710 14711 14712 14713 14714 14715 14716 14717 14718 14719 14720 14721 14722 14723 14724 14725 14726 14727 14728 14729 14730 14731 14732 14733 14734 14735 14736</table>
+		</enchant1>
+		<for />
+	</skill>
+	<skill id="302" levels="9" name="Spoil Festival">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">268 341 408 467 523 582 611 635 655</table>
+		<table name="#magicLevel">29 37 44 50 56 63 67 71 75</table>
+		<table name="#Tab-pAtk">1</table>
+		<table name="#activateRate">80</table>
+		<table name="#dmg">0</table>
+		<table name="#decay-count">0</table>
+		<table name="#earthRcpt">0</table>
+		<set name="activateRate" val="#activateRate" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="levelModifier" val="2" />
+		<set name="target" val="TARGET_AREA" />
+		<set name="skillRadius" val="200" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="SPOIL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="attack" />
+		<enchant1 levels="30" name="Power">
+			<table name="#Tab-pAtk">.99 .98 .97 .96 .95 .94 .93 .92 .91 .9 .89 .88 .87 .86 .85 .84 .83 .82 .81 .8 .79 .78 .77 .76 .75 .74 .73 .72 .71 .7</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Power">
+			<table name="#dmg">100 120 140 160 180 200 220 240 260 280 300 320 340 360 380 400 720 440 460 480 500 520 540 560 580 600 620 640 660 680</table>
+			<table name="#decay-count">1</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="180" val="0">
+				<mul order="0x30" stat="pAtk" val="#Tab-pAtk" />
+				<add order="0x40" stat="earthRcpt" val="#earthRcpt" />
+			</effect>
+			<effect count="#decay-count" name="DamOverTime" time="0" val="#dmg" />
+		</for>
+	</skill>
+	<skill id="303" levels="4" name="Soul of Sagittarius">
+		<!--
+			Done by L2Dream ()
+			Enchant #1: -HP consumption
+			Enchant #2: +pDef
+		-->
+		<table name="#mp">1.10 1.15 1.20 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25 1.25</table>
+		<table name="#hpConsume">185 271 316 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364 364</table>
+		<table name="#effectPoint">438 549 597 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635 635</table>
+		<table name="#magicLevel">46 58 64 70 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		<table name="#abnormal_lv">1 2 3 4</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="weaponsAllowed" val="32" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Cost">
+			<table name="#hpConsume">358 352 346 340 334 328 322 316 310 304 298 292 286 280 274 267 261 255 249 243 237 231 225 219 213 207 201 195 189 183</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#abnormal_lv">4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6</table>
+		</enchant1>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#mp" stackType="mp_up" time="1200" val="0">
+				<mul order="0x30" stat="maxMp" val="#mp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="304" levels="1" name="Song of Vitality">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">611</table>
+		<table name="#magicLevel">66</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Time">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="maxHp" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="305" levels="1" name="Song of Vengeance">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">655</table>
+		<table name="#magicLevel">74</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Time">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<add order="0x40" stat="reflectDam" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="306" levels="1" name="Song of Flame Guard">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">582</table>
+		<table name="#magicLevel">62</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Time">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<sub order="0x40" stat="fireRcpt" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="307" levels="1" name="Dance of Aqua Guard">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">635</table>
+		<table name="#magicLevel">70</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="weaponsAllowed" val="512" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Time">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<sub order="0x40" stat="waterRcpt" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="308" levels="1" name="Song of Storm Guard">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">635</table>
+		<table name="#magicLevel">70</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Time">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<sub order="0x40" stat="windRcpt" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="309" levels="1" name="Dance of Earth Guard">
+		<!--
+			Done by L2Dream
+			Last modify:	29.02.2008
+
+			Description: Temporarily increase your party members' resistance to earth attacks. Continuous dancing consumes additional MP. An equipped dual-sword is required to use this skill.
+		-->
+		<table name="#effectPoint">582</table>
+		<table name="#magicLevel">62</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="weaponsAllowed" val="512" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Time">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<sub order="0x40" stat="earthRcpt" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="310" levels="1" name="Dance of the Vampire">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">655</table>
+		<table name="#magicLevel">74</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="weaponsAllowed" val="512" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Time">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<add order="0x40" stat="absorbDam" val="8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="311" levels="1" name="Dance of Protection">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">611</table>
+		<table name="#magicLevel">66</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="weaponsAllowed" val="512" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Time">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">125 131 136 142 147 153 158 164 169 175 180 186 191 197 202 208 213 219 224 230 235 241 246 252 257 263 268 274 279 285</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="fall" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="312" levels="20" name="Vicious Stance">
+		<!-- Done by L2Dream -->
+		<table name="#mp">0.4</table>
+		<table name="#magicLevel">20 24 28 32 36 40 43 46 49 52 55 58 60 62 64 66 68 70 72</table>
+		<table name="#crit">35 48 64 84 109 139 166 196 229 266 306 349 379 410 443 475 509 542 576 609</table>
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<enchant1 levels="30" name="Power">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#crit">615 620 626 631 637 642 648 653 659 664 670 675 681 686 692 697 702 708 713 719 724 730 735 741 746 752 757 763 768 774</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#mp">0.39 0.38 0.37 0.36 0.35 0.34 0.33 0.32 0.31 0.3 0.29 0.28 0.27 0.26 0.25 0.24 0.23 0.22 0.21 0.2 0.19 0.18 0.17 0.16 0.15 0.14 0.13 0.12 0.11 0.1</table>
+		</enchant2>
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="5" val="#mp">
+				<add order="0x40" stat="cAtkStatic" val="#crit" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="313" levels="8" name="Snipe">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">566 582 597 611 624 635 646 655</table>
+		<table name="#magicLevel">60 62 64 66 68 70 72 74</table>
+		<table name="#pAtk">165 175 185 195 205 215 225 235</table>
+		<table name="#abnormal_lv">1 2 3 4 5 6 7 8</table>
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="weaponsAllowed" val="32" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Power">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#pAtk">670 680 690 700 710 720 730 740 750 760 770 780 790 800 810 820 830 840 850 860 870 880 890 900 910 920 930 940 950</table>
+			<table name="#abnormal_lv">8 8 8 8 8 8 9 9 9 9 9 9 10 10 10 10 10 10 11 11 11 11 11 11 12 12 12 12 12 12</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#abnormal_time">118 116 114 112 110 108 106 104 102 100 98 96 94 92 90 88 86 84 82 80 78 76 74 72 70 68 66 64 62 60</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="ImobileBuff" stackOrder="-1" stackType="ImobileBuff" time="#abnormal_time" val="0">
+				<add order="0x40" stat="pAtk" val="#pAtk">
+					<using kind="Bow" />
+				</add>
+				<add order="0x40" stat="accCombat" val="4">
+					<using kind="Bow" />
+				</add>
+				<add order="0x40" stat="rCrit" val="20">
+					<using kind="Bow" />
+				</add>
+				<add order="0x40" stat="pAtkRange" val="300">
+					<using kind="Bow" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="314" levels="16" name="Fatal Counter">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">567 575 583 591 599 607 614 621 627 634 640 646 651 656 661 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665 665</table>
+		<table name="#magicLevel">59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		<table name="#power">2908 3030 3154 3280 3408 3537 3668 3800 3933 4067 4201 4336 4470 4604 4738 4870</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="weaponsAllowed" val="32" />
+		<set name="power" val="#power" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="reuseDelay" val="20000" />
+		<set name="coolTime" val="1000" />
+		<set name="skillType" val="PDAM" />
+		<set name="deathlink" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Power">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+			<table name="#power">4915 4959 5003 5047 5090 5134 5178 5222 5266 5310 5354 5398 5442 5486 5529 5573 5617 5661 5705 5749 5793 5837 5881 5925 5968 6012 6056 6100 6144 6188</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 77 77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85</table>
+		</enchant2>
+		<for />
+	</skill>
+	<skill id="315" levels="16" name="Crush of Doom">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">425 431 438 444 449 455 460 466 471 475 480 484 488 492 496 499</table>
+		<table name="#power">4558 4750 4944 5142 5342 5545 5751 5958 6166 6376 6586 6797 7008 7218 7427 7635</table>
+		<table name="#magicLevel">59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74</table>
+		<table name="#hpConsume">208 212 212 217 221 225 229 233 237 240 244 248 251 255 258 261</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="weaponsAllowed" val="18432" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="reuseDelay" val="26000" />
+		<set name="coolTime" val="1080" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="shieldignore" val="true" />
+		<set name="nextAction" val="attack" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">7710 7779 7848 7917 7986 8055 8123 8192 8261 8330 8399 8468 8537 8605 8674 8743 8812 8881 8950 9019 9088 9156 9225 9294 9363 9432 9501 9570 9639 9707</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#hpConsume">259 256 252 249 245 242 239 235 232 228 225 222 218 215 211 208 205 201 198 195 191 188 184 181 178 174 171 167 164 161</table>
+		</enchant2>
+		<for />
+	</skill>
+	<skill id="316" levels="1" name="Aegis">
+		<!-- Done by L2Dream -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x10" stat="shldAngle" val="360" />
+		</for>
+	</skill>
+	<skill id="317" levels="5" name="Focus Attack">
+		<!-- Done by L2Dream -->
+		<table name="#cAtk">10 12 13 14 15</table>
+		<table name="#Accuracy">3 3 4 5 5</table>
+		<set name="weaponsAllowed" val="64" />
+		<set name="magicLevel" val="40" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="reuseDelay" val="12000" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" time="120" val="0">
+				<add order="0x40" stat="cAtk" val="#cAtk">
+					<using kind="Pole" />
+				</add>
+				<add order="0x40" stat="accCombat" val="#Accuracy">
+					<using kind="Pole" />
+				</add>
+				<set order="0x80" stat="poleTargetCount" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="318" levels="1" name="Aegis Stance">
+		<!--
+			Done by L2Dream ()
+			Enchant #1: -Cost
+		-->
+		<table name="#magicLevel">46</table>
+		<table name="#sDef">0.60</table>
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<enchant1 levels="30" name="Cost">
+			<table name="#sDef">0.61 0.62 0.62 0.63 0.64 0.64 0.65 0.66 0.66 0.67 0.68 0.68 0.69 0.70 0.70 0.71 0.72 0.72 0.73 0.74 0.74 0.75 0.76 0.76 0.77 0.78 0.78 0.79 0.80 0.80</table>
+		</enchant1>
+		<for>
+			<effect count="0x7fffffff" name="ManaDamOverTime" time="5" val="0">
+				<mul order="0x30" stat="sDef" val="#sDef" />
+				<set order="0x10" stat="shldAngle" val="360" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="319" levels="2" name="Agile Movement">
+		<!-- Done by L2Dream -->
+		<table name="#Accuracy">2 3</table>
+		<table name="#Speed">5 10</table>
+		<table name="#magicLevel">20 40</table>
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="runSpd" val="#Speed">
+				<using armor="Light" />
+			</add>
+			<add order="0x40" stat="accCombat" val="#Accuracy">
+				<using armor="Light" />
+			</add>
+		</for>
+	</skill>
+	<skill id="320" levels="10" name="Wrath">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">307 311 314 317 320 323 326 328 331 333</table>
+		<table name="#magicLevel">65 66 67 68 69 70 71 72 73 74</table>
+		<table name="#CP">0.07 0.1 0.12 0.15 0.17 0.2 0.22 0.25 0.27 0.3</table>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="weaponsAllowed" val="64" />
+		<set name="power" val="#CP" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="400" />
+		<set name="reuseDelay" val="120000" />
+		<set name="coolTime" val="720" />
+		<set name="skillType" val="CPDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Power">
+			<table name="#CP">.31 .32 .33 .34 .35 .36 .37 .38 .39 .40 .41 .42 .43 .44 .45 .46 .47 .48 .49 .50 .51 .52 .53 .54 .55 .56 .57 .58 .59</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+		</enchant2>
+		<for />
+	</skill>
+	<skill id="321" levels="10" name="Blinding Blow">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">307 311 314 317 320 323 326 328 331 333</table>
+		<table name="#magicLevel">65 66 67 68 69 70 71 72 73 74</table>
+		<table name="#power">2751 2850 2950 3050 3151 3252 3353 3453 3553 3653</table>
+		<table name="#activateRate">40</table>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="power" val="#power" />
+		<set name="weaponsAllowed" val="16" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="onCrit" val="true" />
+		<set name="reuseDelay" val="90000" />
+		<set name="coolTime" val="720" />
+		<set name="skillType" val="FATALBLOW" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="lethal2" val="5" />
+		<set name="nextAction" val="attack" />
+		<for>
+			<effect count="1" name="Bluff" time="1" val="0" noicon="1" />
+			<effect applyOnCaster="true" count="1" name="Buff" time="15" val="0">
+				<add order="0x40" stat="runSpd" val="40" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="322" levels="6" name="Shield Fortress">
+		<!-- Done by L2Dream -->
+		<table name="#mpConsumeTick">0.4</table>
+		<table name="#magicLevel">64 66 68 70 72 74</table>
+		<table name="#ShieldDefRate">446 469 491 514 537 560</table>
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<set name="nextAction" val="none" />
+		<enchant1 levels="30" name="Power">
+			<table name="#ShieldDefRate">615 620 626 631 637 642 648 653 659 664 670 675 681 686 692 697 702 708 713 719 724 730 735 741 746 752 757 763 768 774</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost"> <!-- FIXME: one's current MP are decreased не понял что значит -->
+			<table name="#mpConsumeTick">0.39 0.38 0.37 0.36 0.35 0.34 0.33 0.32 0.31 0.3 0.29 0.28 0.27 0.26 0.25 0.24 0.23 0.22 0.21 0.2 0.19 0.18 0.17 0.16 0.15 0.14 0.13 0.12 0.11 0.1</table>
+		</enchant2>
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="5" val="#mpConsumeTick">
+				<add order="0x40" stat="sDef" val="#ShieldDefRate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="323" levels="1" name="Quiver of Arrow: Grade A">
+		<!-- Done by L2Dream,  -->
+		<set name="itemConsumeId" val="1461" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="600000" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="SummonItemId" val="1344" />
+		<set name="SummonMinCount" val="700" />
+		<set name="SummonMaxCount" val="2800" />
+		<for />
+	</skill>
+	<skill id="324" levels="1" name="Quiver of Arrow: Grade S">
+		<!-- Done by L2Dream,  -->
+		<set name="itemConsumeId" val="1462" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="600000" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="SummonItemId" val="1345" />
+		<set name="SummonMinCount" val="900" />
+		<set name="SummonMaxCount" val="3600" />
+		<set name="nextAction" val="none" />
+		<for />
+	</skill>
+	<skill id="325" levels="1" name="Strider Siege Assault">
+		<!-- Done by L2Dream -->
+		<set name="itemConsumeId" val="3031" />
+		<set name="itemConsumeCount" val="5" />
+		<set name="effectPoint" val="100" />
+		<set name="power" val="15005" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="5000" />
+		<set name="coolTime" val="720" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<cond>
+			<and>
+				<player riding="strider" />
+				<target castledoor="true" />
+			</and>
+		</cond>
+		<for />
+	</skill>
+	<skill id="326" levels="1" name="Build Advanced Headquarters">
+		<!-- Done by L2Dream -->
+		<set name="itemConsumeId" val="2131" />
+		<set name="itemConsumeCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="skillType" val="SIEGEFLAG" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="advancedFlag" val="true" />
+		<set name="advancedMultiplier" val="2" />
+		<set name="nextAction" val="none" />
+		<for />
+	</skill>
+	<skill id="327" levels="1" name="Wyvern Aegis">
+		<!-- Done by L2Dream -->
+		<set name="itemConsumeId" val="3031" />
+		<set name="itemConsumeCount" val="20" />
+		<set name="effectPoint" val="662" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msg="You can only use wyvern aegis when flying">
+			<player flying="true" />
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="9" val="0">
+				<add order="0x40" stat="pDef" val="7000" />
+				<add order="0x40" stat="mDef" val="6000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="328" levels="1" name="Wisdom">
+		<!-- Done by L2Dream -->
+		<table name="#rootRcpt">.8</table>
+		<table name="#sleepRcpt">.8</table>
+		<table name="#mentalRcpt">.8</table>
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="rootRcpt" val="#rootRcpt" />
+			<mul order="0x30" stat="sleepRcpt" val="#sleepRcpt" />
+			<mul order="0x30" stat="silenceRcpt" val="#mentalRcpt" />
+			<mul order="0x30" stat="mentalRcpt" val="#mentalRcpt" />
+		</for>
+	</skill>
+	<skill id="329" levels="1" name="Health">
+		<!-- Done by L2Dream -->
+		<table name="#poisonRcpt">.8</table>
+		<table name="#bleedRcpt">.8</table>
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="poisonRcpt" val="#poisonRcpt" />
+			<mul order="0x30" stat="bleedRcpt" val="#bleedRcpt" />
+		</for>
+	</skill>
+	<skill id="330" levels="1" name="Skill Mastery">
+		<!-- Реализован в коде -->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="HARDCODED" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="331" levels="1" name="Skill Mastery">
+		<!-- Реализован в коде -->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="HARDCODED" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="332" levels="1" name="Extra Inventory">
+		<!-- Done by L2Dream -->
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="inventoryLimit" val="10" />
+		</for>
+	</skill>
+	<skill id="333" levels="1" name="Extra Sales Slots">
+		<!-- Done by L2Dream -->
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="tradeLimit" val="1" />
+		</for>
+	</skill>
+	<skill id="334" levels="1" name="Focus Skill Mastery">
+		<!-- Done by L2Dream -->
+		<set name="magicLevel" val="78" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="3" val="1.5">
+				<mul order="0x30" stat="skillMastery" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="335" levels="1" name="Fortitude">
+		<!-- Done by L2Dream -->
+		<table name="#stunRcpt">.7</table>
+		<table name="#paralyzeRcpt">.7</table>
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="3" val="0.5">
+				<mul order="0x30" stat="stunRcpt" val="#stunRcpt" />
+				<mul order="0x30" stat="paralyzeRcpt" val="#paralyzeRcpt" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="336" levels="1" name="Arcane Wisdom">
+		<!-- Done by L2Dream
+			Description: Significantly increases efficiency of magic and decreases MP consumption of skills. Casting Spd. is decreased and HP will be continuously consumed while in effect.
+		-->
+		<table name="#mpConsum">.7</table>
+		<set name="magicLevel" val="78" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<for>
+			<effect count="0x7fffffff" name="DamOverTime" time="3" val="150">
+				<mul order="0x30" stat="mpConsum" val="#mpConsum" />
+				<mul order="0x30" stat="mAtkSpd" val="0.9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="337" levels="1" name="Arcane Power">
+		<table name="#power">1.3</table>
+		<set name="magicLevel" val="78" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<for>
+			<effect count="0x7fffffff" name="DamOverTime" time="3" val="150">
+				<mul order="0x30" stat="mAtk" val="#power" />
+				<mul order="0x30" stat="mpConsum" val="1.1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="338" levels="1" name="Arcane Agility">
+		<!-- Done by L2Dream -->
+		<table name="#mAtkSpd">1.2</table>
+		<table name="#mReuse">.9</table>
+		<set name="magicLevel" val="78" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<for>
+			<effect count="0x7fffffff" name="DamOverTime" time="3" val="150">
+				<mul order="0x30" stat="mReuse" val="#mReuse" />
+				<mul order="0x30" stat="mpConsum" val="1.1" />
+				<mul order="0x30" stat="mAtkSpd" val="#mAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="339" levels="1" name="Parry Stance">
+		<!-- Done by L2Dream -->
+		<table name="#Def">1.25</table>
+		<set name="magicLevel" val="78" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="5" val="0.5">
+				<mul order="0x30" stat="mDef" val="#Def" />
+				<mul order="0x30" stat="pDef" val="#Def" />
+				<sub order="0x40" stat="accCombat" val="4" />
+				<mul order="0x30" stat="pAtkSpd" val="0.8" />
+				<mul order="0x30" stat="runSpd" val="0.9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="340" levels="1" name="Riposte Stance">
+		<!-- Done by L2Dream -->
+		<set name="magicLevel" val="77" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_TOGGLE" />
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="5" val="0.5">
+				<add order="0x40" stat="reflectPhysicSkill" val="10" />
+				<add order="0x40" stat="reflectMagicSkill" val="10" />
+				<add order="0x40" stat="reflectDam" val="30" />
+				<sub order="0x40" stat="accCombat" val="4" />
+				<mul order="0x30" stat="pAtkSpd" val="0.8" />
+				<mul order="0x30" stat="runSpd" val="0.9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="341" levels="1" name="Touch of Life">
+		<!-- Done by L2Dream -->
+		<table name="#hpConsume">1216</table>
+		<table name="#time">120</table>
+		<table name="#count">24</table>
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="power" val="50" />
+		<set name="effectPoint" val="811" />
+		<set name="magicLevel" val="78" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="1200000" />
+		<set name="skillType" val="HEAL_PERCENT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" time="#time" val="0">
+				<sub order="0x40" stat="cancelRcpt" val="30" />
+				<sub order="0x40" stat="debuffRcpt" val="30" />
+				<add order="0x40" stat="hpEff" val="30" />
+			</effect>
+			<effect count="#count" name="HealOverTime" time="5" val="250" />
+		</for>
+	</skill>
+	<skill id="342" levels="1" name="Touch of Death">
+		<!-- Done by L2Dream -->
+		<table name="#hpConsume">1004</table>
+		<table name="#activateRate">40</table>
+		<set name="activateRate" val="#activateRate" />
+		<set name="levelModifier" val="1" />
+		<set name="effectPoint" val="1338" />
+		<set name="magicLevel" val="78" />
+		<set name="save" val="4" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="600000" />
+		<set name="skillType" val="CANCEL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="attack" />
+		<set name="isOffensive" val="true" />
+		<cond>
+			<player percentHP="75" />
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="30" val="0">
+				<mul order="0x30" stat="maxCp" val="0.1" />
+				<add order="0x40" stat="debuffRcpt" val="25" />
+				<sub order="0x40" stat="hpEff" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="343" levels="1" name="Lethal Shot">
+		<!-- Done by L2Dream -->
+		<table name="#power">5132</table>
+		<set name="weaponsAllowed" val="32" />
+		<set name="effectPoint" val="897" />
+		<set name="magicLevel" val="76" />
+		<set name="power" val="#power" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="reuseDelay" val="30000" />
+		<set name="skillType" val="LETHAL_SHOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="lethal2" val="2" />
+		<set name="nextAction" val="none" />
+	</skill>
+	<skill id="344" levels="1" name="Lethal Blow">
+		<!-- Done by L2Dream -->
+		<table name="#power">5773</table>
+		<table name="#lethal2">6</table>
+		<set name="weaponsAllowed" val="16" />
+		<set name="effectPoint" val="337" />
+		<set name="magicLevel" val="76" />
+		<set name="power" val="#power" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="onCrit" val="true" />
+		<set name="reuseDelay" val="15000" />
+		<set name="critical" val="true" />
+		<set name="skillType" val="FATALBLOW" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="lethal2" val="#lethal2" />
+		<set name="nextAction" val="attack" />
+	</skill>
+	<skill id="345" levels="1" name="Sonic Rage">
+		<!-- Done by L2Dream -->
+		<set name="hpConsume" val="50" />
+		<set name="effectPoint" val="340" />
+		<set name="magicLevel" val="78" />
+		<set name="power" val="7" />
+		<set name="weaponsAllowed" val="512" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="CHARGE" />
+		<set name="critical" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="charges" val="7" />
+		<set name="isOffensive" val="true" />
+		<set name="nextAction" val="attack" />
+		<for />
+	</skill>
+	<skill id="346" levels="1" name="Raging Force">
+		<!-- Done by L2Dream -->
+		<set name="hpConsume" val="50" />
+		<set name="effectPoint" val="340" />
+		<set name="magicLevel" val="78" />
+		<set name="power" val="7" />
+		<set name="weaponsAllowed" val="1024" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="CHARGE" />
+		<set name="critical" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="charges" val="7" />
+		<set name="isOffensive" val="true" />
+		<set name="nextAction" val="attack" />
+		<for />
+	</skill>
+	<skill id="347" levels="1" name="Earthquake">
+		<!-- Done by L2Dream -->
+		<table name="#power">4040</table>
+		<table name="#hpConsume">340</table>
+		<set name="weaponsAllowed" val="64" />
+		<set name="effectPoint" val="679" />
+		<set name="magicLevel" val="78" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="power" val="4040" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="200" />
+		<set name="overHit" val="true" />
+		<set name="critical" val="true" />
+		<set name="reuseDelay" val="30000" />
+		<set name="skillType" val="PDAM" />
+		<set name="cancelTarget" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="shieldignore" val="true" />
+		<set name="nextAction" val="none" />
+		<for />
+	</skill>
+	<skill id="348" levels="1" name="Spoil Crush">
+		<!-- Done by L2Dream -->
+		<set name="weaponsAllowed" val="16392" />
+		<set name="effectPoint" val="337" />
+		<set name="activateRate" val="80" />
+		<set name="magicLevel" val="76" />
+		<set name="levelModifier" val="2" />
+		<set name="effectPoint" val="337" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="critical" val="true" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="SPOIL" />
+		<set name="crush" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="attack" />
+		<for />
+	</skill>
+	<skill id="349" levels="1" name="Song of Renewal">
+		<!-- Done by L2Dream -->
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="666" />
+		<set name="magicLevel" val="77" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mReuse" val="0.8" />
+				<mul order="0x30" stat="pReuse" val="0.8" />
+				<mul order="0x30" stat="mpConsum" val="0.95" />
+				<mul order="0x30" stat="mpConsumePhysical" val="0.95" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="350" levels="1" name="Physical Mirror">
+		<!-- Done by L2Dream -->
+		<set name="effectPoint" val="398" />
+		<set name="magicLevel" val="76" />
+		<set name="weaponsAllowed" val="2" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="600000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="skill_reflect" time="300" val="0">
+				<add order="0x40" stat="reflectPhysicDebuff" val="30" />
+				<add order="0x40" stat="reflectMagicDebuff" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="351" levels="1" name="Magical Mirror">
+		<!-- Done by L2Dream -->
+		<set name="effectPoint" val="669" />
+		<set name="magicLevel" val="78" />
+		<set name="weaponsAllowed" val="2" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="600000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="skill_reflect" time="300" val="0">
+				<add order="0x40" stat="reflectPhysicDebuff" val="10" />
+				<add order="0x40" stat="reflectMagicDebuff" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="352" levels="1" name="Shield Bash">
+		<!-- Done by L2Dream -->
+		<table name="#activateRate">80</table>
+		<table name="#water">0</table>
+		<table name="#fire">0</table>
+		<table name="#wind">0</table>
+		<table name="#earth">0</table>
+		<table name="#count">0</table>
+		<set name="effectPoint" val="666" />
+		<set name="magicLevel" val="77" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="weaponsAllowed" val="2" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="PDAM" />
+		<set name="cancelTarget" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="skillInterrupt" val="true" />
+		<set name="levelModifier" val="2" />
+		<set name="save" val="4" />
+		<set name="nextAction" val="attack" />
+		<for>
+			<effect count="#count" name="Buff" time="30" val="0">
+				<add order="0x40" stat="waterRcpt" val="#water" />
+				<add order="0x40" stat="fireRcpt" val="#fire" />
+				<add order="0x40" stat="windRcpt" val="#wind" />
+				<add order="0x40" stat="earthRcpt" val="#earth" />
+			</effect>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="2" val="0" />
+		</for>
+	</skill>
+	<skill id="353" levels="1" name="Shield Slam">
+		<!-- Done by L2Dream -->
+		<table name="#activateRate">40</table>
+		<table name="#Holy">0</table>
+		<table name="#Dark">0</table>
+		<set name="effectPoint" val="666" />
+		<set name="magicLevel" val="77" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="weaponsAllowed" val="2" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="60000" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="skillInterrupt" val="true" />
+		<set name="cancelTarget" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="attack" />
+		<for>
+			<effect count="1" name="MutePhisycal" time="30" val="0">
+				<add order="0x40" stat="sacredRcpt" val="#Holy" />
+				<add order="0x40" stat="unholyRcpt" val="#Dark" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="354" levels="1" name="Hamstring Shot">
+		<!-- Done by L2Dream -->
+		<table name="#power">1973</table>
+		<table name="#activateRate">40</table>
+		<set name="effectPoint" val="507" />
+		<set name="magicLevel" val="77" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="levelModifier" val="1" />
+		<set name="save" val="3" />
+		<set name="weaponsAllowed" val="32" />
+		<set name="power" val="#power" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="critical" val="true" />
+		<set name="reuseDelay" val="60000" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="RunSpeedDown" time="30" val="0">
+				<mul order="0x30" stat="runSpd" val="0.5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="355" levels="1" name="Focus Death">
+		<!--
+			Done by:	L2Dream
+			Last modify:	11.04.2009, L2Dream
+
+			Description: For 2 minutes, decreases user's critical attack rate by 30% and frontal critical damage by 30%. Increases the probability of deadly attack by 60% and rear critical damage by 90%. Requires a dagger.
+		-->
+		<table name="#blowRate">1.3</table>
+		<table name="#cAtk1">30</table>
+		<table name="#cAtk2">90</table>
+		<set name="effectPoint" val="669" />
+		<set name="magicLevel" val="78" />
+		<set name="weaponsAllowed" val="16" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="120000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="focus" time="120" val="0">
+				<sub order="0x40" stat="rCrit" val="30">
+					<using kind="Dagger" />
+				</sub>
+				<mul order="0x30" stat="blowRate" val="#blowRate" />
+				<sub order="0x40" stat="cAtk" val="#cAtk1">
+					<using kind="Dagger" direction="front" />
+				</sub>
+				<add order="0x40" stat="cAtk" val="#cAtk2">
+					<using kind="Dagger" direction="behind" />
+				</add>
+				<add order="0x40" stat="cAtk" val="21">
+					<and>
+						<using kind="Dagger" direction="front" />
+						<or>
+							<using skill="16" />
+							<using skill="30" />
+							<using skill="263" />
+							<using skill="321" />
+							<using skill="344" />
+						</or>
+					</and>
+				</add>
+				<sub order="0x40" stat="cAtk" val="24">
+					<and>
+						<using kind="Dagger" />
+						<target direction="behind" />
+						<or>
+							<using skill="16" />
+							<using skill="30" />
+							<using skill="263" />
+							<using skill="321" />
+							<using skill="344" />
+						</or>
+					</and>
+				</sub>
+			</effect>
+		</for>
+	</skill>
+	<skill id="356" levels="1" name="Focus Chance">
+		<!-- Done by L2Dream -->
+		<table name="#side">30</table>
+		<table name="#back">60</table>
+		<set name="effectPoint" val="669" />
+		<set name="magicLevel" val="78" />
+		<set name="weaponsAllowed" val="16" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="120000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="focus" time="120" val="0">
+				<sub order="0x40" stat="rCrit" val="30">
+					<and>
+						<using kind="Dagger" />
+						<target direction="front" />
+					</and>
+				</sub>
+				<add order="0x40" stat="rCrit" val="#side">
+					<and>
+						<using kind="Dagger" />
+						<target direction="side" />
+					</and>
+				</add>
+				<add order="0x40" stat="rCrit" val="#back">
+					<and>
+						<using kind="Dagger" />
+						<target direction="behind" />
+					</and>
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="357" levels="1" name="Focus Power">
+		<!-- L2Dream -->
+		<table name="#side">30</table>
+		<table name="#back">60</table>
+		<set name="effectPoint" val="669" />
+		<set name="magicLevel" val="78" />
+		<set name="weaponsAllowed" val="16" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="120000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="focus" time="120" val="0">
+				<sub order="0x40" stat="cAtk" val="30">
+					<target direction="front" />
+				</sub>
+				<add order="0x40" stat="cAtk" val="#side">
+					<target direction="side" />
+				</add>
+				<add order="0x40" stat="cAtk" val="#back">
+					<target direction="behind" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="358" levels="1" name="Bluff">
+		<!-- L2Dream -->
+		<table name="#activateRate">40</table>
+		<set name="magicLevel" val="77" />
+		<set name="save" val="4" />
+		<set name="levelModifier" val="1"/>
+		<set name="weaponsAllowed" val="16" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="30000" />
+		<set name="cancelTarget" val="true" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="skillType" val="DELETE_HATE_OF_ME" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Bluff" time="3" val="0" stackOrder="1" stackType="Stun"/>
+		</for>
+	</skill>
+	<skill id="359" levels="1" name="Eye of Hunter">
+		<!-- Done by L2Dream -->
+		<table name="#Power">1.3</table>
+		<table name="#Time">600</table>
+		<set name="effectPoint" val="666" />
+		<set name="magicLevel" val="77" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="detect_weakness" time="#Time" val="0">
+				<mul order="0x30" stat="pAtk" val="#Power">
+					<or>
+						<target race="Animals" />
+						<target race="Plants" />
+						<target race="Bugs" />
+					</or>
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="360" levels="1" name="Eye of Slayer">
+		<!-- Done by L2Dream -->
+		<table name="#Power">1.3</table>
+		<table name="#Time">600</table>
+		<set name="effectPoint" val="669" />
+		<set name="magicLevel" val="78" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="detect_weakness" time="#Time" val="0">
+				<mul order="0x30" stat="pAtk" val="#Power">
+					<or>
+						<target race="Beasts" />
+						<target race="Giants" />
+						<target race="Dragons" />
+						<target race="MagicCreatures" />
+						<target race="Fairies" />
+						<target race="Spirits" />
+					</or>
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="361" levels="1" name="Shock Blast">
+		<!-- Done by L2Dream -->
+		<table name="#hpConsume">507</table>
+		<table name="#activateRate">40</table>
+		<set name="activateRate" val="#activateRate" />
+		<set name="magicLevel" val="77" />
+		<set name="effectPoint" val="507" />
+		<set name="save" val="4" />
+		<set name="levelModifier" val="1" />
+		<set name="weaponsAllowed" val="64" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="power" val="2072" />
+		<set name="target" val="TARGET_AREA" />
+		<set name="skillRadius" val="200" />
+		<set name="overHit" val="true" />
+		<set name="critical" val="true" />
+		<set name="reuseDelay" val="30000" />
+		<set name="skillType" val="PDAM" />
+		<set name="cancelTarget" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="shieldignore" val="true" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="9" val="0">
+				<mul order="0x30" stat="pDef" val="0.7" />
+				<mul order="0x30" stat="mDef" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="362" levels="1" name="Armor Crush">
+		<!-- Done by L2Dream -->
+		<table name="#power">2565</table>
+		<table name="#hpConsume">338</table>
+		<table name="#activateRate">60</table>
+		<set name="activateRate" val="#activateRate" />
+		<set name="effectPoint" val="507" />
+		<set name="magicLevel" val="77" />
+		<set name="save" val="4" />
+		<set name="levelModifier" val="2" />
+		<set name="weaponsAllowed" val="18444" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="power" val="#power" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="critical" val="true" />
+		<set name="reuseDelay" val="15000" />
+		<set name="skillType" val="PDAM" />
+		<set name="cancelTarget" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="attack" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="9" val="0">
+				<mul order="0x30" stat="pDef" val="0.7" />
+				<mul order="0x30" stat="mDef" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="363" levels="1" name="Song of Meditation">
+		<!-- Done by L2Dream -->
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="777" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="regMp" val="1.2" />
+				<mul order="0x30" stat="mpConsum" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="364" levels="1" name="Song of Champion">
+		<!-- Done by L2Dream -->
+		<set name="effectPoint" val="777" />
+		<set name="magicLevel" val="66" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" time="120" val="0">
+				<mul order="0x30" stat="pReuse" val="0.75" />
+				<mul order="0x30" stat="mpConsumePhysical" val="0.7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="365" levels="1" name="Siren's Dance">
+		<!-- Done by L2Dream -->
+		<set name="effectPoint" val="777" />
+		<set name="magicLevel" val="66" />
+		<set name="weaponsAllowed" val="512" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" time="120" val="0">
+				<add order="0x40" stat="mCritRate" val="1.14" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="366" levels="1" name="Dance of Shadows">
+		<!-- Done by L2Dream -->
+		<table name="#abnormal_time">120</table>
+		<set name="effectPoint" val="777" />
+		<set name="magicLevel" val="66" />
+		<set name="weaponsAllowed" val="512" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="MUSIC" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="SilentMove" stackOrder="1" stackType="SilentMove" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="runSpd" val="0.5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="367" levels="1" name="Dance of Medusa">
+		<!-- Done by L2Dream -->
+		<table name="#activateRate">40</table>
+		<set name="activateRate" val="#activateRate" />
+		<set name="magicLevel" val="77" />
+		<set name="effectPoint" val="666" />
+		<set name="weaponsAllowed" val="512" />
+		<set name="save" val="3" />
+		<set name="element" val="earth" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="300" />
+		<set name="reuseDelay" val="40000" />
+		<set name="skillType" val="PARALYZE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Petrification" time="30" val="0">
+				<mul order="0x80" stat="regHp" val="0" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="368" levels="1" name="Vengeance">
+		<!-- Done by L2Dream -->
+		<table name="#effectPoint">8145 8154 8162 8171 8180 8188 8197 8206 8214 8223 8232 8240 8249 8257 8266</table>
+		<table name="#runSpd">0</table>
+		<set name="weaponsAllowed" val="2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="magicLevel" val="77" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="200" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="skillType" val="AGGRESSION" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect applyOnCaster="true" count="1" name="Buff" stackOrder="-1" stackType="ImobileBuff" time="30" val="0">
+				<add order="0x40" stat="pDef" val="5400" />
+				<add order="0x40" stat="mDef" val="4050" />
+				<sub order="0x40" stat="cancelRcpt" val="100" />
+				<sub order="0x40" stat="debuffRcpt" val="100" />
+				<mul order="0x90" stat="runSpd" val="#runSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="369" levels="1" name="Evade Shot">
+		<!-- Done by L2Dream -->
+		<table name="#rEvas">20</table>
+		<table name="#power">2020</table>
+		<set name="effectPoint" val="337" />
+		<set name="magicLevel" val="78" />
+		<set name="weaponsAllowed" val="32" />
+		<set name="power" val="#power" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="reuseDelay" val="30000" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect applyOnCaster="true" count="1" name="Buff" time="30" val="0">
+				<add order="0x40" stat="rEvas" val="6" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="370" levels="3" name="Clan Vitality">
+		<!-- Done by L2Dream -->
+		<table name="#maxHp">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="2" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="maxHp" val="#maxHp" />
+		</for>
+	</skill>
+	<skill id="371" levels="3" name="Clan Spirituality">
+		<!-- Done by L2Dream -->
+		<table name="#maxCp">1.06 1.10 1.12</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="5" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="maxCp" val="#maxCp" />
+		</for>
+	</skill>
+	<skill id="372" levels="3" name="Clan Essence">
+		<!-- Done by L2Dream -->
+		<table name="#maxMp">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="#maxMp" />
+		</for>
+	</skill>
+	<skill id="373" levels="3" name="Clan Lifeblood">
+		<!-- Done by L2Dream -->
+		<table name="#regHp">1.04 1.08 1.12</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="2" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="regHp" val="#regHp" />
+		</for>
+	</skill>
+	<skill id="374" levels="3" name="Clan Morale">
+		<!-- Done by L2Dream -->
+		<table name="#regCp">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="4" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="regCp" val="#regCp" />
+		</for>
+	</skill>
+	<skill id="375" levels="3" name="Clan Clarity">
+		<!-- Done by L2Dream -->
+		<table name="#regMp">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="regMp" val="#regMp" />
+		</for>
+	</skill>
+	<skill id="376" levels="3" name="Clan Might">
+		<!-- Done by L2Dream -->
+		<table name="#patak">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="3" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="pAtk" val="#patak" />
+		</for>
+	</skill>
+	<skill id="377" levels="3" name="Clan Aegis">
+		<!-- Done by L2Dream -->
+		<table name="#pdef">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="3" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="pDef" val="#pdef" />
+		</for>
+	</skill>
+	<skill id="378" levels="3" name="Clan Empowerment">
+		<!-- Done by L2Dream -->
+		<table name="#matak">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="mAtk" val="#matak" />
+		</for>
+	</skill>
+	<skill id="379" levels="3" name="Clan Magic Protection">
+		<!-- Done by L2Dream -->
+		<table name="#mdef">1.06 1.10 1.12</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="2" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="mDef" val="#mdef" />
+		</for>
+	</skill>
+	<skill id="380" levels="3" name="Clan Guidance">
+		<!-- Done by L2Dream -->
+		<table name="#accCombat">1 2 3</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="5" />
+		<set name="isCommon" val="true" />
+		<for>
+			<add order="0x40" stat="accCombat" val="#accCombat" />
+		</for>
+	</skill>
+	<skill id="381" levels="3" name="Clan Agility">
+		<!-- Done by L2Dream -->
+		<table name="#rEvas">1 2 3</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="5" />
+		<set name="isCommon" val="true" />
+		<for>
+			<add order="0x40" stat="rEvas" val="#rEvas" />
+		</for>
+	</skill>
+	<skill id="382" levels="3" name="Clan Withstand-Attack">
+		<!-- Done by L2Dream -->
+		<table name="#rShld">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="rShld" val="#rShld" />
+		</for>
+	</skill>
+	<skill id="383" levels="3" name="Clan Shield Boost">
+		<!-- Done by L2Dream -->
+		<table name="#sDef">1.03 1.05 1.06</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="5" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="sDef" val="#sDef" />
+		</for>
+	</skill>
+	<skill id="384" levels="3" name="Clan Cyclonic Resistance">
+		<!-- Done by L2Dream -->
+		<table name="#resist">5 10 15</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<sub order="0x40" stat="windRcpt" val="#resist" />
+			<sub order="0x40" stat="waterRcpt" val="#resist" />
+		</for>
+	</skill>
+	<skill id="385" levels="3" name="Clan Magmatic Resistance">
+		<!-- Done by L2Dream -->
+		<table name="#resist">5 10 15</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<sub order="0x40" stat="fireRcpt" val="#resist" />
+			<sub order="0x40" stat="earthRcpt" val="#resist" />
+		</for>
+	</skill>
+	<skill id="386" levels="3" name="Clan Fortitude">
+		<!-- Done by L2Dream -->
+		<table name="#resist">3 5 6</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<sub order="0x40" stat="stunRcpt" val="#resist" />
+		</for>
+	</skill>
+	<skill id="387" levels="3" name="Clan Freedom">
+		<!-- Done by L2Dream -->
+		<table name="#resist">3 5 6</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<sub order="0x40" stat="rootRcpt" val="#resist" />
+		</for>
+	</skill>
+	<skill id="388" levels="3" name="Clan Vigilance">
+		<!-- Done by L2Dream -->
+		<table name="#resist">3 5 6</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="6" />
+		<set name="isCommon" val="true" />
+		<for>
+			<sub order="0x40" stat="sleepRcpt" val="#resist" />
+		</for>
+	</skill>
+	<skill id="389" levels="3" name="Clan March">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-runSpd">3 5 6</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="7" />
+		<set name="isCommon" val="true" />
+		<for>
+			<add order="0x40" stat="runSpd" val="#Tab-runSpd" />
+		</for>
+	</skill>
+	<skill id="390" levels="3" name="Clan Luck">
+		<!-- Decreases Exp. loss and the chance of other death penalties when killed by a monster or player. It only effects those who are of an Heir class or higher. -->
+		<set name="target" val="TARGET_SELF" />
+		<table name="#Tab-expLost">0.9 0.8 0.7</table>
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="2" />
+		<set name="isCommon" val="true" />
+		<for>
+			<mul order="0x30" stat="expLost" val="#Tab-expLost" />
+		</for>
+	</skill>
+	<skill id="391" levels="1" name="Clan Imperium">
+		<!-- Gives authority to open up a command channel. Only affects Wise Man class and above. -->
+		<!-- Нужен только как флаг для создания comand channel-а. -->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="HARDCODED" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="minPledgeClass" val="4" />
+		<set name="isCommon" val="true" />
+		<for />
+	</skill>
+	<skill id="395" levels="1" name="Heroic Miracle">
+		<!--
+			Done by:	L2Dream
+			Last modify:	25.08.2008, L2Dream
+
+			Description:
+			Instantly and significantly increases P. Def., M. Def., Speed
+			and resistance to buff canceling attacks. Consumes 40 Soul Ore. Effect 3.
+		-->
+		<set name="itemConsumeId" val="1785" />
+		<set name="itemConsumeCount" val="40" />
+		<set name="reuseDelay" val="1200000" />
+		<set name="power" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="isMagic" val="false" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="hero" time="30" val="0">
+				<add order="0x40" stat="pDef" val="5400" />
+				<add order="0x40" stat="mDef" val="4050" />
+				<add order="0x40" stat="runSpd" val="5" />
+				<sub order="0x40" stat="cancelRcpt" val="80" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="396" levels="1" name="Heroic Berserker">
+		<!--
+			Done by:	L2Dream
+			Last modify:	18.02.2009, L2Dream
+
+			Description:
+			Temporarily yet significantly increases Accuracy, P. Atk., M. Atk., Atk. Spd., Casting Spd., Speed, resistance to buff canceling attacks
+			and debuff attacks, and the effects of HP regeneration magic. Significantly decreases P. Def., M. Def., and Evasion while the effect lasts. Consumes 40 Soul Ore.
+		-->
+		<set name="itemConsumeId" val="1785" />
+		<set name="itemConsumeCount" val="40" />
+		<set name="reuseDelay" val="1200000" />
+		<set name="power" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="cancelable" val="false" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="hero" time="120" val="0">
+				<add order="0x40" stat="accCombat" val="8" />
+				<sub order="0x40" stat="rEvas" val="8" />
+				<add order="0x40" stat="pAtk" val="500" />
+				<add order="0x40" stat="mAtk" val="500" />
+				<add order="0x40" stat="pAtkSpd" val="100" />
+				<add order="0x40" stat="mAtkSpd" val="100" />
+				<add order="0x40" stat="runSpd" val="20" />
+				<mul order="0x30" stat="pDef" val="0.75" />
+				<mul order="0x30" stat="mDef" val="0.75" />
+				<sub order="0x40" stat="cancelRcpt" val="80" />
+				<mul order="0x30" stat="hpEff" val="1.17" />
+			</effect>
+		</for>
+	</skill>
+</list>

@@ -1,0 +1,64 @@
+<title>Midnex Teleport Menu</title>
+
+<center>
+<table width=280 bgcolor="C0C0C0">
+<tr>
+<td><button value="Main" action="bypass -h admin_admin" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Events" action="bypass -h admin_server events.htm" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Chars" action="bypass -h admin_char_manage" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Server" action="bypass -h admin_server admserver.htm" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="GM Shop" action="bypass -h admin_gmshop" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+
+<table width=270 cellpadding="4" bgcolor="C0C0C0">
+<tr>
+<td>Teleport to town:</td>
+<td><combobox width=120 height=17 var=ebox list=Aden;Giran;Oren;Dion;Heine;Gludio;Goddard;Schuttgart;Gludin;Hunter;Floran;Rune;ElvenVillage;DarkElvenVillage;TalkingIslandVillage;DwarvenVillage;OrcVillage</td>
+</tr>
+<tr>
+<td></td>
+<td><button value="Go" action="bypass -h admin_teletotown $ebox" width=100 height=20 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+Move to common locations:
+<table width=130 bgcolor="00FF00" >
+<tr>
+<td>[admin_show_html tele/castles/castles.htm|<button value="Castles" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+<td>[admin_show_html tele/arenas.htm|<button value="Arenas" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+</tr>
+<tr>
+<td>[admin_show_html tele/raid/raid.htm|<button value="Boss and Raid Boss" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+<td>[admin_show_html tele/other.htm|<button value="Other Locations" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+</tr>
+<tr>
+<td>[admin_show_html tele/c4.htm|<button value="C4 Locations" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+<td>[admin_show_html tele/c5.htm|<button value="C5 Locations" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+</tr>
+<tr>
+<td>[admin_show_html tele/interlude.htm|<button value="Interlude" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+</tr>
+<tr>
+<td>[admin_show_html tele/catacombs/catacombs.htm|<button value="Catatacombs" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+<td>[admin_show_html tele/necropolis/necropolis.htm|<button value="Necropolis" width=100 height=18 back="sek.cbui94" fore="sek.cbui92">]</td>
+</tr>
+</table>
+<br>
+<br>
+Developers Movement:
+
+<table width=150 bgcolor="FFFF00">
+<tr>
+<td><button value="Normal mode" action="bypass -h admin_teleto end" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Demonic mode " action="bypass -h admin_teleto r" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr></table>
+<table bgcolor="FFFF00" >
+<tr>
+<td>X: <edit var="char_cord_x" width=60 height=15></td>
+<td>Y: <edit var="char_cord_y" width=60 height=15 ></td>
+<td>Z: <edit var="char_cord_z" width=60 height=15></td>
+</tr>
+</table>
+<br>
+<button value="GO" action="bypass -h admin_move_to $char_cord_x $char_cord_y $char_cord_z" width=100 height=20 back="sek.cbui94" fore="sek.cbui92">
+</center>

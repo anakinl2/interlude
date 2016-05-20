@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="7000" levels="1" name="NPC Default">
+		<set name="target" val="TARGET_ONE" />
+		<set name="isMagic" val="false" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="0" />
+		<set name="effectPoint" val="-1" />
+	</skill>
+	<skill id="7001" levels="1" name="Dispel Buff">
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="CANCEL" />
+		<set name="isMagic" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="900" />
+		<set name="aggroPoints" val="100" />
+		<set name="negateStats" val="BUFF" />
+		<set name="negatePower" val="17" />
+	</skill>
+	<skill id="7002" levels="1" name="Dispel Debuff">
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="CANCEL" />
+		<set name="isMagic" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="900" />
+		<set name="aggroPoints" val="100" />
+		<set name="negateStats" val="STUN SLEEP MUTE FEAR CONFUSION POISON BLEED DEBUFF WEAKNESS PARALYZE" />
+		<set name="negatePower" val="17" />
+		<for />
+	</skill>
+	<skill id="7003" levels="1" name="Dispel All">
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="CANCEL" />
+		<set name="isMagic" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="600" />
+		<set name="effectPoint" val="900" />
+		<set name="aggroPoints" val="100" />
+		<set name="negateStats" val="STUN SLEEP MUTE FEAR CONFUSION POISON BLEED BUFF DEBUFF WEAKNESS PARALYZE" />
+		<set name="negatePower" val="9" />
+		<for />
+	</skill>
+	<skill id="7004" levels="2" name="Dispel Petrification">
+		<!--
+			Description: Cures petrification with the effect of 2 or less.
+		-->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="PASSIVE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="isMagic" val="true" />
+		<set name="castRange" val="-1" />
+		<set name="effectPoint" val="-1" />
+		<set name="aggroPoints" val="566" />
+		<for />
+	</skill>
+	<skill id="7005" levels="4" name="Greater Chant of Vampire">
+		<!--
+			Description: Temporarily allows party members to partially restore HP using damage inflicted upon the enemy. Excludes damage from skill or range attack. Effect 4.
+		-->
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillType" val="PASSIVE" />
+		<set name="coolTime" val="1666" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isMagic" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="900" />
+		<set name="aggroPoints" val="655" />
+	</skill>
+	<skill id="7006" levels="13" name="The Love of Pa'agrio">
+		<!--
+			Description: Greatly enhances alliance members' HP restoration.  Effect 6.
+		-->
+		<set name="target" val="TARGET_CLAN" />
+		<set name="skillType" val="PASSIVE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isMagic" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="900" />
+		<set name="aggroPoints" val="655" />
+		<set name="coolTime" val="1666" />
+		<for />
+	</skill>
+	<skill id="7007" levels="4" name="Greater Seal of Flame">
+		<!--
+			Description: A protective ring of fire that continuously reduces HP of surrounding enemies and their alliance members. Effect 8.
+		-->
+		<set name="skillRadius" val="200" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="PASSIVE" />
+		<set name="coolTime" val="2666" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isMagic" val="true" />
+		<set name="castRange" val="400" />
+		<set name="effectPoint" val="900" />
+		<for />
+	</skill>
+	<skill id="7029" levels="4" name="Super Haste">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-runSpd">2 3 3 3.5</table>
+		<table name="#Tab-pAtk">1 1 1 2</table>
+		<table name="#Tab-mAtkSpd">2 3 3 3.2</table>
+		<table name="#Tab-pAtkSpd">2 3 3 3.4</table>
+		<table name="#Tab-mReuse">1 1 1.99 1.99</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CONT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isSaveable" val="false" />
+		<for>
+			<effect count="1" name="Buff" time="86400" val="0">
+				<mul order="0x30" stat="runSpd" val="#Tab-runSpd" />
+				<mul order="0x30" stat="pAtk" val="#Tab-pAtk" />
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-mAtkSpd" />
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-pAtkSpd" />
+				<div order="0x30" stat="mReuse" val="#Tab-mReuse" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7030" levels="1" name="Summon King Bugbear">
+		<set name="itemConsumeId" val="1458" />
+		<set name="itemConsumeCount" val="8" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="18600000" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<!-- Summon-specific -->
+		<set name="npcId" val="20150" />
+		<set name="expPenalty" val="0.3" />
+		<for />
+	</skill>
+	<skill id="7031" levels="1" name="Summon Skeleton Royal Guard">
+		<set name="itemConsumeId" val="1458" />
+		<set name="itemConsumeCount" val="8" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="18600000" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<!-- Summon-specific -->
+		<set name="npcId" val="20622" />
+		<set name="expPenalty" val="0.3" />
+		<for />
+	</skill>
+	<skill id="7032" levels="1" name="Summon Hunter Gargoyle">
+		<set name="itemConsumeId" val="1458" />
+		<set name="itemConsumeCount" val="8" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="18600000" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<!-- Summon-specific -->
+		<set name="npcId" val="20241" />
+		<set name="expPenalty" val="0.3" />
+		<for />
+	</skill>
+	<skill id="7033" levels="1" name="not_used">
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="7034" levels="1" name="not_used">
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="7035" levels="1" name="not_used">
+		<!--
+			Description:
+			This aerial attack inflicts damage on a target inside the Outer Castle.
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="7036" levels="1" name="not_used">
+		<!--
+			Description:
+			Valakas Use Skill
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="7037" levels="1" name="not_used">
+		<!--
+			Description:
+			Tyrannosaurus Use Skill
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="7038" levels="1" name="not_used">
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="7039" levels="1" name="not_used">
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="7040" levels="1" name="not_used">
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+	<skill id="7041" levels="1" name="Master's Blessing - Focus">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-rCrit">30</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-rCrit" stackType="rCrit" time="1200" val="0">
+				<add order="0x40" stat="rCrit" val="#Tab-rCrit" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7042" levels="1" name="Master's Blessing - Death Whisper">
+		<!-- Done by L2Dream -->
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="cAtk" time="1200" val="0">
+				<add order="0x40" stat="cAtk" val="50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7043" levels="1" name="Master's Blessing - Haste">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-pAtkSpd">1.33</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-pAtkSpd" stackType="pAtkSpeedUp" time="1200" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-pAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7044" levels="1" name="Master's Blessing - Guidance">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-accCombat">4</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-accCombat" stackType="accuracyUp" time="1200" val="0">
+				<add order="0x40" stat="accCombat" val="#Tab-accCombat" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7045" levels="1" name="Master's Blessing - Blessed Body">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-maxHp">1.35</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-maxHp" stackType="MaxHPUp" time="1200" val="0">
+				<mul order="0x30" stat="maxHp" val="#Tab-maxHp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7046" levels="1" name="Master's Blessing - Blessed Soul">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-maxMp">1.35</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-maxMp" stackType="MPregen" time="1200" val="0">
+				<mul order="0x30" stat="maxMp" val="#Tab-maxMp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7047" levels="1" name="Master's Blessing - Agility">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-rEvas">4</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-rEvas" stackType="rEvas" time="1200" val="0">
+				<add order="0x40" stat="rEvas" val="#Tab-rEvas" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7048" levels="1" name="Master's Blessing - Acumen">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-mAtkSpd">1.3</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-mAtkSpd" stackType="mAtkSpeedUp" time="1200" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-mAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7049" levels="1" name="Master's Blessing - Decrease Weight">
+		<!-- Done by L2Dream -->
+		<table name="#Weight">9000</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Weight" stackType="Weight" time="1200" val="0">
+				<add order="0x40" stat="maxNoPenaltyLoad" val="#Weight" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7050" levels="1" name="Master's Blessing - Might">
+		<!-- Done by L2Dream -->
+		<table name="#rate">1.15</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#rate" stackType="pAtk" time="1200" val="0">
+				<mul order="0x30" stat="pAtk" val="#rate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7051" levels="1" name="Master's Blessing - Shield">
+		<!-- Done by L2Dream -->
+		<table name="#rate">1.15</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#rate" stackType="pDef" time="1200" val="0">
+				<mul order="0x30" stat="pDef" val="#rate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7052" levels="1" name="Master's Blessing - Magic Barrier">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-mDef">1.3</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-mDef" stackType="MagicDefUp" time="1200" val="0">
+				<mul order="0x30" stat="mDef" val="#Tab-mDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7053" levels="1" name="Master's Blessing - Vampiric Rage">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-absorbDam">9</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-absorbDam" stackType="vampRage" time="1200" val="0">
+				<add order="0x40" stat="absorbDam" val="#Tab-absorbDam" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7054" levels="1" name="Master's Blessing - Empower">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-mAtk">1.75</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-mAtk" stackType="mAtk" time="1200" val="0">
+				<mul order="0x30" stat="mAtk" val="#Tab-mAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7055" levels="1" name="Master's Blessing - Wind Walk">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-runSpd">33</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="SpeedUp" time="1200" val="0">
+				<add order="0x40" stat="runSpd" val="#Tab-runSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7056" levels="1" name="Master's Blessing - Berserker Spirit">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-mAtk">1.16</table>
+		<table name="#Tab-pAtk">1.08</table>
+		<table name="#Tab-mDef">0.84</table>
+		<table name="#Tab-pDef">0.92</table>
+		<table name="#Tab-mAtkSpd">1.08</table>
+		<table name="#Tab-pAtkSpd">1.08</table>
+		<table name="#Tab-runSpd">8</table>
+		<table name="#Tab-rEvas">4</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="berserk" time="1200" val="0">
+				<mul order="0x30" stat="mAtk" val="#Tab-mAtk" />
+				<mul order="0x30" stat="pAtk" val="#Tab-pAtk" />
+				<mul order="0x30" stat="mDef" val="#Tab-mDef" />
+				<mul order="0x30" stat="pDef" val="#Tab-pDef" />
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-mAtkSpd" />
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-pAtkSpd" />
+				<add order="0x40" stat="runSpd" val="#Tab-runSpd" />
+				<sub order="0x40" stat="rEvas" val="#Tab-rEvas" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7057" levels="1" name="Master's Blessing - Greater Might">
+		<!-- Done by L2Dream -->
+		<table name="#pAtk">1.10</table>
+		<set name="reuseDelay" val="1000" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="0" stackType="Great" time="1200" val="0">
+				<mul order="0x30" stat="pAtk" val="#pAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7058" levels="1" name="Master's Blessing - Greater Shield">
+		<!-- Done by L2Dream -->
+		<table name="#rate">1.15</table>
+		<set name="reuseDelay" val="6000" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="0" stackType="Great" time="1200" val="0">
+				<mul order="0x30" stat="pDef" val="#rate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7059" levels="1" name="Master's Blessing - Wild Magic">
+		<!-- Done by L2Dream -->
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="magicCritUp" time="1200" val="0">
+				<add order="0x40" stat="mCritRate" val="3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7060" levels="1" name="Master's Blessing - Clarity">
+		<!-- Done by L2Dream -->
+		<table name="#MpConsumeRate">0.9</table>
+		<table name="#mpConsume">2</table>
+		<set name="reuseDelay" val="1000" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#mpConsume" stackType="MPrate" time="1200" val="0">
+				<mul order="0x30" stat="mpConsum" val="#MpConsumeRate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7061" levels="1" name="Master's Blessing - Prophecy of Water">
+		<!-- Done by L2Dream -->
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="ancient" time="1200" val="0">
+				<add order="0x40" stat="mCritRate" val="1" />
+				<mul order="0x30" stat="regMp" val="1.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<mul order="0x30" stat="debuffRcpt" val="0.9" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+				<mul order="0x30" stat="mpConsum" val="0.95" />
+				<mul order="0x30" stat="mpConsumePhysical" val="0.95" />
+				<mul order="0x30" stat="mpDanceConsume" val="0.95" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7062" levels="1" name="Master's Blessing - Prophecy of Fire">
+		<!-- Done by L2Dream -->
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="ancient" time="1200" val="0">
+				<mul order="0x30" stat="maxMp" val="1.2" />
+				<mul order="0x30" stat="regHp" val="1.2" />
+				<add order="0x40" stat="mCritRate" val="1" />
+				<add order="0x40" stat="cAtk" val="20" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<mul order="0x30" stat="debuffRcpt" val="0.9" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7063" levels="1" name="Master's Blessing - Prophecy of Wind">
+		<!-- Done by L2Dream -->
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="ancient" time="1200" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2" />
+				<add order="0x40" stat="rCrit" val="20" />
+				<add order="0x40" stat="mCritRate" val="1" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<mul order="0x30" stat="debuffRcpt" val="0.9" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+				<add order="0x40" stat="absorbDam" val="5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="7064" levels="1" name="Master's Blessing - Chant of Victory">
+		<!-- Done by L2Dream -->
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="ancient" time="1200" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2" />
+				<add order="0x40" stat="mCritRate" val="1" />
+				<add order="0x40" stat="rCrit" val="20" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<mul order="0x30" stat="debuffRcpt" val="0.9" />
+				<add order="0x40" stat="accCombat" val="4" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+			</effect>
+			<effect count="1" name="HealPercent" time="0" val="20" />
+		</for>
+	</skill>
+</list>

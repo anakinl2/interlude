@@ -1,0 +1,77 @@
+====================================================
+	
+	Wizard
+	---------------
+	Archmages //94       <- atleast more m attack
+	Mystic Muses //103   <- same as archmage  
+	Storm Screamer //110 <- Remove "Battle Heal" bcos of drain. +1
+	Soul Takers //95     <- Remove "Battle Heal" bcos of drain. +1
+
+	DaggerMaster
+	---------------
+	Adventurers //93     <-
+	Wind Riders //101    <-- ALL 3 dagger classes needs a skill landing nerf.
+	Ghost Hunters //108  <-
+
+	BowMaster
+	---------------
+	Sagittarius //92           <- 
+	Moonlight Sentinels //102  <-- Make skills more powerfull. (p attack because of    " range class < duelists " )
+	Ghost Sentinels //109      <--
+	Tricksters //134           <-
+
+
+=====================================================
+
+
+	Healer
+	---------------
+	Cardinals //97          <-
+	Eva's Saints //105      <- Maybe transform boost
+	Shillien Saints //112   <-
+
+	Enchanter
+	---------------
+	Hierophants //98        <- Make fist master. <- dual master to be honest
+	Judicators //136        <- Wtf is that?
+	Dominators //115        <- This one is good.
+	Doom Cryers //116       <- Add some nuke skills. <- way to powerfull in last rev (in my opinion) i would prefer " - c speed " and " + m attack "
+	
+	Summoner
+	---------------
+	Arcana Lords //96       <- Make big summons add more power, def. 
+	Elemental Masters //104 <- Make big summons add more power, def.    ALL 3 way to much bow resist for a pvp server. (damage around 30.. with x1 )
+	Spectral Masters //111  <- Make big summons add more power, def.
+
+
+======================================================
+
+
+	ShieldMaster
+	---------------
+	Phoenix Knights, //90  <-
+	Hell Knights, //91     <--  " - bow resist " , " - stun rate " , " - skill power (enhance skills) "
+	Eva's Templars //99    <--
+	Shillen Templars //106 <-
+
+	 
+	WeaponMaster
+	---------------
+	Dreadnoughts //89      <- Make skills land more but stacktime lower.
+	Titans //113           <- Make faster, do something with frenzy etc..
+	Doombringers //131
+	Soul Hounds //132,133  <- little nerf.. nothing special (just in p and m attack)
+	
+	
+	Maestros//118          <- Make as sumoner, make summons avaibe in events.
+	Fortune Seekers //117  <- Make spoil 100% and add some blund damage skill.
+	
+	
+
+	ForceMaster & Bard
+	---------------
+	Duelists //88          <- Nerf range attacks.
+	Grand Khavataris //114 <- No need of bost maybe even nerf.
+	Sword Muses //100      <- Make as pole master? - NO!
+	Spectral Dancers //107 <- Make as gladi, add some damage skills. +1 on this
+	

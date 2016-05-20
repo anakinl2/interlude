@@ -1,0 +1,19 @@
+<list>
+	<instance id="0">
+		<location id="0" name="Instance_Name" summon="false">
+			<properties>
+				<level min="0" max="99" />
+				<party min="2" max="9" />
+				<teleport x="-111188" y="74555" z="-12432" />
+				<return x="-84725" y="60027" z="-2576" />
+				<time collapse="30" reuse="144" /> <!-- В Минутах -->
+			</properties>
+
+			<spawn>
+				<mob id="18379" count="1" x="-111478" y="74271" z="-12341" h="0" respawn="0" />
+				<door id="16200001" />
+				<zone xMin="-81150" xMax="-82640" yMin="-220800" yMax="-219350" zMin="-7925" zMax="-7925" /> <!-- Только Для Рандомного Спавна-->
+			</spawn>
+		</location>
+	</instance>
+</list>

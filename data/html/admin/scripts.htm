@@ -1,0 +1,53 @@
+﻿
+<title>Midnex Manage Server</title>
+<center>
+<table width=280 bgcolor="C0C0C0">
+<tr>
+<td><button value="Main" action="bypass -h admin_admin" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Events" action="bypass -h admin_server events.htm" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Chars" action="bypass -h admin_char_manage" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Server" action="bypass -h admin_server admserver.htm" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="GM Shop" action="bypass -h admin_gmshop" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+
+<br><br>
+
+ Server Manage:
+<table width=280 bgcolor="7FFF00">
+<tr>
+<td><button value="Shutdown" action="bypass -h admin_server_shutdown" width=65 height=20 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Configs" action="bypass -h admin_show_html config.htm" width=65 height=20 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Components" action="bypass -h admin_show_html reload.htm" width=65 height=20 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Scripts" action="bypass -h admin_show_html scripts.htm" width=65 height=20 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+
+Reload Scripts:
+
+<table width=280 bgcolor="7FFF00">
+<tr>
+<td>[admin_sreload all|<button value="Reload All Scripts" width=136 height=22 back="L2UI_CH3.bigbutton3" fore="L2UI_CH3.bigbutton3">]</td>
+<td>[admin_sreload actions|<button value="Reload Actions" width=136 height=22 back="L2UI_CH3.bigbutton3" fore="L2UI_CH3.bigbutton3">]</td>
+</tr>
+<tr>
+<td>[admin_sreload commands|<button value="Reload Commands" width=136 height=22 back="L2UI_CH3.bigbutton3" fore="L2UI_CH3.bigbutton3">]</td>
+<td>[admin_sreload events|<button value="Reload Events" width=136 height=22 back="L2UI_CH3.bigbutton3" fore="L2UI_CH3.bigbutton3">]</td>
+</tr>
+<tr>
+<td>[admin_sreload items|<button value="Reload Items" width=136 height=22 back="L2UI_CH3.bigbutton3" fore="L2UI_CH3.bigbutton3">]</td>
+<td>[admin_sreload npc|<button value="Reload Npc" width=136 height=22 back="L2UI_CH3.bigbutton3" fore="L2UI_CH3.bigbutton3">]</td>
+</tr>
+<tr>
+<td>[admin_sreload services|<button value="Reload Services" width=136 height=22 back="L2UI_CH3.bigbutton3" fore="L2UI_CH3.bigbutton3">]</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<edit var="Scriptsname" width=150 height=15><br>
+[admin_sreload $Scriptsname|<button value="Reload Script" width=136 height=22 back="L2UI_CH3.bigbutton3" fore="L2UI_CH3.bigbutton3">]
+
+</center>
+

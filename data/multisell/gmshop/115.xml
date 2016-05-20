@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Lifestones -->
+<list>
+	<item>
+		<ingredient id="7917" count="1" enchant="0"/>
+		<production id="8752" count="1" enchant="0"/>
+	</item>
+	<item>
+		<ingredient id="7917" count="3" enchant="0"/>
+		<production id="8762" count="1" enchant="0"/>
+	</item>
+</list>

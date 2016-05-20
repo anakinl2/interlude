@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='4812' name="Crystallized Ice Bow - Quick Recovery">
+		<mul val='.83' order='0x50' stat='atkReuse' />
+	</item>
+	<item id='4814' name="Elemental Bow - Miser">
+		<set val='7' order='0x08' stat='miser' />
+		<set val='30' order='0x08' stat='miserChance' />
+	</item>
+	<item id='4815' name="Elemental Bow - Quick Recovery">
+		<mul val='.8' order='0x50' stat='atkReuse' />
+	</item>
+</list>

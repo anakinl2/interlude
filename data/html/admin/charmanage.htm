@@ -1,0 +1,47 @@
+﻿<title>Midnex Manage Char</title>
+<center>
+<table width=280 bgcolor="C0C0C0">
+<tr>
+<td><button value="Main" action="bypass -h admin_admin" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Events" action="bypass -h admin_server events.htm" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Chars" action="bypass -h admin_char_manage" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Server" action="bypass -h admin_server admserver.htm" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="GM Shop" action="bypass -h admin_gmshop" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+
+
+<table width=200 bgcolor="00FF00" >
+<tr>
+<td><button value="Character list" action="bypass -h admin_show_characters 0"  width=90 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Ban list" action="bypass -h admin_show_html banmenu.htm" width=90 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+<br>
+
+Value:<edit var="value" width=130>
+
+<table bgcolor="C0C0C0">
+<tr>
+<td><button value="Set LvL"  action="bypass -h admin_setlevel $value"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Set Rec"  action="bypass -h admin_rec $value"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Set Sex"  action="bypass -h admin_setsex $value"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Set Title"  action="bypass -h admin_settitle $value"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+<tr>
+<td><button value="Set Name"  action="bypass -h admin_setname $value"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Set Color"  action="bypass -h admin_setcolor $value"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Set Hero"  action="bypass -h admin_sethero"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Set Noble"  action="bypass -h admin_setnoble"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+<tr>
+<td><button value="Set Karma" action="bypass -h admin_setkarma $value"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="No Karma" action="bypass -h admin_nokarma"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Oly Points" action="bypass -h admin_add_oly_points $value"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Transform" action="bypass -h admin_show_html transform.htm"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+<tr>
+<td><button value="Set Class" action="bypass -h admin_show_html setclass.htm"  width=70 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+</center>

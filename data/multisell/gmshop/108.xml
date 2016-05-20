@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Soulshots  -->
+<list>  
+  <item>
+    <ingredient id="57" count="150" enchant="0"/>
+    <production id="1464" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="260" enchant="0"/>
+    <production id="1465" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="320" enchant="0"/>
+    <production id="1466" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="400" enchant="0"/>
+    <production id="1467" count="1" enchant="0"/>
+  </item>  
+  <item>
+    <ingredient id="57" count="260" enchant="0"/>
+    <production id="3949" count="1" enchant="0"/>
+  </item> 
+  <item>
+    <ingredient id="57" count="400" enchant="0"/>
+    <production id="3950" count="1" enchant="0"/>
+  </item> 
+  <item>
+    <ingredient id="57" count="520" enchant="0"/>
+    <production id="3951" count="1" enchant="0"/>
+  </item> 
+  <item>
+    <ingredient id="57" count="640" enchant="0"/>
+    <production id="3952" count="1" enchant="0"/>
+  </item>
+
+  <item>
+    <ingredient id="57" count="1640" enchant="0"/>
+    <production id="2511" count="1" enchant="0"/>
+  </item> 
+  <item>
+    <ingredient id="57" count="1640" enchant="0"/>
+    <production id="2512" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="1640" enchant="0"/>
+    <production id="2513" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="1640" enchant="0"/>
+    <production id="2514" count="1" enchant="0"/>
+  </item> 
+  
+  
+  <item>
+    <ingredient id="57" count="80" enchant="0"/>
+    <production id="6645" count="1" enchant="0"/>
+  </item>
+
+  <item>
+    <ingredient id="57" count="100" enchant="0"/>
+    <production id="6646" count="1" enchant="0"/>
+  </item>
+
+  <item>
+    <ingredient id="57" count="120" enchant="0"/>
+    <production id="6647" count="1" enchant="0"/>
+  </item>
+  
+</list>

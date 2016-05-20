@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2impulse_Core" default="dist" basedir=".">
+	<description>Midnex Project</description>
+	
+	<property name="src" location="java"/>
+	<property name="lib" location="lib"/>
+	<property name="build" location="build/core"/>
+	
+	<path id="classpath">
+		<fileset dir="${lib}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="dir">
+		<delete dir="${build}"/>
+		<mkdir dir="${build}"/>
+	</target>
+	
+	<target name="compile" depends="dir" description="Compile the source.">
+		<javac destdir="${build}" optimize="on" debug="on" source="1.8" target="1.8" encoding="UTF-8" nowarn="off">
+			<compilerarg value="-Xlint:all"></compilerarg>
+			<src path="java"/>
+			<classpath refid="classpath"/>
+		</javac>
+	</target>
+	
+	<target name="dist" depends="compile" description="Create jar-file">
+		<tstamp>
+			<format property="build.tstamp" pattern="yyyy.MM.dd HH:mm"/>
+		</tstamp>
+
+		<exec dir="." executable="svnversion" outputproperty="l2d.revision" failifexecutionfails="false">
+			<arg line="-n ."/>
+		</exec>
+
+		<concat destfile="${build}/l2d/l2d-version.ini">
+			version=${l2d.revision}
+			builddate=${build.tstamp}: ${user.name}/${os.name}
+		</concat>
+		<delete file="./../../impulse_build/dist/game/lib/l2dserver.jar"/>
+		<jar destfile="./../../impulse_build/dist/game/lib/l2dserver.jar" level="0">
+			<fileset dir="${build}"/>
+			<manifest>
+				<attribute name="Main-Class" value="l2d.Server"/>
+			</manifest>
+		</jar>
+	</target>
+	
+</project>

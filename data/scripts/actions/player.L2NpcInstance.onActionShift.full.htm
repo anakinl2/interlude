@@ -1,0 +1,38 @@
+<html><body>
+<center>
+* %name% [AI: %ai_type%]<br1>
+	Level %level% %class%, faction %factionId% *
+</center>
+<table border=0 width="100%">
+<tr><td>Aggro</td><td>%aggro%</td><td>Respawn</td><td>%respawn%</td></tr>
+<tr><td>NpcId</td><td>%id%</td><td>Location/Spawn</td><td>%loc%/%spawn%</td></tr>
+</table>
+<table border=0 width="100%">
+<tr><td>Pos</td><td>%xyz%</td><td>Heading</td><td>%heading%</td></tr>
+</table>
+<table border=0 width="100%">
+<tr><td>*Combat*</td><td></td></tr>
+<tr><td>Max.HP</td><td>%maxHp%</td><td>Max.MP</td><td>%maxMp%</td></tr>
+<tr><td>P.Atk.</td><td>%pAtk%</td><td>M.Atk.</td><td>%mAtk%</td></tr>
+<tr><td>P.Def.</td><td>%pDef%</td><td>M.Def.</td><td>%mDef%</td></tr>
+<tr><td>Acc.</td><td>%acc%</td><td>Evs.</td><td>%evs%</td></tr>
+<tr><td>Crit.</td><td>%crt%</td><td>Spd</td><td>%walkSpeed%/%runSpeed%</td></tr>
+<tr><td>Atk.Spd</td><td>%aspd%</td><td>Cst.Spd</td><td>%cspd%</td></tr>
+<tr><td>Dist.</td><td>%dist%</td><td>Killed</td><td>%killed%</td></tr>
+<tr><td>Exp</td><td>%expReward%</td><td>Sp</td><td>%spReward%</td></tr>
+</table>
+<table border=0 width="100%">
+<tr><td>*Basic*</td><td></td></tr>
+<tr><td>STR</td><td>%STR%</td><td>DEX</td><td>%DEX%</td><td>CON</td><td>%CON%</td></tr>
+<tr><td>INT</td><td>%INT%</td><td>WIT</td><td>%WIT%</td><td>MEN</td><td>%MEN%</td></tr>
+</table>
+<br>
+<table>
+<tr>
+	<td><button value="Show DropList" action="bypass -h scripts_actions.OnActionShift:droplist" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+	<td><button value="Show Resists" action="bypass -h scripts_actions.OnActionShift:resists" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+	<td><button value="Show Aggro" action="bypass -h scripts_actions.OnActionShift:aggro" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+
+</table>
+</body></html>

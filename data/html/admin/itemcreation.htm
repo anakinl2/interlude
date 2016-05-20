@@ -1,0 +1,55 @@
+<title>Midnex Item Create Menu</title>
+<center>
+<table width=280 bgcolor="C0C0C0">
+<tr>
+<td><button value="Main" action="bypass -h admin_admin" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Events" action="bypass -h admin_server events.htm" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Chars" action="bypass -h admin_char_manage" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="Server" action="bypass -h admin_server admserver.htm" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+<td><button value="GM Shop" action="bypass -h admin_gmshop" width=50 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+
+Item Creation Menu
+
+<table width=270 bgcolor="C0C0C0">
+<tr><td>Fill the ID number in item-id to create the item that</td></tr>
+<tr><td>you want, use amount if you need more than one.</td></tr>
+<tr><td><br></td></tr>
+<tr><td>*Caution:*</td></tr>
+<tr><td>Do not use amount with non-stackable items.</td></tr>
+<tr><td><br></td></tr>
+</table>
+
+
+Create an single item:
+<table bgcolor="00FF00">
+<tr>
+<td>Item-ID: <edit var="itemid" width=50></td>
+<td>Amount: <edit var="itemnum" width=50></td>
+<td>&nbsp;<button value="Create" action="bypass -h admin_create_item $itemid $itemnum" width=70 height=20 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+
+<br>
+<br>
+
+Create an special coin item:
+<table width=270 cellpadding="4" bgcolor="C0C0C0">
+<tr>
+<td>Coin Type:</td>
+<td><combobox width=120 height=17 var=ebox list=Adena;SanctityCrystal;AncientAdena;FestivalAdena;BlueEva;GoldEinhasad;SilverShilen;BloodyPaagrio></td>
+</tr>
+<tr>
+<td>Amount:</td>
+<td><edit var="vbox" width=120 height=12 type=number></td>
+</tr>
+<tr>
+<td></td>
+<td><button value="Create Coin" action="bypass -h admin_create_coin $ebox $vbox" width=100 height=20 back="sek.cbui94" fore="sek.cbui92"></td>
+</tr>
+</table>
+
+
+</center>
+</body></html>

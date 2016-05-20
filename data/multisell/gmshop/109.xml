@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Potions -->
+<list>
+  <item>
+	<ingredient id="57" count="5000"/>
+	<production id="728" count="1"/>
+  </item>
+  <item>
+	<ingredient id="57" count="2000"/>
+	<production id="726" count="1"/>
+  </item>
+  <item>
+    <ingredient id="57" count="1000" enchant="0"/>
+    <production id="1539" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="6000" enchant="0"/>
+    <production id="6036" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="6000" enchant="0"/>
+    <production id="1375" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="3000" enchant="0"/>
+    <production id="1374" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="10000" enchant="0"/>
+    <production id="8638" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="10000" enchant="0"/>
+    <production id="8626" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="10000" enchant="0"/>
+    <production id="8632" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="10000" enchant="0"/>
+    <production id="8639" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="10000" enchant="0"/>
+    <production id="8627" count="1" enchant="0"/>
+  </item>
+  <item>
+    <ingredient id="57" count="10000" enchant="0"/>
+    <production id="8633" count="1" enchant="0"/>
+  </item>
+</list>

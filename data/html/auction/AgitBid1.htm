@@ -1,0 +1,29 @@
+<html>
+<body>
+*Bidding is only permitted on one clan hall.*
+
+Once a bid is submitted, that amount is *deposited* into escrow with the auction house.
+
+A *10% transaction tax* is deducted from the bid.
+
+The transaction tax is non-refundable even when the bid is cancelled.
+
+The* bid* must be higher than the minimum bid (or previous bid when rebidding) and the clan that has submitted the highest bid at the end of the auction wins.
+
+There is currently <font color="aaccff">%PLEDGE_ADENA%</font> adena in the clan warehouse.
+
+The minimum bid is <font color="aaccff">%AGIT_AUCTION_MINBID%</font> adena.
+
+How much do you want to bid?
+
+<table width=270 border=0><tr><td width=220 align=right><edit var=bidprice width=230 align=right type=number></td><td width=40 align=right>adena</td></tr></table>
+<img src="L2UI.SquareBlank" width=270 height=10> <img src="L2UI.SquareWhite" width=270 height=1> <img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr>
+<td width=130></td>
+<td width=70 align=center><button action="%AGIT_LINK_BACK%" value="Back" width=70 height=21 back="L2UI.DefaultButton_click" fore="L2UI.DefaultButton"></td>
+<td width=70 align=center><button action="bypass -h npc_%objectId%_bid $bidprice" value="Confirm" width=70 height=21 back="L2UI.DefaultButton_click" fore="L2UI.DefaultButton"></td>
+</tr>
+</table>
+<br>
+</body></html>

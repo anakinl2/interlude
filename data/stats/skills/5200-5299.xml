@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="5200" levels="8" name="Pet Recharge">
+		<table name="#power">120 124 128 138 145 150 153 155</table>
+		<set name="power" val="#power" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="skillType" val="MANAHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for />
+	</skill>
+	<skill id="5201" levels="6" name="Pet Concentration">
+		<table name="#rate">0.82 0.75 0.64 0.58 0.52 0.47</table>
+		<table name="#abnormal_lv">1 2 3 4 5 6</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="concentration" time="120" val="0">
+				<mul order="0x30" stat="concentration" val="#rate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5202" levels="12" name="Stun">
+		<table name="#mpConsume"> 24 39 53 70 90 110 130 138 145 150 153 155 </table>
+		<set name="mpConsume" val="#mpConsume"/>
+		<set name="power" val="80"/>
+		<set name="lvlDepend" val="2"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="reuseDelay" val="12000"/>
+		<set name="hitTime" val="1200"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="STUN"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="castRange" val="40"/>
+		<set name="effectRange" val="400"/>
+		<set name="isDebuff" val="true"/>
+		<for>
+			<effect count="1" name="Stun" time="12" val="0" stackOrder="1" stackType="Stun"/>
+		</for>
+	</skill>
+	<skill id="5203" levels="12" name="Fear">
+		<table name="#mpConsume"> 24 39 53 70 90 110 130 138 145 150 153 155 </table>
+		<table name="#power"> 20 22 24 26 28 30 32 34 36 38 40 42 </table>
+		<set name="mpConsume" val="#mpConsume"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="reuseDelay" val="120000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="isMagic" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isDebuff" val="true"/>
+		<set name="castRange" val="600"/>
+		<set name="effectRange" val="1100"/>
+		<for>
+			<effect count="6" name="Fear" time="2" val="0"/>
+		</for>
+	</skill>
+	<skill id="5204" levels="1" name="Production-First Gigantic Pig Combination">
+		<!-- Needs more work -->
+		<!-- Only pre-implementation -->
+		<set name="target" val="TARGET_SELF" /> <!-- Needs to be checked -->
+		<set name="skillType" val="BUFF" />
+		<set name="hitTime" val="5800" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="5205" levels="1" name="Boss Regeneration">
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="castRange" val="-1"/>
+		<for>
+			<mul order="0x30" stat="regHp" val="1.2"/>
+			<mul order="0x30" stat="regMp" val="1.2"/>
+		</for>
+	</skill>
+	<skill id="5206" levels="1" name="Decrease Speed">
+		<!-- Done by L2Dream -->
+		<set name="activateRate" val="60" />
+		<set name="save" val="3" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="8000" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="levelModifier" val="1" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="RunSpeedDown" time="30" val="0">
+				<mul order="0x30" stat="runSpd" val="0.9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5207" levels="1" name="Decrease Atk. Spd.">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-pAtkSpd">1.1</table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="20" />
+		<set name="activateRate" val="80" />
+		<set name="save" val="3" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="levelModifier" val="1" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" time="30" val="0">
+				<div order="0x30" stat="pAtkSpd" val="#Tab-pAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5208" levels="1" name="Event Wind walk">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-runSpd">33</table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="30" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="SpeedUp" time="1200" val="0">
+				<add order="0x40" stat="runSpd" val="#Tab-runSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5209" levels="1" name="Event Shield">
+		<!-- Done by L2Dream -->
+		<table name="#rate">1.15</table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="44" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pDef" time="1200" val="0">
+				<mul order="0x30" stat="pDef" val="#rate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5210" levels="1" name="Event Bless the body">
+		<!-- Done by L2Dream -->
+		<table name="#addHp">180</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="hp_up" time="1200" val="0">
+				<add order="0x40" stat="maxHp" val="#addHp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5211" levels="1" name="Event Vampiric rage">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-absorbDam">9</table>
+		<set name="power" val="0" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="#Tab-absorbDam" stackType="vampRage" time="1200" val="0">
+				<add order="0x40" stat="absorbDam" val="#Tab-absorbDam" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5212" levels="1" name="Event Regeneration">
+		<!-- Done by L2Dream -->
+		<table name="#rate">1.2</table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="56" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="hpregen" time="1200" val="0">
+				<mul order="0x30" stat="regHp" val="#rate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5213" levels="1" name="Event Haste">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-pAtkSpd">1.15</table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="44" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="pAtkSpeedUp" time="1200" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-pAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5214" levels="1" name="Event Bless the soul">
+		<!-- Done by L2Dream -->
+		<table name="#addMp">120</table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="mp_up_item" time="1200" val="0">
+				<add order="0x40" stat="maxMp" val="#addMp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5215" levels="1" name="Event Acumen">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-mAtkSpd">1.3</table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="48" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtkSpeedUp" time="1200" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-mAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5216" levels="1" name="Event Concentration">
+		<!-- Done by L2Dream -->
+		<table name="#concentration">0.82</table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="20" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="concentration" time="1200" val="0">
+				<mul order="0x30" stat="concentration" val="#concentration" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5217" levels="1" name="Event Empower">
+		<!-- Done by L2Dream -->
+		<table name="#Tab-mAtk">1.55</table>
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="25" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="mAtk" time="1200" val="0">
+				<mul order="0x30" stat="mAtk" val="#Tab-mAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="5218" levels="1" name="Production: Event Teleport">
+		<!-- Needs more work -->
+		<!-- Only pre-implementation -->
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="hitTime" val="2000" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<for />
+	</skill>
+	<skill id="5219" levels="1" name="Stun of giant mutated animal">
+		<!-- Done by L2Dream -->
+		<set name="activateRate" val="50" />
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="18" />
+		<set name="save" val="4" />
+		<set name="power" val="30" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="13000" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="levelModifier" val="1" />
+		<set name="nextAction" val="attack" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="9" val="0" />
+		</for>
+	</skill>
+	<skill id="5220" levels="1" name="Fear of giant mutated animal">
+		<!-- Done by L2Dream -->
+		<set name="effectPoint" val="100" />
+		<set name="magicLevel" val="14" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="20000" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="activateRate" val="35" />
+		<set name="levelModifier" val="2" />
+		<set name="save" val="3" />
+		<set name="nextAction" val="none" />
+		<for>
+			<effect count="3" name="Fear" stackOrder="-1" stackType="Fear" time="5" val="0" />
+		</for>
+	</skill>
+</list>
