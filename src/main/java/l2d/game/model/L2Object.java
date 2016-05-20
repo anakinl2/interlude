@@ -1,21 +1,15 @@
 package l2d.game.model;
 
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.logging.Logger;
 
-import l2d.ext.listeners.MethodInvokeListener;
-import l2d.ext.listeners.PropertyChangeListener;
-import l2d.ext.listeners.engine.DefaultListenerEngine;
-import l2d.ext.listeners.engine.ListenerEngine;
-import l2d.ext.listeners.events.MethodEvent;
-import l2d.ext.listeners.events.PropertyEvent;
-import l2d.ext.listeners.events.L2Object.TerritoryChangeEvent;
-import l2d.ext.scripts.Events;
-import l2d.ext.scripts.Script;
-import l2d.ext.scripts.ScriptObject;
-import l2d.ext.scripts.Scripts;
+import com.lineage.ext.listeners.MethodInvokeListener;
+import com.lineage.ext.listeners.PropertyChangeListener;
+import com.lineage.ext.listeners.engine.DefaultListenerEngine;
+import com.lineage.ext.listeners.engine.ListenerEngine;
+import com.lineage.ext.listeners.events.MethodEvent;
+import com.lineage.ext.listeners.events.PropertyEvent;
+import com.lineage.ext.listeners.events.L2Object.TerritoryChangeEvent;
+import com.lineage.ext.scripts.Events;
 import l2d.game.ai.L2CharacterAI;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.idfactory.IdFactory;
@@ -35,8 +29,8 @@ import l2d.game.model.instances.L2SummonInstance;
 import l2d.game.model.quest.Quest;
 import l2d.game.tables.ReflectionTable;
 import l2d.game.tables.TerritoryTable;
-import l2d.util.GCSArray;
-import l2d.util.Location;
+import com.lineage.util.GCSArray;
+import com.lineage.util.Location;
 
 public abstract class L2Object
 {

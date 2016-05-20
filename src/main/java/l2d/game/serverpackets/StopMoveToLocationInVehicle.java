@@ -1,7 +1,7 @@
 package l2d.game.serverpackets;
 
 import l2d.game.model.L2Player;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class StopMoveToLocationInVehicle extends L2GameServerPacket
 {

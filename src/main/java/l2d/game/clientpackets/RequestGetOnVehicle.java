@@ -4,7 +4,7 @@ import l2d.game.instancemanager.BoatManager;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2BoatInstance;
 import l2d.game.serverpackets.GetOnVehicle;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class RequestGetOnVehicle extends L2GameClientPacket
 {

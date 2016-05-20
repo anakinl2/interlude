@@ -5,14 +5,14 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.model.L2Skill;
 import l2d.game.skills.SkillsEngine;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class SkillTable
 {

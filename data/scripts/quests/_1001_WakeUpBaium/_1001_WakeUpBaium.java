@@ -1,13 +1,13 @@
 package quests._1001_WakeUpBaium;
 
 import bosses.BaiumManager;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.model.L2World;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.model.quest.Quest;
 import l2d.game.model.quest.QuestState;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class _1001_WakeUpBaium extends Quest implements ScriptFile
 {

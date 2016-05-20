@@ -1,11 +1,11 @@
 package events.autoannouncer;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.instancemanager.ServerVariables;
 import l2d.game.model.L2Player;
-import l2d.util.Files;
+import com.lineage.util.Files;
 
 public class Announcer extends Functions implements ScriptFile
 {

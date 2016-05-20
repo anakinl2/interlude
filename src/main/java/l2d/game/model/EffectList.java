@@ -3,7 +3,6 @@ package l2d.game.model;
 import java.lang.ref.WeakReference;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
@@ -13,9 +12,7 @@ import l2d.game.serverpackets.ShortBuffStatusUpdate;
 import l2d.game.skills.Stats;
 import l2d.game.skills.effects.EffectTemplate;
 import l2d.game.skills.funcs.Func;
-import l2d.game.skills.funcs.FuncTemplate;
-import l2d.game.skills.skillclasses.Effect;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 public class EffectList
 {

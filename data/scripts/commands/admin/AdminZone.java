@@ -1,7 +1,7 @@
 package commands.admin;
 
 import javolution.util.FastList;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.idfactory.IdFactory;
@@ -17,7 +17,7 @@ import l2d.game.serverpackets.NpcHtmlMessage;
 import l2d.game.tables.ReflectionTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.tables.TerritoryTable;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 public class AdminZone implements IAdminCommandHandler, ScriptFile
 {

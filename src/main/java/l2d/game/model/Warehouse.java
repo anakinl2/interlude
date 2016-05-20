@@ -5,16 +5,16 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.db.mysql;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.db.mysql;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.model.instances.L2ItemInstance.ItemClass;
 import l2d.game.model.instances.L2ItemInstance.ItemLocation;
 import l2d.game.tables.ItemTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public abstract class Warehouse
 {

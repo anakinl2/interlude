@@ -8,7 +8,7 @@ import l2d.game.model.L2WorldRegion;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.serverpackets.Earthquake;
 import l2d.game.serverpackets.L2GameServerPacket;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 /**
  * AI каменной статуи Байума.<br>

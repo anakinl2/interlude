@@ -2,11 +2,11 @@ package l2d.game.model;
 
 import java.util.ArrayList;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.base.ItemToDrop;
 import l2d.game.tables.ItemTable;
 import l2d.game.templates.L2Item;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class L2DropData implements Cloneable, Comparable<Object>
 {

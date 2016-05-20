@@ -5,11 +5,11 @@ import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.instancemanager.CastleManager;
 import l2d.game.instancemanager.CastleManorManager;
 import l2d.game.instancemanager.CastleManorManager.CropProcure;
@@ -28,7 +28,7 @@ import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.PlaySound;
 import l2d.game.tables.ItemTable;
 import l2d.game.tables.SkillTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class Castle extends Residence
 {

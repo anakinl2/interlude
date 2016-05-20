@@ -2,7 +2,7 @@ package l2d.game.serverpackets;
 
 import l2d.game.GameTimeController;
 import l2d.game.model.L2Player;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class CharSelected extends L2GameServerPacket
 {

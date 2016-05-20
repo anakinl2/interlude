@@ -1,8 +1,8 @@
 package commands.admin;
 
 import javolution.util.FastList;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.loginservercon.LSConnection;
@@ -10,9 +10,9 @@ import l2d.game.loginservercon.gspackets.BanIP;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2World;
 import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.util.BannedIp;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.util.BannedIp;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 /**
  * This class handles following admin commands:- ipbanlist - ipban, ipblock -

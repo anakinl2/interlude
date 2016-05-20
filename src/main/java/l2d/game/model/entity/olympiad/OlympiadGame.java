@@ -5,8 +5,8 @@ import java.util.concurrent.ConcurrentSkipListSet;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.ext.network.MMOConnection;
+import com.lineage.Config;
+import com.lineage.ext.network.MMOConnection;
 import l2d.game.instancemanager.ZoneManager;
 import l2d.game.model.Inventory;
 import l2d.game.model.L2Party;
@@ -27,7 +27,7 @@ import l2d.game.serverpackets.SkillList;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.SkillTable;
 import l2d.game.templates.StatsSet;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class OlympiadGame
 {

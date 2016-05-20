@@ -6,13 +6,13 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.listeners.PropertyCollection;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.cache.Msg;
 import l2d.game.handler.IVoicedCommandHandler;
 import l2d.game.handler.VoicedCommandHandler;
@@ -25,11 +25,11 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.FakePlayersTable;
 import l2d.game.tables.GmListTable;
 import l2d.game.tables.MapRegion;
-import l2d.status.GameStatusThread;
-import l2d.status.Status;
-import l2d.util.Calculator;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.status.GameStatusThread;
+import com.lineage.status.Status;
+import com.lineage.util.Calculator;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 public class Say2C extends L2GameClientPacket
 {

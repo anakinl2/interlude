@@ -2,14 +2,14 @@ package l2d.game.serverpackets;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.instancemanager.CursedWeaponsManager;
 import l2d.game.instancemanager.PartyRoomManager;
 import l2d.game.model.Inventory;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2CubicInstance;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class CharInfo extends L2GameServerPacket
 {

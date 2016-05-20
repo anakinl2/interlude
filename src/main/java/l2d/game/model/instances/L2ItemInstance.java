@@ -7,13 +7,13 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Events;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Events;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.geodata.GeoEngine;
@@ -40,9 +40,9 @@ import l2d.game.templates.L2EtcItem.EtcItemType;
 import l2d.game.templates.L2Item;
 import l2d.game.templates.L2Item.Grade;
 import l2d.game.templates.L2Weapon.WeaponType;
-import l2d.util.Location;
-import l2d.util.Log;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
 
 public final class L2ItemInstance extends L2Object
 {

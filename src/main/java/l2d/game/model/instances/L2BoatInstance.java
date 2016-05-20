@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.clientpackets.Say2C;
 import l2d.game.model.L2Character;
@@ -25,8 +25,8 @@ import l2d.game.serverpackets.VehicleCheckLocation;
 import l2d.game.serverpackets.VehicleInfo;
 import l2d.game.templates.L2CharTemplate;
 import l2d.game.templates.L2Weapon;
-import l2d.util.GArray;
-import l2d.util.Location;
+import com.lineage.util.GArray;
+import com.lineage.util.Location;
 
 public class L2BoatInstance extends L2Character
 {

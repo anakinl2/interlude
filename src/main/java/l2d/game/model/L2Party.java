@@ -3,7 +3,7 @@ package l2d.game.model;
 import java.util.ArrayList;
 import java.util.concurrent.Future;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.cache.Msg;
 import l2d.game.instancemanager.PartyRoomManager;
@@ -21,10 +21,10 @@ import l2d.game.serverpackets.PartySpelled;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.skills.Stats;
 import l2d.game.tables.ItemTable;
-import l2d.util.GArray;
-import l2d.util.Location;
-import l2d.util.Log;
-import l2d.util.Rnd;
+import com.lineage.util.GArray;
+import com.lineage.util.Location;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
 
 public class L2Party
 {

@@ -2,7 +2,7 @@ package events.christmas;
 
 import java.util.Calendar;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.ThreadPoolManager;
 import l2d.game.instancemanager.ServerVariables;

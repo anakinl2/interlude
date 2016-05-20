@@ -13,8 +13,8 @@ import l2d.game.tables.DoorTable;
 import l2d.game.tables.NpcTable;
 import l2d.game.tables.TerritoryTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.parsers.AbstractDirParser;
+import com.lineage.util.Location;
+import com.lineage.util.parsers.AbstractDirParser;
 
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;

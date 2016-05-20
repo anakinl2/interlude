@@ -5,12 +5,12 @@
 //***************
 package npc.model;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class PaganTeleporterInstance extends L2NpcInstance implements ScriptFile
 {

@@ -9,8 +9,8 @@ import l2d.game.model.L2Skill;
 import l2d.game.model.instances.L2MinionInstance;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.serverpackets.MagicSkillUse;
-import l2d.util.Rnd;
-import l2d.util.Location;
+import com.lineage.util.Rnd;
+import com.lineage.util.Location;
 
 public class Queen_Ant_Nurse extends Priest
 {

@@ -2,9 +2,9 @@ package items;
 
 import java.util.List;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IItemHandler;
 import l2d.game.handler.ItemHandler;
 import l2d.game.model.FishDropData;
@@ -14,7 +14,7 @@ import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.FishTable;
 import l2d.game.tables.ItemTable;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 public class FishItem implements IItemHandler, ScriptFile
 {

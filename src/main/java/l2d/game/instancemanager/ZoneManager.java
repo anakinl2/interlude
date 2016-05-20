@@ -6,13 +6,13 @@ import java.util.logging.Logger;
 import javolution.util.FastList;
 import javolution.util.FastList.Node;
 import javolution.util.FastMap;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.listeners.L2ZoneEnterLeaveListener;
-import l2d.ext.listeners.PropertyCollection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.listeners.L2ZoneEnterLeaveListener;
+import com.lineage.ext.listeners.PropertyCollection;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlEvent;
 import l2d.game.model.L2Object;
@@ -29,8 +29,8 @@ import l2d.game.tables.NpcTable;
 import l2d.game.tables.PetDataTable;
 import l2d.game.tables.TerritoryTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class ZoneManager
 {

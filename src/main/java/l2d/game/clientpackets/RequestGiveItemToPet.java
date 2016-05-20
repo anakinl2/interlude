@@ -7,7 +7,7 @@ import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.model.instances.L2PetInstance;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.PetDataTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class RequestGiveItemToPet extends L2GameClientPacket
 {

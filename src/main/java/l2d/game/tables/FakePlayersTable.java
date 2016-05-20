@@ -7,11 +7,11 @@ import java.io.LineNumberReader;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2World;
-import l2d.util.GArray;
-import l2d.util.Rnd;
+import com.lineage.util.GArray;
+import com.lineage.util.Rnd;
 
 public class FakePlayersTable
 {

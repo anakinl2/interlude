@@ -1,6 +1,6 @@
 package ai;
 
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.ai.Fighter;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;

@@ -3,7 +3,7 @@ package l2d.game.clientpackets;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.cache.Msg;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;

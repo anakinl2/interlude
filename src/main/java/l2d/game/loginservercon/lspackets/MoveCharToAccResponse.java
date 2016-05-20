@@ -1,7 +1,7 @@
 package l2d.game.loginservercon.lspackets;
 
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.loginservercon.AttLS;
 import l2d.game.model.L2Player;
 import l2d.game.network.L2GameClient;

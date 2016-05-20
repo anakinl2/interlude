@@ -1,14 +1,13 @@
 package commands.admin;
 
 import java.text.NumberFormat;
-import java.util.Collection;
 import java.util.Locale;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-import l2d.db.mysql;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.db.mysql;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.cache.Msg;
 import l2d.game.handler.AdminCommandHandler;
@@ -19,14 +18,13 @@ import l2d.game.model.L2SubClass;
 import l2d.game.model.L2World;
 import l2d.game.model.base.ClassId;
 import l2d.game.model.base.PlayerClass;
-import l2d.game.model.base.Race;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.NpcHtmlMessage;
 import l2d.game.serverpackets.SkillList;
 import l2d.game.serverpackets.SocialAction;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.SkillTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 @SuppressWarnings("unused")
 public class AdminEditChar implements IAdminCommandHandler, ScriptFile

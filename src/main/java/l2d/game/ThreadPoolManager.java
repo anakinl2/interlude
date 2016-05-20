@@ -10,8 +10,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.ext.network.ReceivablePacket;
+import com.lineage.Config;
+import com.lineage.ext.network.ReceivablePacket;
 import l2d.game.network.L2GameClient;
 
 public class ThreadPoolManager

@@ -19,15 +19,15 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastTable;
-import l2d.Config;
-import l2d.ext.listeners.MethodCollection;
-import l2d.ext.listeners.PropertyCollection;
-import l2d.ext.listeners.StatsChangeListener;
-import l2d.ext.mods.balancer.Balancer;
-import l2d.ext.mods.balancer.Balancer.bflag;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Scripts;
-import l2d.ext.scripts.Scripts.ScriptClassAndMethod;
+import com.lineage.Config;
+import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.StatsChangeListener;
+import com.lineage.ext.mods.balancer.Balancer;
+import com.lineage.ext.mods.balancer.Balancer.bflag;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Scripts;
+import com.lineage.ext.scripts.Scripts.ScriptClassAndMethod;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlEvent;
 import l2d.game.ai.DefaultAI;
@@ -88,11 +88,11 @@ import l2d.game.templates.L2CharTemplate;
 import l2d.game.templates.L2NpcTemplate;
 import l2d.game.templates.L2Weapon;
 import l2d.game.templates.L2Weapon.WeaponType;
-import l2d.util.GArray;
-import l2d.util.Location;
-import l2d.util.Log;
-import l2d.util.Rnd;
-import l2d.util.Util;
+import com.lineage.util.GArray;
+import com.lineage.util.Location;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
 
 public abstract class L2Character extends L2Object
 {

@@ -1,9 +1,9 @@
 package l2d.game.loginservercon.gspackets;
 
-import l2d.Config;
-import l2d.ext.network.MMOSocket;
+import com.lineage.Config;
+import com.lineage.ext.network.MMOSocket;
 import l2d.game.loginservercon.AdvIP;
-import l2d.util.GsaTr;
+import com.lineage.util.GsaTr;
 
 public class AuthRequest extends GameServerBasePacket
 {

@@ -16,7 +16,7 @@ import l2d.game.skills.Stats;
 import l2d.game.tables.NpcTable;
 import l2d.game.tables.SkillTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class EffectSignet extends L2Effect
 {

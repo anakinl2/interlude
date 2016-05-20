@@ -18,9 +18,9 @@ import l2d.game.tables.FishTable;
 import l2d.game.templates.L2Weapon;
 import l2d.game.templates.L2Weapon.WeaponType;
 import l2d.game.templates.StatsSet;
-import l2d.util.Location;
-import l2d.util.Rnd;
-import l2d.util.Util;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
 
 public class Fishing extends L2Skill
 {

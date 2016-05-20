@@ -3,7 +3,7 @@ package l2d.game.ai;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.model.L2Character;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class Ranger extends DefaultAI
 {

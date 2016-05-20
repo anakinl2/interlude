@@ -2,25 +2,24 @@ package events.donate;
 
 import javolution.util.FastList;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.instancemanager.ServerVariables;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.Inventory;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2Skill;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.InventoryUpdate;
-import l2d.game.serverpackets.SkillList;
 import l2d.game.serverpackets.SocialAction;
 import l2d.game.templates.L2Item;
 import l2d.game.templates.L2Item.Grade;
 import l2d.game.tables.ItemTable;
 import l2d.game.tables.SkillTable;
-import l2d.util.Files;
-import l2d.util.Log;
+import com.lineage.util.Files;
+import com.lineage.util.Log;
 
 public class Shop extends Functions implements ScriptFile
 {

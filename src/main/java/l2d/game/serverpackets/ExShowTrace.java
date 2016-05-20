@@ -4,7 +4,7 @@ import java.util.List;
 
 import javolution.util.FastList;
 import l2d.game.model.L2Object;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class ExShowTrace extends L2GameServerPacket
 {

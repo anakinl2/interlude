@@ -8,11 +8,11 @@ import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
 import javolution.text.TextBuilder;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.cache.Msg;
 import l2d.game.clientpackets.RequestFriendDel;
 import l2d.game.clientpackets.RequestFriendInvite;

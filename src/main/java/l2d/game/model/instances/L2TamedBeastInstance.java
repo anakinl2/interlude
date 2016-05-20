@@ -14,8 +14,8 @@ import l2d.game.model.L2World;
 import l2d.game.serverpackets.NpcInfo;
 import l2d.game.tables.SkillTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 // While a tamed beast behaves a lot like a pet (ingame) and does have
 // an owner, in all other aspects, it acts like a mob.

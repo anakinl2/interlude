@@ -13,7 +13,7 @@ import l2d.game.serverpackets.SkillList;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.SkillTable;
 import l2d.game.tables.SkillTreeTable;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 /**
  * Format chdd

@@ -1,6 +1,6 @@
 package l2d.game.clientpackets;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.communitybbs.CommunityBoard;
 
 public class RequestShowBoard extends L2GameClientPacket

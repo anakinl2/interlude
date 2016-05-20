@@ -7,7 +7,7 @@ import l2d.game.model.L2Character;
 import l2d.game.model.L2Effect;
 import l2d.game.model.L2Skill;
 import l2d.game.templates.StatsSet;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class Cancel extends L2Skill
 {

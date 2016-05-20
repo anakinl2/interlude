@@ -4,8 +4,8 @@ import java.lang.ref.WeakReference;
 
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2Character;
-import l2d.util.GArray;
-import l2d.util.Util;
+import com.lineage.util.GArray;
+import com.lineage.util.Util;
 
 public class DecayTaskManager
 {

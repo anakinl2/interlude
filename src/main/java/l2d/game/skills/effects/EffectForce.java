@@ -6,7 +6,7 @@ import l2d.game.model.L2Effect;
 import l2d.game.model.L2Skill;
 import l2d.game.skills.Env;
 import l2d.game.tables.SkillTable;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 public class EffectForce extends L2Effect
 {

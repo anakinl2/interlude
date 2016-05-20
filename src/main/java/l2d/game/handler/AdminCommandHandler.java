@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.model.L2Player;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class AdminCommandHandler
 {

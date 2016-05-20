@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.cache.Msg;
 import l2d.game.geodata.GeoEngine;
@@ -101,8 +101,8 @@ import l2d.game.skills.skillclasses.Unlock;
 import l2d.game.tables.SkillTable;
 import l2d.game.templates.L2Weapon.WeaponType;
 import l2d.game.templates.StatsSet;
-import l2d.util.GArray;
-import l2d.util.Rnd;
+import com.lineage.util.GArray;
+import com.lineage.util.Rnd;
 
 public abstract class L2Skill implements Cloneable
 {

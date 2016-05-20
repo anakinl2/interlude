@@ -15,11 +15,11 @@ import java.util.logging.Logger;
 
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Events;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.Scripts;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Events;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlEvent;
 import l2d.game.ai.CtrlIntention;
@@ -76,11 +76,11 @@ import l2d.game.taskmanager.DecayTaskManager;
 import l2d.game.templates.L2Item;
 import l2d.game.templates.L2NpcTemplate;
 import l2d.game.templates.L2Weapon;
-import l2d.util.GArray;
-import l2d.util.Location;
-import l2d.util.Log;
-import l2d.util.Rnd;
-import l2d.util.Strings;
+import com.lineage.util.GArray;
+import com.lineage.util.Location;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
+import com.lineage.util.Strings;
 
 public class L2NpcInstance extends L2Character
 {

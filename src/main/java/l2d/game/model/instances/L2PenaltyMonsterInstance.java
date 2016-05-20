@@ -11,7 +11,7 @@ import l2d.game.model.L2Spawn;
 import l2d.game.serverpackets.Say2;
 import l2d.game.tables.SpawnTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class L2PenaltyMonsterInstance extends L2MonsterInstance
 {

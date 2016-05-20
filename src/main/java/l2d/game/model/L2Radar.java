@@ -3,7 +3,7 @@ package l2d.game.model;
 import java.util.Vector;
 
 import l2d.game.serverpackets.RadarControl;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public final class L2Radar
 {

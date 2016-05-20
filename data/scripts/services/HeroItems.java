@@ -1,15 +1,15 @@
 package services;
 
-import l2d.Config;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.ItemList;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class HeroItems extends Functions implements ScriptFile
 {

@@ -1,7 +1,5 @@
 package l2d.game.instancemanager;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
 import java.util.StringTokenizer;
@@ -9,7 +7,7 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.model.entity.residence.Castle;
 import l2d.game.model.entity.siege.SiegeSpawn;

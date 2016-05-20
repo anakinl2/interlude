@@ -3,7 +3,7 @@ package l2d.game.model.instances;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.TradeController;
 import l2d.game.cache.Msg;
 import l2d.game.instancemanager.CastleManager;
@@ -23,7 +23,7 @@ import l2d.game.serverpackets.NpcHtmlMessage;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class L2CastleChamberlainInstance extends L2ResidenceManager
 {

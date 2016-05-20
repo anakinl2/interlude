@@ -13,8 +13,8 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
 import l2d.game.tables.NpcTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class L2Fishing implements Runnable
 {

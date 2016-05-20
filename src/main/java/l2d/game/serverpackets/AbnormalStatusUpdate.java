@@ -1,6 +1,6 @@
 package l2d.game.serverpackets;
 
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 /**
  *

@@ -9,7 +9,7 @@ import l2d.game.model.L2Object;
 import l2d.game.model.L2Zone;
 import l2d.game.model.L2Zone.ZoneType;
 import l2d.game.model.entity.residence.Castle;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class Town
 {

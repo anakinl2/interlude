@@ -2,7 +2,7 @@ package l2d.game.taskmanager;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2World;
 import l2d.game.model.instances.L2ItemInstance;

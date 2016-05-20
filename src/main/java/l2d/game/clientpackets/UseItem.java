@@ -2,7 +2,7 @@ package l2d.game.clientpackets;
 
 import java.nio.BufferUnderflowException;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.handler.IItemHandler;
 import l2d.game.handler.ItemHandler;
 import l2d.game.instancemanager.CursedWeaponsManager;

@@ -1,6 +1,6 @@
 package l2d.game.serverpackets;
 
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 /**
  * [S] d3 Earthquake

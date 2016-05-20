@@ -1,6 +1,6 @@
 package commands.admin;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.Msg;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
@@ -11,7 +11,7 @@ import l2d.game.model.L2World;
 import l2d.game.serverpackets.Revive;
 import l2d.game.serverpackets.SocialAction;
 import l2d.game.taskmanager.DecayTaskManager;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 @SuppressWarnings("unused")
 public class AdminRes implements IAdminCommandHandler, ScriptFile

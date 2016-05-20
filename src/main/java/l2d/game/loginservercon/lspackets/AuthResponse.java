@@ -3,7 +3,7 @@ package l2d.game.loginservercon.lspackets;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.loginservercon.AttLS;
 import l2d.game.loginservercon.Attribute;
 import l2d.game.loginservercon.gspackets.PlayerInGame;

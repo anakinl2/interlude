@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2Spawn;
@@ -20,9 +20,9 @@ import l2d.game.tables.NpcTable;
 import l2d.game.tables.ReflectionTable;
 import l2d.game.tables.TerritoryTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Rnd;
-import l2d.util.parsers.AbstractFileParser;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
+import com.lineage.util.parsers.AbstractFileParser;
 
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;

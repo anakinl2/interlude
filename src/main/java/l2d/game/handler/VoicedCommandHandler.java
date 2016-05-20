@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 
 /**
  * This class ...

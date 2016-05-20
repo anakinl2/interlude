@@ -3,9 +3,9 @@
  */
 package l2d.game.model.quest;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Player;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class DropChance
 {

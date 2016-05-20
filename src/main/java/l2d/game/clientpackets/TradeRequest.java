@@ -7,7 +7,7 @@ import l2d.game.model.L2Player.TransactionType;
 import l2d.game.model.L2World;
 import l2d.game.serverpackets.SendTradeRequest;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 public class TradeRequest extends L2GameClientPacket
 {

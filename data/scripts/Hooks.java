@@ -1,8 +1,8 @@
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IScriptHandler;
 import l2d.game.handler.ScriptHandler;
 import l2d.game.model.L2Player;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class Hooks implements IScriptHandler, ScriptFile
 {

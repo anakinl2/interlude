@@ -5,16 +5,16 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.model.CharSelectInfoPackage;
 import l2d.game.network.L2GameClient;
 import l2d.game.tables.CharTemplateTable;
 import l2d.game.templates.L2PlayerTemplate;
-import l2d.util.AutoBan;
+import com.lineage.util.AutoBan;
 
 /**
  * [S] 09 CharSelectInfo

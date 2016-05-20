@@ -2,7 +2,7 @@ package l2d.game.clientpackets;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.model.L2Player;
 

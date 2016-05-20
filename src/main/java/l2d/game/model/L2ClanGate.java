@@ -1,7 +1,7 @@
 package l2d.game.model;
 
 import l2d.game.ThreadPoolManager;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class L2ClanGate
 {

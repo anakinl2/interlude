@@ -8,12 +8,12 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.instancemanager.CastleManager;
 import l2d.game.instancemanager.CursedWeaponsManager;
@@ -35,8 +35,8 @@ import l2d.game.tables.PetDataTable;
 import l2d.game.templates.L2EtcItem.EtcItemType;
 import l2d.game.templates.L2Item;
 import l2d.game.templates.L2Weapon.WeaponType;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 public abstract class Inventory
 {

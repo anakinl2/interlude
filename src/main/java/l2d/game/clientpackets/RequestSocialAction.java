@@ -1,11 +1,11 @@
 package l2d.game.clientpackets;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2Player;
 import l2d.game.serverpackets.SocialAction;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 public class RequestSocialAction extends L2GameClientPacket
 {

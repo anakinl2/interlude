@@ -1,10 +1,10 @@
 package l2d.game.model;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.serverpackets.EtcStatusUpdate;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.SkillTable;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class DeathPenalty
 {

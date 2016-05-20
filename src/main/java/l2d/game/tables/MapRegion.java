@@ -3,10 +3,10 @@ package l2d.game.tables;
 import java.sql.ResultSet;
 import java.util.logging.Logger;
 
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.handler.IScriptHandler;
 import l2d.game.handler.ScriptHandler;
 import l2d.game.instancemanager.CastleManager;
@@ -23,8 +23,8 @@ import l2d.game.model.Reflection;
 import l2d.game.model.base.Race;
 import l2d.game.model.entity.siege.Siege;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class MapRegion
 {

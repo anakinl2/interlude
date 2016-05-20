@@ -1,6 +1,6 @@
 package l2d.game.serverpackets;
 
-import l2d.ext.network.MMOConnection;
+import com.lineage.ext.network.MMOConnection;
 import l2d.game.clientpackets.L2GameClientPacket;
 
 public class WrappedMessage extends L2GameServerPacket

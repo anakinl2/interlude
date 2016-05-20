@@ -9,11 +9,11 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.Announcements;
 import l2d.game.ThreadPoolManager;
 import l2d.game.idfactory.IdFactory;
@@ -22,8 +22,8 @@ import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.NpcTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 /**
  * Auto Spawn Handler

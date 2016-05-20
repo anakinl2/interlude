@@ -8,7 +8,7 @@ import l2d.game.model.CursedWeapon;
 import l2d.game.model.L2Character;
 import l2d.game.serverpackets.ExCursedWeaponLocation;
 import l2d.game.serverpackets.ExCursedWeaponLocation.CursedWeaponInfo;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class RequestCursedWeaponLocation extends L2GameClientPacket
 {

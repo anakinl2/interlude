@@ -1,6 +1,6 @@
 package l2d.game.clientpackets;
 
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2CastleChamberlainInstance;
@@ -11,9 +11,9 @@ import l2d.game.model.instances.L2MerchantInstance;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.serverpackets.ItemList;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Files;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.util.Files;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 /**
  * packet type id 0x37

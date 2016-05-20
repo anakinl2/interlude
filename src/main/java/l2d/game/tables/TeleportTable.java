@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.templates.L2Item;
 
 import org.w3c.dom.Document;

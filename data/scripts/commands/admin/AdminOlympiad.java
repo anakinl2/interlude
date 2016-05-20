@@ -1,14 +1,14 @@
 package commands.admin;
 
-import l2d.Config;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2World;
 import l2d.game.model.entity.olympiad.Olympiad;
 import l2d.game.model.entity.olympiad.OlympiadDatabase;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 @SuppressWarnings("unused")
 public class AdminOlympiad implements IAdminCommandHandler, ScriptFile

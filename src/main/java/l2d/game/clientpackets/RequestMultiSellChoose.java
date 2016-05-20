@@ -4,7 +4,7 @@ import java.nio.BufferUnderflowException;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.cache.Msg;
 import l2d.game.model.L2Multisell;
 import l2d.game.model.L2Multisell.MultiSellListContainer;
@@ -23,8 +23,8 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
 import l2d.game.tables.PetDataTable;
 import l2d.game.templates.L2Item;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 public class RequestMultiSellChoose extends L2GameClientPacket
 {

@@ -2,9 +2,9 @@ package commands.voiced;
 
 import java.util.Map.Entry;
 
-import l2d.db.mysql;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.db.mysql;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IVoicedCommandHandler;
 import l2d.game.handler.VoicedCommandHandler;
 import l2d.game.model.L2Object;

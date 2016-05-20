@@ -12,8 +12,8 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.Announcements;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlEvent;
@@ -40,11 +40,11 @@ import l2d.game.tables.ItemTable;
 import l2d.game.tables.SkillTable;
 import l2d.game.templates.L2Item;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.GArray;
-import l2d.util.Location;
-import l2d.util.MinionList;
-import l2d.util.Rnd;
-import l2d.util.Util;
+import com.lineage.util.GArray;
+import com.lineage.util.Location;
+import com.lineage.util.MinionList;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
 
 /**
  * This class manages all Monsters.

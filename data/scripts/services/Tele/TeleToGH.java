@@ -2,10 +2,10 @@ package services.Tele;
 
 import java.util.ArrayList;
 
-import l2d.Config;
-import l2d.ext.listeners.L2ZoneEnterLeaveListener;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.listeners.L2ZoneEnterLeaveListener;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.instancemanager.ZoneManager;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Playable;
@@ -15,7 +15,7 @@ import l2d.game.model.L2Zone;
 import l2d.game.model.L2Zone.ZoneType;
 import l2d.game.tables.NpcTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 public class TeleToGH extends Functions implements ScriptFile
 {

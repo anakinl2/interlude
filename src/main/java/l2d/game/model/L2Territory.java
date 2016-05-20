@@ -7,8 +7,8 @@ import javolution.util.FastList;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.instancemanager.ZoneManager;
 import l2d.game.model.L2Zone.ZoneType;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class L2Territory
 {

@@ -1,7 +1,7 @@
 package commands.admin;
 
 import javolution.text.TextBuilder;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.model.Inventory;
@@ -10,7 +10,7 @@ import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.InventoryUpdate;
 import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class AdminEnchant implements IAdminCommandHandler, ScriptFile
 {

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.model.instances.L2MinionInstance;
 import l2d.game.model.instances.L2NpcInstance;
@@ -15,8 +15,8 @@ import l2d.game.model.instances.L2PetInstance;
 import l2d.game.tables.TerritoryTable;
 import l2d.game.taskmanager.SpawnTaskManager;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 /**
  * This class manages the spawn and respawn of a group of L2NpcInstance that are in the same are and have the same type.

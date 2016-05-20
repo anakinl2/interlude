@@ -7,12 +7,12 @@ import java.util.HashSet;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.scripts.Scripts;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.instancemanager.CatacombSpawnManager;
 import l2d.game.instancemanager.DayNightSpawnManager;
 import l2d.game.instancemanager.RaidBossSpawnManager;
@@ -23,7 +23,7 @@ import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.model.instances.L2MonsterInstance;
 import l2d.game.model.instances.L2SiegeGuardInstance;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 @SuppressWarnings({ "nls", "unqualified-field-access", "boxing" })
 public class SpawnTable

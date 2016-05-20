@@ -11,11 +11,11 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2Clan;
 import l2d.game.model.L2Object;
@@ -28,7 +28,7 @@ import l2d.game.model.instances.L2DoorInstance;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.tables.ClanTable;
 import l2d.game.tables.DoorTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

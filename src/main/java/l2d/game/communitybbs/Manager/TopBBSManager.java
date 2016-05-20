@@ -4,15 +4,15 @@ import java.sql.ResultSet;
 
 import javolution.util.FastMap;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.model.L2Player;
 import l2d.game.serverpackets.ExHeroList;
-import l2d.util.Files;
-import l2d.util.GArray;
+import com.lineage.util.Files;
+import com.lineage.util.GArray;
 
 /**
  * 130 players per page ^^

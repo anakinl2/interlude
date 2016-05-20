@@ -1,14 +1,14 @@
 package ai;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.Fighter;
 import l2d.game.model.L2Character;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.ItemTable;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 import java.util.concurrent.ScheduledFuture;
 

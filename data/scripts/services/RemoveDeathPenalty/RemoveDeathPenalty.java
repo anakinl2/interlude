@@ -1,13 +1,13 @@
 package services.RemoveDeathPenalty;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.Msg;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.SkillTable;
-import l2d.util.Files;
+import com.lineage.util.Files;
 
 /**
  * Используется NPC Black Judge (id: 30981) для сниятия с игрока Death Penalty

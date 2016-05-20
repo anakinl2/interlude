@@ -8,7 +8,7 @@ import l2d.game.model.PcInventory;
 import l2d.game.model.PetInventory;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.model.instances.L2PetInstance;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class RequestGetItemFromPet extends L2GameClientPacket
 {

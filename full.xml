@@ -92,7 +92,7 @@
 		<jar destfile="${build}/l2dserver.jar" level="0">
 			<fileset dir="${build.classes}"/>
 			<manifest>
-				<attribute name="Main-Class" value="l2d.Server"/>
+				<attribute name="Main-Class" value="com.lineage.Server"/>
 			</manifest>
 		</jar>
 

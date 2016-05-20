@@ -2,7 +2,7 @@ package items;
 
 import java.util.ArrayList;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.Msg;
 import l2d.game.handler.IItemHandler;
 import l2d.game.handler.ItemHandler;

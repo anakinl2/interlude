@@ -5,7 +5,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Party;
@@ -25,9 +25,9 @@ import l2d.game.serverpackets.TutorialShowQuestionMark;
 import l2d.game.tables.ItemTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.templates.L2Item;
-import l2d.util.Files;
-import l2d.util.Log;
-import l2d.util.Rnd;
+import com.lineage.util.Files;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
 
 public final class QuestState
 {

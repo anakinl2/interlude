@@ -4,7 +4,7 @@ TITLE L2Dream Auth Server
 echo %DATE% %TIME% Auth server is running !!! > login_is_running.tmp
 echo Starting L2Dream Auth Server.
 echo.
-java -Xms32m -Xmx32m -cp lib/*; l2d.auth.L2LoginServer
+java -Xms32m -Xmx32m -cp lib/*; L2LoginServer
 if ERRORLEVEL 2 goto restart
 if ERRORLEVEL 1 goto error
 goto end

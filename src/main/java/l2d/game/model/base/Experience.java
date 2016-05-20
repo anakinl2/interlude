@@ -1,7 +1,5 @@
 package l2d.game.model.base;
 
-import l2d.Config;
-
 @SuppressWarnings({ "nls", "unqualified-field-access", "boxing" })
 public class Experience
 {

@@ -3,8 +3,8 @@ package commands.voiced;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IVoicedCommandHandler;
 import l2d.game.handler.VoicedCommandHandler;
 import l2d.game.model.Inventory;
@@ -23,7 +23,7 @@ import l2d.game.skills.Stats;
 import l2d.game.skills.funcs.Func;
 import l2d.game.tables.FakePlayersTable;
 import l2d.game.templates.L2Weapon.WeaponType;
-import l2d.util.Files;
+import com.lineage.util.Files;
 
 public class Help extends Functions implements IVoicedCommandHandler, ScriptFile
 {

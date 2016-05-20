@@ -1,6 +1,6 @@
 package l2d.game.model.instances;
 
-import l2d.ext.scripts.Events;
+import com.lineage.ext.scripts.Events;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;

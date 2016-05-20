@@ -1,8 +1,8 @@
 package l2d.game.skills;
 
-import l2d.Config;
-import l2d.debug.StatsLimitDebugger;
-import l2d.ext.listeners.StatsChangeListener;
+import com.lineage.Config;
+import com.lineage.debug.StatsLimitDebugger;
+import com.lineage.ext.listeners.StatsChangeListener;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Playable;
 import l2d.game.skills.funcs.Func;

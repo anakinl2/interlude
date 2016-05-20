@@ -1,13 +1,13 @@
 package l2d.game.clientpackets;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2World;
 import l2d.game.model.L2WorldRegion;
 import l2d.game.model.instances.L2ItemInstance;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 /**
  * [C] 04 Action <p>

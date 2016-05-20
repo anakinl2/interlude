@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.model.instances.L2BoatInstance;
 import l2d.game.templates.L2CharTemplate;

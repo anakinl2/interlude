@@ -20,8 +20,8 @@ import l2d.game.serverpackets.StatusUpdate;
 import l2d.game.serverpackets.ValidateLocation;
 import l2d.game.tables.DoorTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.GArray;
-import l2d.util.Rnd;
+import com.lineage.util.GArray;
+import com.lineage.util.Rnd;
 
 /**
  * L2SepulcherNpcInstance

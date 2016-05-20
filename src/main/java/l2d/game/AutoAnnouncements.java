@@ -6,10 +6,10 @@ import java.util.concurrent.Future;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 
 public final class AutoAnnouncements
 {

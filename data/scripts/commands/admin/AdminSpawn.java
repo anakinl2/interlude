@@ -5,14 +5,12 @@ import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import l2d.db.mysql;
-import l2d.ext.scripts.ScriptFile;
-import l2d.ext.scripts.Scripts;
+import com.lineage.db.mysql;
+import com.lineage.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.ai.L2CharacterAI;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.idfactory.IdFactory;
-import l2d.game.instancemanager.BoatManager;
 import l2d.game.instancemanager.RaidBossSpawnManager;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;
@@ -23,10 +21,8 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.GmListTable;
 import l2d.game.tables.NpcTable;
 import l2d.game.tables.SpawnTable;
-import l2d.game.templates.L2CharTemplate;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.game.templates.StatsSet;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 @SuppressWarnings("unused")
 public class AdminSpawn implements IAdminCommandHandler, ScriptFile

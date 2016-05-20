@@ -3,7 +3,7 @@ package l2d.game.model.instances;
 import java.io.File;
 import java.util.logging.Logger;
 
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.cache.Msg;
 import l2d.game.instancemanager.RaidBossSpawnManager;
 import l2d.game.model.L2Player;

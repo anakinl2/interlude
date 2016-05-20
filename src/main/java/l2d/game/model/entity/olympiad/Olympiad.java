@@ -11,8 +11,8 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.Announcements;
 import l2d.game.ThreadPoolManager;
 import l2d.game.instancemanager.ServerVariables;

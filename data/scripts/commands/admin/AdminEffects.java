@@ -1,8 +1,8 @@
 package commands.admin;
 
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.Msg;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
@@ -17,8 +17,8 @@ import l2d.game.serverpackets.Earthquake;
 import l2d.game.serverpackets.NpcInfo;
 import l2d.game.serverpackets.SocialAction;
 import l2d.game.tables.SkillTable;
-import l2d.util.Rnd;
-import l2d.util.Util;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
 
 public class AdminEffects implements IAdminCommandHandler, ScriptFile
 {

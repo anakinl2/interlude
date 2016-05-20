@@ -1,7 +1,7 @@
 package items;
 
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IItemHandler;
 import l2d.game.handler.ItemHandler;
 import l2d.game.instancemanager.CastleManager;

@@ -2,11 +2,10 @@ package l2d.game;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.auth.AuthWebStatus;
-import l2d.db.L2DatabaseFactory;
-import l2d.debug.HeapDumper;
-import l2d.ext.scripts.Scripts;
+import com.lineage.Config;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.debug.HeapDumper;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.cache.InfoCache;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.idfactory.IdFactory;
@@ -28,8 +27,8 @@ import l2d.game.tables.SkillTable;
 import l2d.game.tables.SkillTreeTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.tables.TerritoryTable;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 @SuppressWarnings({ "nls", "unqualified-field-access", "boxing" })
 public class Shutdown extends Thread

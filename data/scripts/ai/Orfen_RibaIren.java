@@ -3,7 +3,7 @@ package ai;
 import l2d.game.ai.Fighter;
 import l2d.game.model.L2Character;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class Orfen_RibaIren extends Fighter
 {

@@ -2,7 +2,7 @@ package commands.admin;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.instancemanager.QuestManager;
@@ -13,7 +13,7 @@ import l2d.game.model.quest.Quest;
 import l2d.game.model.quest.QuestState;
 import l2d.game.model.quest.State;
 import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.util.PrintfFormat;
+import com.lineage.util.PrintfFormat;
 
 public class AdminQuests implements IAdminCommandHandler, ScriptFile
 {

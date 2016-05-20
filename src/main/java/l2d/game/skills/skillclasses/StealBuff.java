@@ -3,7 +3,7 @@ package l2d.game.skills.skillclasses;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 import javolution.util.FastList;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.cache.Msg;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Effect;
@@ -13,7 +13,7 @@ import l2d.game.skills.Env;
 import l2d.game.skills.Formulas;
 import l2d.game.skills.effects.EffectTemplate;
 import l2d.game.templates.StatsSet;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class StealBuff extends L2Skill
 {

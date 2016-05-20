@@ -3,7 +3,7 @@ package l2d.game.model.entity.olympiad;
 import java.util.concurrent.ScheduledFuture;
 
 import l2d.game.ThreadPoolManager;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class OlympiadGameTask implements Runnable
 {

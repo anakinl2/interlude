@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.ext.scripts.Scripts;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.cache.PlayerShiftCache;
 import l2d.game.communitybbs.CommunityBoard;
 import l2d.game.handler.AdminCommandHandler;

@@ -3,12 +3,12 @@ package l2d.game;
 import java.io.IOException;
 import java.sql.ResultSet;
 
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.model.L2World;
-import l2d.util.Files;
+import com.lineage.util.Files;
 import cz.dhl.ftp.Ftp;
 import cz.dhl.ftp.FtpConnect;
 import cz.dhl.ftp.FtpFile;

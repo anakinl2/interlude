@@ -7,13 +7,13 @@ import java.util.logging.Logger;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Skill;
 import l2d.game.model.base.L2Augmentation;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.skills.Stats;
 import l2d.game.tables.SkillTable;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;

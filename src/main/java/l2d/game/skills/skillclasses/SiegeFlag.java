@@ -17,7 +17,7 @@ import l2d.game.skills.Stats;
 import l2d.game.skills.funcs.FuncMul;
 import l2d.game.tables.NpcTable;
 import l2d.game.templates.StatsSet;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class SiegeFlag extends L2Skill
 {

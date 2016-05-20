@@ -42,7 +42,7 @@
 		<jar destfile="./../../impulse_build/dist/game/lib/l2dserver.jar" level="0">
 			<fileset dir="${build}"/>
 			<manifest>
-				<attribute name="Main-Class" value="l2d.Server"/>
+				<attribute name="Main-Class" value="com.lineage.Server"/>
 			</manifest>
 		</jar>
 	</target>

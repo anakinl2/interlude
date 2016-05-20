@@ -1,6 +1,6 @@
 package events.thefallharvest;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ThreadPoolManager;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.handler.IItemHandler;

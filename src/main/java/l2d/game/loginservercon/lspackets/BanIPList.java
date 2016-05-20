@@ -2,7 +2,7 @@ package l2d.game.loginservercon.lspackets;
 
 import javolution.util.FastList;
 import l2d.game.loginservercon.AttLS;
-import l2d.util.BannedIp;
+import com.lineage.util.BannedIp;
 
 public class BanIPList extends LoginServerBasePacket
 {

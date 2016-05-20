@@ -11,16 +11,16 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.geodata.GeoOptimizer.BlockLink;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Territory;
 import l2d.game.model.L2World;
 import l2d.game.model.instances.L2DoorInstance;
 import l2d.game.tables.DoorTable;
-import l2d.util.Location;
-import l2d.util.Log;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
 
 /**
  * @Author: Diamond

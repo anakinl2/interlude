@@ -2,7 +2,7 @@ package l2d.game.serverpackets;
 
 import javolution.util.FastList;
 import l2d.game.model.L2Player;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 /**
  *

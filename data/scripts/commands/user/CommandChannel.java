@@ -1,6 +1,6 @@
 package commands.user;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IUserCommandHandler;
 import l2d.game.handler.UserCommandHandler;
 import l2d.game.model.L2CommandChannel;

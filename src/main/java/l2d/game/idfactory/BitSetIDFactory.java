@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
 import l2d.game.ThreadPoolManager;
-import l2d.util.PrimeFinder;
+import com.lineage.util.PrimeFinder;
 
 public class BitSetIDFactory extends IdFactory
 {

@@ -6,8 +6,8 @@ import l2d.game.model.L2Skill;
 import l2d.game.model.instances.L2BossInstance;
 import l2d.game.serverpackets.PlaySound;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class OrfenInstance extends L2BossInstance
 {

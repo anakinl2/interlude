@@ -1,7 +1,7 @@
 package l2d.game.serverpackets;
 
 import l2d.game.model.instances.L2ItemInstance;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 /**
  * 16

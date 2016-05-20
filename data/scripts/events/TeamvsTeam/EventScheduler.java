@@ -2,9 +2,9 @@ package events.TeamvsTeam;
 
 import java.util.concurrent.ScheduledFuture;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
-import l2d.util.Rnd;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
+import com.lineage.util.Rnd;
 
 /**
  * 

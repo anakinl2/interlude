@@ -4,8 +4,8 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import l2d.util.GArray;
-import l2d.util.Strings;
+import com.lineage.util.GArray;
+import com.lineage.util.Strings;
 
 public class BypassManager
 {

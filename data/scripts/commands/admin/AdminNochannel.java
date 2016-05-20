@@ -2,18 +2,18 @@ package commands.admin;
 
 import java.util.StringTokenizer;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2World;
-import l2d.util.AutoBan;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.util.AutoBan;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 public class AdminNochannel implements IAdminCommandHandler, ScriptFile
 {

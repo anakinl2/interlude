@@ -1,7 +1,7 @@
 package l2d.game.skills.effects;
 
-import l2d.ext.listeners.MethodCollection;
-import l2d.ext.listeners.reduceHp.ReduceCurrentHpListener;
+import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.reduceHp.ReduceCurrentHpListener;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Effect;
 import l2d.game.model.L2Skill;

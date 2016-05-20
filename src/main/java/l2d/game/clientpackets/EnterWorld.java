@@ -5,14 +5,14 @@ import java.sql.ResultSet;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.mods.ClassChange;
-import l2d.ext.scripts.Scripts;
-import l2d.ext.scripts.Scripts.ScriptClassAndMethod;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.mods.ClassChange;
+import com.lineage.ext.scripts.Scripts;
+import com.lineage.ext.scripts.Scripts.ScriptClassAndMethod;
 import l2d.game.Announcements;
 import l2d.game.instancemanager.CoupleManager;
 import l2d.game.instancemanager.CursedWeaponsManager;
@@ -48,8 +48,8 @@ import l2d.game.serverpackets.SkillList;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.serverpackets.UserInfo;
 import l2d.game.tables.SkillTable;
-import l2d.util.HWID;
-import l2d.util.Log;
+import com.lineage.util.HWID;
+import com.lineage.util.Log;
 
 /**
  * [C] 03 EnterWorld <p>

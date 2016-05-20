@@ -8,12 +8,12 @@ import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.scripts.Scripts;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.cache.InfoCache;
 import l2d.game.instancemanager.CatacombSpawnManager;
 import l2d.game.model.L2DropData;
@@ -25,8 +25,8 @@ import l2d.game.model.instances.L2MonsterInstance;
 import l2d.game.model.instances.L2TamedBeastInstance;
 import l2d.game.templates.L2NpcTemplate;
 import l2d.game.templates.StatsSet;
-import l2d.util.DropList;
-import l2d.util.Log;
+import com.lineage.util.DropList;
+import com.lineage.util.Log;
 
 public class NpcTable
 {

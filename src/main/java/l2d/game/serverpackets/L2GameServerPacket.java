@@ -1,6 +1,6 @@
 package l2d.game.serverpackets;
 
-import l2d.ext.network.SendablePacket;
+import com.lineage.ext.network.SendablePacket;
 import l2d.game.network.L2GameClient;
 
 public abstract class L2GameServerPacket extends SendablePacket<L2GameClient>

@@ -2,7 +2,7 @@ package l2d.game.clientpackets;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.instancemanager.AugmentationManager;
 import l2d.game.instancemanager.CursedWeaponsManager;
 import l2d.game.model.L2Player;
@@ -13,7 +13,7 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.serverpackets.UserInfo;
 import l2d.game.templates.L2Item;
 import l2d.game.templates.L2Item.Grade;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 public final class RequestRefine extends L2GameClientPacket
 {

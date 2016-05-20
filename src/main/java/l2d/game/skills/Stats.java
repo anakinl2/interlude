@@ -2,7 +2,7 @@ package l2d.game.skills;
 
 import java.util.NoSuchElementException;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.skills.inits.InitConst;
 import l2d.game.skills.inits.InitFunc;
 import l2d.game.skills.inits.Init_rShld;

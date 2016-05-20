@@ -1,6 +1,6 @@
 package l2d.game.clientpackets;
 
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.model.L2Player;
 
 public class RequestOustPartyMember extends L2GameClientPacket

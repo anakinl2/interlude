@@ -6,12 +6,12 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;

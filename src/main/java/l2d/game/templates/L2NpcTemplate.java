@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
-import l2d.ext.scripts.Script;
-import l2d.ext.scripts.Scripts;
+import com.lineage.ext.scripts.Script;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.model.L2Drop;
 import l2d.game.model.L2DropData;
 import l2d.game.model.L2MinionData;

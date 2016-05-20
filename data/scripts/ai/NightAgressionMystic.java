@@ -1,7 +1,7 @@
 package ai;
 
-import l2d.ext.listeners.DayNightChangeListener;
-import l2d.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.DayNightChangeListener;
+import com.lineage.ext.listeners.PropertyCollection;
 import l2d.game.GameTimeController;
 import l2d.game.ai.Mystic;
 import l2d.game.model.L2Character;

@@ -5,7 +5,7 @@ import l2d.game.model.L2Player;
 import l2d.game.model.L2World;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 /**
  * format: cdd

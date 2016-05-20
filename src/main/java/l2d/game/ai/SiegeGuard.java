@@ -8,8 +8,8 @@ import l2d.game.model.L2Clan;
 import l2d.game.model.L2Playable;
 import l2d.game.model.instances.L2NpcInstance.AggroInfo;
 import l2d.game.model.instances.L2SiegeGuardInstance;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public abstract class SiegeGuard extends DefaultAI
 {

@@ -2,7 +2,7 @@ package l2d.game.clientpackets;
 
 import java.util.logging.Logger;
 
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.cache.Msg;
 import l2d.game.model.ClanWarehousePool;
 import l2d.game.model.L2Character;

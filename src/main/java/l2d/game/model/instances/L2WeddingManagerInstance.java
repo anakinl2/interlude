@@ -1,7 +1,7 @@
 package l2d.game.model.instances;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.Announcements;
 import l2d.game.cache.Msg;
 import l2d.game.instancemanager.CoupleManager;

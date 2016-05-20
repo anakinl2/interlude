@@ -5,7 +5,7 @@ import static l2d.game.ai.CtrlIntention.AI_INTENTION_IDLE;
 import java.util.ArrayList;
 import java.util.concurrent.ScheduledFuture;
 
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.Fighter;
 import l2d.game.model.L2Character;
@@ -17,8 +17,8 @@ import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.serverpackets.Die;
 import l2d.game.serverpackets.MagicSkillUse;
 import l2d.game.tables.NpcTable;
-import l2d.util.Log;
-import l2d.util.Rnd;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
 
 public class SquashAI extends Fighter
 {

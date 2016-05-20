@@ -2,9 +2,9 @@ package l2d.game.model.instances;
 
 import l2d.game.model.L2Character;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Log;
-import l2d.util.PrintfFormat;
+import com.lineage.util.Location;
+import com.lineage.util.Log;
+import com.lineage.util.PrintfFormat;
 
 public class L2MinionInstance extends L2MonsterInstance
 {

@@ -1,6 +1,6 @@
 package l2d.game.model.entity.siege;
 
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class SiegeSpawn
 {

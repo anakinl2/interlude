@@ -8,10 +8,10 @@ import java.util.logging.Logger;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import l2d.Config;
-import l2d.ext.mods.balancer.Balancer;
-import l2d.ext.mods.balancer.Balancer.bflag;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.mods.balancer.Balancer;
+import com.lineage.ext.mods.balancer.Balancer.bflag;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.cache.Msg;
 import l2d.game.instancemanager.CastleManager;
 import l2d.game.instancemanager.ClanHallManager;
@@ -39,7 +39,7 @@ import l2d.game.templates.L2Armor.ArmorType;
 import l2d.game.templates.L2PlayerTemplate;
 import l2d.game.templates.L2Weapon;
 import l2d.game.templates.L2Weapon.WeaponType;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

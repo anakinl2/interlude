@@ -6,7 +6,7 @@ import java.text.Collator;
 import java.util.HashMap;
 import java.util.TreeSet;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.model.L2Player;

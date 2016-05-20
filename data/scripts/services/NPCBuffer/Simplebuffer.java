@@ -1,13 +1,13 @@
 package services.NPCBuffer;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2Skill;
 import l2d.game.serverpackets.MagicSkillUse;
 import l2d.game.tables.SkillTable;
-import l2d.util.GCArray;
+import com.lineage.util.GCArray;
 /**
  * 
  * @author Midnex

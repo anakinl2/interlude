@@ -1,7 +1,7 @@
 package l2d.game.skills.conditions;
 
 import l2d.game.skills.Env;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class ConditionGameChance extends Condition
 {

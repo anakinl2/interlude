@@ -3,10 +3,10 @@ package l2d.game.model;
 import static l2d.game.model.L2Zone.ZoneType.Siege;
 import static l2d.game.model.L2Zone.ZoneType.peace_zone;
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.ext.mods.balancer.Balancer;
-import l2d.ext.mods.balancer.Balancer.bflag;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.mods.balancer.Balancer;
+import com.lineage.ext.mods.balancer.Balancer.bflag;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.ai.CtrlEvent;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.cache.Msg;
@@ -30,7 +30,7 @@ import l2d.game.templates.L2CharTemplate;
 import l2d.game.templates.L2EtcItem;
 import l2d.game.templates.L2Weapon;
 import l2d.game.templates.L2Weapon.WeaponType;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public abstract class L2Playable extends L2Character
 {

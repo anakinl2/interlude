@@ -2,7 +2,7 @@ package l2d.game.templates;
 
 import java.util.regex.Pattern;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Skill;
 import l2d.game.model.L2Skill.SkillType;
 import l2d.game.model.instances.L2ItemInstance.ItemClass;

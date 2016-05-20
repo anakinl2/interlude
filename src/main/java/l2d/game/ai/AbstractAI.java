@@ -6,16 +6,16 @@ import static l2d.game.ai.CtrlIntention.AI_INTENTION_IDLE;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.ext.listeners.MethodCollection;
-import l2d.ext.listeners.engine.DefaultListenerEngine;
-import l2d.ext.listeners.engine.ListenerEngine;
-import l2d.ext.listeners.events.AbstractAI.AbstractAINotifyEvent;
-import l2d.ext.listeners.events.AbstractAI.AbstractAISetIntention;
+import com.lineage.Config;
+import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.engine.DefaultListenerEngine;
+import com.lineage.ext.listeners.engine.ListenerEngine;
+import com.lineage.ext.listeners.events.AbstractAI.AbstractAINotifyEvent;
+import com.lineage.ext.listeners.events.AbstractAI.AbstractAISetIntention;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Skill;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public abstract class AbstractAI
 {

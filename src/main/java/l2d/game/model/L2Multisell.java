@@ -10,7 +10,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.base.MultiSellEntry;
 import l2d.game.model.base.MultiSellIngredient;
 import l2d.game.model.instances.L2ItemInstance;

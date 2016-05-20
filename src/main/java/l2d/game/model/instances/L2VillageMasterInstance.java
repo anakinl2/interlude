@@ -5,8 +5,8 @@ import java.util.Set;
 import java.util.logging.Logger;
 
 import javolution.text.TextBuilder;
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.instancemanager.CastleSiegeManager;
 import l2d.game.instancemanager.SiegeManager;
 import l2d.game.model.L2Alliance;
@@ -36,7 +36,7 @@ import l2d.game.tables.ClanTable;
 import l2d.game.tables.SkillTable;
 import l2d.game.tables.SkillTreeTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 public final class L2VillageMasterInstance extends L2NpcInstance
 {

@@ -1,6 +1,6 @@
 package items;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.Msg;
 import l2d.game.handler.IItemHandler;
 import l2d.game.handler.ItemHandler;
@@ -9,7 +9,7 @@ import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.Dice;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class RollingDice implements IItemHandler, ScriptFile
 {

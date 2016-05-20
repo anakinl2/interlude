@@ -2,7 +2,7 @@ package l2d.game.model;
 
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class L2Bingo
 {

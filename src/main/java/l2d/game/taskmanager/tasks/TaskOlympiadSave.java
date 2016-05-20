@@ -2,7 +2,7 @@ package l2d.game.taskmanager.tasks;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.entity.olympiad.OlympiadDatabase;
 import l2d.game.taskmanager.Task;
 import l2d.game.taskmanager.TaskManager;

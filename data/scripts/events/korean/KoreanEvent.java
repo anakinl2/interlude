@@ -4,8 +4,8 @@ import static l2d.game.model.L2Zone.ZoneType.OlympiadStadia;
 
 import java.util.concurrent.ScheduledFuture;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.instancemanager.TownManager;
 import l2d.game.instancemanager.ZoneManager;
@@ -21,8 +21,8 @@ import l2d.game.serverpackets.MagicSkillUse;
 import l2d.game.serverpackets.Say2;
 import l2d.game.tables.DoorTable;
 import l2d.game.tables.SkillTable;
-import l2d.util.GArray;
-import l2d.util.GCSArray;
+import com.lineage.util.GArray;
+import com.lineage.util.GCSArray;
 
 public class KoreanEvent extends Functions implements ScriptFile
 {

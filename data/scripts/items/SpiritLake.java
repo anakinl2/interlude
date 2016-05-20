@@ -2,7 +2,7 @@ package items;
 
 import javolution.util.FastList;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ai.CtrlEvent;
 import l2d.game.handler.IItemHandler;
 import l2d.game.handler.ItemHandler;

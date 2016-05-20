@@ -3,7 +3,7 @@ package l2d.game.model.entity.siege.clanhall;
 import java.util.Calendar;
 
 import javolution.util.FastList;
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.ThreadPoolManager;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.idfactory.IdFactory;

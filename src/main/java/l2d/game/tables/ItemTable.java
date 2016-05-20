@@ -10,13 +10,13 @@ import java.util.Map.Entry;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.scripts.Scripts;
-import l2d.ext.scripts.Scripts.ScriptClassAndMethod;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.scripts.Scripts;
+import com.lineage.ext.scripts.Scripts.ScriptClassAndMethod;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Playable;
@@ -35,7 +35,7 @@ import l2d.game.templates.L2Item.Grade;
 import l2d.game.templates.L2Weapon;
 import l2d.game.templates.L2Weapon.WeaponType;
 import l2d.game.templates.StatsSet;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 @SuppressWarnings({ "nls", "unqualified-field-access", "boxing" })
 public class ItemTable

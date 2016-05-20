@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.TreeSet;
 
 import javolution.text.TextBuilder;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.GameTimeController;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.model.L2Player;

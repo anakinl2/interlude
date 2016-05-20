@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.Msg;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
@@ -21,7 +21,7 @@ import l2d.game.skills.Env;
 import l2d.game.skills.funcs.Func;
 import l2d.game.tables.SkillTable;
 import l2d.game.tables.SkillTreeTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class AdminSkill implements IAdminCommandHandler, ScriptFile
 {

@@ -1,10 +1,10 @@
 package commands.voiced;
 
-import l2d.Config;
-import l2d.db.mysql;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.db.mysql;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IVoicedCommandHandler;
 import l2d.game.handler.VoicedCommandHandler;
 import l2d.game.model.L2Clan;
@@ -13,9 +13,9 @@ import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.ItemTable;
-import l2d.util.Files;
-import l2d.util.PrintfFormat;
-import l2d.util.Strings;
+import com.lineage.util.Files;
+import com.lineage.util.PrintfFormat;
+import com.lineage.util.Strings;
 
 public class Lang extends Functions implements IVoicedCommandHandler, ScriptFile
 {

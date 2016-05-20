@@ -1,11 +1,11 @@
 package commands.admin;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.model.L2Player;
 import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.util.Files;
+import com.lineage.util.Files;
 
 public class AdminHelpPage implements IAdminCommandHandler, ScriptFile
 {

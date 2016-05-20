@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.cache.Msg;
 import l2d.game.loginservercon.gspackets.GameServerBasePacket;
@@ -21,8 +21,8 @@ import l2d.game.model.L2Player;
 import l2d.game.network.L2GameClient;
 import l2d.game.serverpackets.LoginFail;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.BannedIp;
-import l2d.util.Util;
+import com.lineage.util.BannedIp;
+import com.lineage.util.Util;
 
 /**
  * @Author: Death

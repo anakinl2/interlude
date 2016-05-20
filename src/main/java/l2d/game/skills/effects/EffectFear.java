@@ -6,8 +6,8 @@ import l2d.game.geodata.GeoEngine;
 import l2d.game.model.L2Effect;
 import l2d.game.model.L2Summon;
 import l2d.game.skills.Env;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public final class EffectFear extends L2Effect
 {

@@ -1,7 +1,7 @@
 package services.Tele;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;
 

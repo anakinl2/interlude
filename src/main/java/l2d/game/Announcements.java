@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.clientpackets.Say2C;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2World;
@@ -181,7 +181,7 @@ public class Announcements
 
 	/**
 	 * Отправляет анонсом CustomMessage, приминимо к примеру в шатдауне.
-	 * @param address адрес в {@link l2d.ext.multilang.CustomMessage}
+	 * @param address адрес в {@link CustomMessage}
 	 * @param replacements массив String-ов которые атоматически добавятся в сообщения
 	 */
 	public void announceByCustomMessage(String address, String[] replacements)

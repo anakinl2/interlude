@@ -8,11 +8,11 @@ import java.util.logging.Logger;
 
 import javolution.util.FastMap;
 import javolution.util.FastMap.Entry;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.instancemanager.SiegeManager;
 import l2d.game.model.L2Alliance;
@@ -23,7 +23,7 @@ import l2d.game.model.L2Player;
 import l2d.game.model.L2World;
 import l2d.game.serverpackets.PledgeShowMemberListDeleteAll;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 public class ClanTable
 {

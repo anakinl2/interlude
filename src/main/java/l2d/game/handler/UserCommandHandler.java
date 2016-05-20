@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 
 public class UserCommandHandler
 {

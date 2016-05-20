@@ -1,6 +1,6 @@
 package commands.admin;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ThreadPoolManager;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
@@ -11,7 +11,7 @@ import l2d.game.serverpackets.DeleteObject;
 import l2d.game.serverpackets.MonRaceInfo;
 import l2d.game.serverpackets.PlaySound;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 @SuppressWarnings("unused")
 public class AdminMonsterRace implements IAdminCommandHandler, ScriptFile

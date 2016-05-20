@@ -1,11 +1,11 @@
 package l2d.game.serverpackets;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Effect.EffectType;
 import l2d.game.model.L2Summon;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class NpcInfo extends L2GameServerPacket
 {

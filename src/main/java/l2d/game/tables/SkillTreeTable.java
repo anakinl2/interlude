@@ -10,10 +10,10 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.model.L2Clan;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2Skill;
@@ -22,7 +22,7 @@ import l2d.game.model.L2SkillLearn;
 import l2d.game.model.base.ClassId;
 import l2d.game.model.base.L2EnchantSkillLearn;
 import l2d.game.model.base.Race;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 @SuppressWarnings({ "nls", "unqualified-field-access", "boxing" })
 public class SkillTreeTable

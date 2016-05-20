@@ -8,7 +8,7 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.skills.Formulas;
 import l2d.game.skills.Formulas.AttackInfo;
 import l2d.game.templates.StatsSet;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class FatalBlow extends L2Skill
 {

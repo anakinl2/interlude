@@ -2,7 +2,7 @@ package l2d.game.serverpackets;
 
 import java.util.List;
 
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 /**
  * Format: (ch) d[ddddd]

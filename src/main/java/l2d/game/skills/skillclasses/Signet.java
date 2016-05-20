@@ -10,7 +10,7 @@ import l2d.game.model.L2Skill;
 import l2d.game.model.L2Zone.ZoneType;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.templates.StatsSet;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class Signet extends L2Skill
 {

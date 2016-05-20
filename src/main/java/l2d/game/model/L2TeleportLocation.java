@@ -1,6 +1,6 @@
 package l2d.game.model;
 
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 @SuppressWarnings("serial")
 public class L2TeleportLocation extends Location

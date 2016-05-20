@@ -1,7 +1,7 @@
 package l2d.game.serverpackets;
 
 import l2d.game.model.L2Character;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 /**
  * format   dddddd		(player id, target id, distance, startx, starty, startz)<p>

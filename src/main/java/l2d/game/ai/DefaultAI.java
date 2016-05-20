@@ -13,7 +13,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.model.L2Character;
@@ -38,8 +38,8 @@ import l2d.game.serverpackets.MagicSkillUse;
 import l2d.game.skills.Stats;
 import l2d.game.tables.TerritoryTable;
 import l2d.game.templates.StatsSet;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class DefaultAI extends L2CharacterAI implements Runnable
 {

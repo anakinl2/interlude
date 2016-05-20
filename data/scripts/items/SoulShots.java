@@ -1,7 +1,6 @@
 package items;
 
-import l2d.ext.scripts.ScriptFile;
-import l2d.Config;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IItemHandler;
 import l2d.game.handler.ItemHandler;
 import l2d.game.model.L2Playable;
@@ -15,7 +14,7 @@ import l2d.game.tables.ItemTable;
 import l2d.game.templates.L2Item;
 import l2d.game.templates.L2Weapon;
 import l2d.game.templates.L2Weapon.WeaponType;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class SoulShots implements IItemHandler, ScriptFile
 {

@@ -5,14 +5,14 @@ import java.io.FileInputStream;
 import java.util.Map.Entry;
 import java.util.StringTokenizer;
 
-import l2d.ext.mods.balancer.Balancer;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.mods.balancer.Balancer;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ai.DefaultAI;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.model.L2Player;
 import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.util.Files;
+import com.lineage.util.Files;
 
 /**
  * This class handles following admin commands: - help path = shows

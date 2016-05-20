@@ -8,11 +8,11 @@ import java.util.TreeSet;
 
 import javolution.util.FastList;
 import javolution.util.FastList.Node;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.base.Experience;
 import l2d.game.model.base.ItemToDrop;
 import l2d.game.model.instances.L2MonsterInstance;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class L2DropGroup implements Cloneable
 {

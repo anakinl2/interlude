@@ -13,7 +13,7 @@ import l2d.game.model.L2Player;
 import l2d.game.model.L2Skill;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.templates.StatsSet;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 public class Call extends L2Skill
 {

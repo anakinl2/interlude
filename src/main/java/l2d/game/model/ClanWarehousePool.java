@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.instances.L2ItemInstance;
 
 public class ClanWarehousePool

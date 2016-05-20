@@ -3,8 +3,8 @@ package l2d.game.clientpackets;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.mysql;
+import com.lineage.Config;
+import com.lineage.db.mysql;
 import l2d.game.network.L2GameClient;
 import l2d.game.serverpackets.CharacterDeleteFail;
 import l2d.game.serverpackets.CharacterDeleteSuccess;

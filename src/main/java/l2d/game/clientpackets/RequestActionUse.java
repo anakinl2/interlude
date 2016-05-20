@@ -3,7 +3,7 @@ package l2d.game.clientpackets;
 import java.util.HashMap;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.cache.Msg;

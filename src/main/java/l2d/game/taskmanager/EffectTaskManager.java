@@ -9,7 +9,7 @@ import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Effect;
 import l2d.game.model.L2Player;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 public class EffectTaskManager
 {

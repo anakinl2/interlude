@@ -10,7 +10,7 @@ import l2d.game.idfactory.IdFactory;
 import l2d.game.model.instances.L2DoorInstance;
 import l2d.game.tables.ReflectionTable;
 import l2d.game.tables.SpawnTable;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class Reflection
 {

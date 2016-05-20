@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.instancemanager.CatacombSpawnManager;
 import l2d.game.instancemanager.DayNightSpawnManager;
 import l2d.game.instancemanager.RaidBossSpawnManager;
 import l2d.game.instancemanager.ServerVariables;
 import l2d.game.model.L2Zone.ZoneType;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.GArray;
-import l2d.util.GCSArray;
-import l2d.util.Location;
+import com.lineage.util.GArray;
+import com.lineage.util.GCSArray;
+import com.lineage.util.Location;
 
 /**
  * @author Diamond

@@ -8,9 +8,9 @@ import java.util.Date;
 import java.util.zip.CRC32;
 
 import javolution.text.TextBuilder;
-import l2d.Config;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.Scripts;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.Shutdown;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2World;

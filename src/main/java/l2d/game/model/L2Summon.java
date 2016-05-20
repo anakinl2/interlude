@@ -1,7 +1,7 @@
 package l2d.game.model;
 
-import l2d.Config;
-import l2d.ext.scripts.Events;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Events;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.ai.L2SummonAI;
 import l2d.game.model.L2Zone.ZoneType;
@@ -22,8 +22,8 @@ import l2d.game.skills.Stats;
 import l2d.game.taskmanager.DecayTaskManager;
 import l2d.game.templates.L2NpcTemplate;
 import l2d.game.templates.L2Weapon;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public abstract class L2Summon extends L2Playable
 {

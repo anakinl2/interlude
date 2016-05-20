@@ -1,13 +1,13 @@
 package l2d.game.skills.skillclasses;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.cache.Msg;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Skill;
 import l2d.game.skills.Stats;
 import l2d.game.templates.StatsSet;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class Continuous extends L2Skill
 {

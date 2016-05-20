@@ -7,17 +7,17 @@ import java.nio.channels.SelectionKey;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.auth.crypt.ConnectionCrypt;
-import l2d.auth.crypt.ConnectionCryptDummy;
-import l2d.auth.crypt.NewCrypt;
+import com.lineage.Config;
+import com.lineage.auth.crypt.ConnectionCrypt;
+import com.lineage.auth.crypt.ConnectionCryptDummy;
+import com.lineage.auth.crypt.NewCrypt;
 import l2d.game.ThreadPoolManager;
 import l2d.game.loginservercon.gspackets.AuthRequest;
 import l2d.game.loginservercon.gspackets.BlowFishKey;
 import l2d.game.loginservercon.gspackets.GameServerBasePacket;
 import l2d.game.loginservercon.lspackets.LoginServerBasePacket;
-import l2d.util.Rnd;
-import l2d.util.Util;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
 
 /**
  * @Author: Death

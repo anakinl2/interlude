@@ -1,6 +1,6 @@
 package l2d.game.network;
 
-import l2d.util.Protection;
+import com.lineage.util.Protection;
 
 public class GameCrypt
 {

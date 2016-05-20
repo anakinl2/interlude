@@ -20,11 +20,11 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.NpcTable;
 import l2d.game.tables.SkillTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Log;
-import l2d.util.MinionList;
-import l2d.util.PrintfFormat;
-import l2d.util.Rnd;
-import l2d.util.Util;
+import com.lineage.util.Log;
+import com.lineage.util.MinionList;
+import com.lineage.util.PrintfFormat;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
 
 /**
  * This class manages all RaidBoss.

@@ -15,7 +15,7 @@ import l2d.game.model.L2Skill.SkillType;
 import l2d.game.serverpackets.MagicSkillUse;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.SkillTable;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class L2CubicInstance
 {

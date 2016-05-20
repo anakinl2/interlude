@@ -3,7 +3,7 @@ package l2d.game.templates;
 import l2d.game.skills.Stats;
 import l2d.game.skills.funcs.FuncTemplate;
 import l2d.game.tables.SkillTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public final class L2Weapon extends L2Item
 {

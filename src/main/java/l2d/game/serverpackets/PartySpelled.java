@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Effect;
-import l2d.util.EffectsComparator;
+import com.lineage.util.EffectsComparator;
 
 public class PartySpelled extends L2GameServerPacket
 {

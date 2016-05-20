@@ -1,15 +1,15 @@
 package services;
 
-import l2d.Config;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.Msg;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.tables.ItemTable;
 import l2d.game.templates.L2Item;
-import l2d.util.HWID;
+import com.lineage.util.HWID;
 
 public class Window extends Functions implements ScriptFile
 {

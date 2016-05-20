@@ -1,9 +1,9 @@
 package commands.admin;
 
-import l2d.Config;
-import l2d.ext.scripts.ScriptFile;
-import l2d.ext.scripts.Scripts;
-import l2d.ext.scripts.Scripts.ScriptClassAndMethod;
+import com.lineage.Config;
+import com.lineage.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Scripts;
+import com.lineage.ext.scripts.Scripts.ScriptClassAndMethod;
 import l2d.game.Announcements;
 import l2d.game.TradeController;
 import l2d.game.handler.AdminCommandHandler;
@@ -23,8 +23,8 @@ import l2d.game.tables.SkillTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.tables.StaticObjectsTable;
 import l2d.game.tables.TerritoryTable;
-import l2d.util.Files;
-import l2d.util.Strings;
+import com.lineage.util.Files;
+import com.lineage.util.Strings;
 
 public class AdminReload implements IAdminCommandHandler, ScriptFile
 {

@@ -2,8 +2,8 @@ package l2d.game.model.instances;
 
 import java.util.StringTokenizer;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.model.L2Clan;
 import l2d.game.model.L2Player;
 import l2d.game.serverpackets.NpcHtmlMessage;

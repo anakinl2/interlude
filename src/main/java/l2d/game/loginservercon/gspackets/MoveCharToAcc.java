@@ -1,6 +1,6 @@
 package l2d.game.loginservercon.gspackets;
 
-import l2d.auth.gameservercon.lspackets.ServerBasePacket;
+import com.lineage.auth.gameservercon.lspackets.ServerBasePacket;
 
 /**
  * @Author: Abaddon

@@ -5,7 +5,7 @@ import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2Skill;
 import l2d.game.tables.SkillTable;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 /**
  * @author SYS

@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastSet;
-import l2d.Config;
+import com.lineage.Config;
 
 public final class DeadlockDetector extends Thread
 {

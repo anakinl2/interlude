@@ -13,7 +13,7 @@ import l2d.game.serverpackets.Die;
 import l2d.game.serverpackets.Revive;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.MapRegion;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class RequestRestartPoint extends L2GameClientPacket
 {

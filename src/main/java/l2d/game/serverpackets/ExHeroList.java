@@ -1,7 +1,6 @@
 package l2d.game.serverpackets;
 
 import java.util.Map;
-import java.util.Map.Entry;
 
 import javolution.util.FastMap;
 
@@ -9,7 +8,7 @@ import l2d.game.communitybbs.Manager.TopBBSManager.rankers;
 import l2d.game.model.entity.Hero;
 import l2d.game.model.entity.olympiad.Olympiad;
 import l2d.game.templates.StatsSet;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 /**
  * Format: (ch) d [SdSdSdd]

@@ -3,8 +3,8 @@ package l2d.game.clientpackets;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.ext.scripts.Functions;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.TradeController;
 import l2d.game.cache.Msg;
 import l2d.game.model.L2Character;
@@ -20,9 +20,9 @@ import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.serverpackets.ItemList;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
-import l2d.util.Files;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.util.Files;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 /**
  * format: cddb, b - array of (dd)

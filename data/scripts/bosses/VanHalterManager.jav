@@ -12,12 +12,12 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import FiltredPreparedStatement;
+import L2DatabaseFactory;
+import ThreadConnection;
+import Functions;
+import ScriptFile;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.clientpackets.Say2C;
@@ -36,8 +36,8 @@ import l2d.game.tables.NpcTable;
 import l2d.game.tables.SkillTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import Location;
+import Rnd;
 
 /**
  * TODO Остальсь немного.

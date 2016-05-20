@@ -1,7 +1,7 @@
 package services.NPCBuffer;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Effect;
 import l2d.game.model.L2Playable;
@@ -13,8 +13,8 @@ import l2d.game.serverpackets.PlaySound;
 import l2d.game.skills.Env;
 import l2d.game.skills.effects.EffectTemplate;
 import l2d.game.tables.SkillTable;
-import l2d.util.Files;
-import l2d.util.GArray;
+import com.lineage.util.Files;
+import com.lineage.util.GArray;
 
 public class buffflute extends Functions implements ScriptFile
 {

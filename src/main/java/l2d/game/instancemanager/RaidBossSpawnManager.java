@@ -13,13 +13,13 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.FiltredStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.db.mysql;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.FiltredStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.db.mysql;
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2Spawn;
 import l2d.game.model.instances.L2RaidBossInstance;
@@ -27,9 +27,9 @@ import l2d.game.model.instances.L2ReflectionBossInstance;
 import l2d.game.tables.GmListTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.templates.StatsSet;
-import l2d.util.Log;
-import l2d.util.PrintfFormat;
-import l2d.util.Util;
+import com.lineage.util.Log;
+import com.lineage.util.PrintfFormat;
+import com.lineage.util.Util;
 
 @SuppressWarnings({ "nls", "unqualified-field-access", "boxing" })
 public class RaidBossSpawnManager

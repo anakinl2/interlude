@@ -9,7 +9,7 @@ import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.model.instances.L2MonsterInstance;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.templates.StatsSet;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class Sweep extends L2Skill
 {

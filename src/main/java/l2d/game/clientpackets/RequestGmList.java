@@ -2,7 +2,7 @@ package l2d.game.clientpackets;
 
 import l2d.game.model.L2Player;
 import l2d.game.tables.GmListTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class RequestGmList extends L2GameClientPacket
 {

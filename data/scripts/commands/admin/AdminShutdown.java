@@ -3,8 +3,8 @@ package commands.admin;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import l2d.Config;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.GameTimeController;
 import l2d.game.Shutdown;
 import l2d.game.handler.AdminCommandHandler;

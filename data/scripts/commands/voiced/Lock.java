@@ -1,8 +1,8 @@
 package commands.voiced;
 
-import l2d.Config;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IVoicedCommandHandler;
 import l2d.game.handler.VoicedCommandHandler;
 import l2d.game.loginservercon.LSConnection;
@@ -10,7 +10,7 @@ import l2d.game.loginservercon.gspackets.LockAccountIP;
 import l2d.game.model.L2Object;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Files;
+import com.lineage.util.Files;
 
 public class Lock extends Functions implements IVoicedCommandHandler, ScriptFile
 {

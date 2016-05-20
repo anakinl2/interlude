@@ -2,7 +2,7 @@ package l2d.game;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 
 public class GCTask implements Runnable
 {

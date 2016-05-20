@@ -3,9 +3,9 @@ package actions;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import l2d.Config;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.InfoCache;
 import l2d.game.model.L2Effect;
 import l2d.game.model.L2Object;
@@ -22,9 +22,9 @@ import l2d.game.model.instances.L2SummonInstance;
 import l2d.game.model.quest.Quest;
 import l2d.game.model.quest.QuestEventType;
 import l2d.game.skills.Stats;
-import l2d.util.DropList;
-import l2d.util.Files;
-import l2d.util.Util;
+import com.lineage.util.DropList;
+import com.lineage.util.Files;
+import com.lineage.util.Util;
 
 public class OnActionShift extends Functions implements ScriptFile
 {

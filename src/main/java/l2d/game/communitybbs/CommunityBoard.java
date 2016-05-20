@@ -3,9 +3,9 @@ package l2d.game.communitybbs;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-import l2d.Config;
-import l2d.ext.mods.balancer.Balancer;
-import l2d.ext.scripts.Scripts;
+import com.lineage.Config;
+import com.lineage.ext.mods.balancer.Balancer;
+import com.lineage.ext.scripts.Scripts;
 import l2d.game.communitybbs.Manager.ClanBBSManager;
 import l2d.game.communitybbs.Manager.FriendsBBSManager;
 import l2d.game.communitybbs.Manager.MailBBSManager;

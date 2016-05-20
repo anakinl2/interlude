@@ -1,12 +1,12 @@
 package quests._1002_EntertoAntharas;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.model.L2Party;
 import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.model.quest.Quest;
 import l2d.game.model.quest.QuestState;
-import l2d.util.Location;
+import com.lineage.util.Location;
 import bosses.AntharasManager;
 
 public class _1002_EntertoAntharas extends Quest implements ScriptFile

@@ -2,9 +2,9 @@ package l2d.game.geodata;
 
 import java.util.ArrayList;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Object;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class PathFind
 {

@@ -1,6 +1,6 @@
 package l2d.game.clientpackets;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.cache.Msg;
 import l2d.game.instancemanager.CastleManager;
 import l2d.game.instancemanager.CastleManorManager;
@@ -13,8 +13,8 @@ import l2d.game.serverpackets.StatusUpdate;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
 import l2d.game.templates.L2Item;
-import l2d.util.Log;
-import l2d.util.Util;
+import com.lineage.util.Log;
+import com.lineage.util.Util;
 
 /**
  * Format: cdd[dd]

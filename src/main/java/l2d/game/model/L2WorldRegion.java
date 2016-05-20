@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import l2d.game.ai.DefaultAI;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.SpawnTable;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 /**
  * @author Diamond

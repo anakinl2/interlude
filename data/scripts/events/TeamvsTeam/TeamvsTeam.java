@@ -6,9 +6,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.concurrent.ScheduledFuture;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.clientpackets.Say2C;
 import l2d.game.instancemanager.TownManager;
 import l2d.game.instancemanager.ZoneManager;
@@ -28,10 +27,10 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.DoorTable;
 import l2d.game.tables.NpcTable;
 import l2d.game.tables.SpawnTable;
-import l2d.util.GArray;
-import l2d.util.GCSArray;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.GArray;
+import com.lineage.util.GCSArray;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 /**
  * 

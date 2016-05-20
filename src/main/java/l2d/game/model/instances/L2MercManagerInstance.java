@@ -3,7 +3,7 @@ package l2d.game.model.instances;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.TradeController;
 import l2d.game.model.L2Clan;
 import l2d.game.model.L2Player;

@@ -2,13 +2,13 @@ package commands.user;
 
 import java.text.SimpleDateFormat;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IUserCommandHandler;
 import l2d.game.handler.UserCommandHandler;
 import l2d.game.model.L2Player;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Files;
+import com.lineage.util.Files;
 
 /**
  * Support for commands:

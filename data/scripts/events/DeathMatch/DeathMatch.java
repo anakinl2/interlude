@@ -1,7 +1,7 @@
 package events.DeathMatch;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.ThreadPoolManager;
 import l2d.game.serverpackets.Revive;
@@ -16,9 +16,9 @@ import l2d.game.model.L2Zone;
 import static l2d.game.model.L2Zone.ZoneType.OlympiadStadia;
 import l2d.game.tables.DoorTable;
 import l2d.game.tables.SkillTable;
-import l2d.util.Rnd;
-import l2d.util.Location;
-import l2d.Config;
+import com.lineage.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.Config;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 

@@ -4,8 +4,8 @@ import l2d.game.ThreadPoolManager;
 import l2d.game.ai.DefaultAI;
 import l2d.game.model.L2Character;
 import l2d.game.serverpackets.MagicSkillUse;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 /**
  * Master Toma, телепортируется раз в 30 минут по 3м разным точкам гномьего острова.

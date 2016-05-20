@@ -3,9 +3,9 @@ package l2d.game.geodata;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import l2d.util.GArray;
-import l2d.util.Location;
-import l2d.util.StrTable;
+import com.lineage.util.GArray;
+import com.lineage.util.Location;
+import com.lineage.util.StrTable;
 
 public class PathFindBuffers
 {

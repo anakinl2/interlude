@@ -1,6 +1,6 @@
 package ai;
 
-import l2d.ext.listeners.L2ZoneEnterLeaveListener;
+import com.lineage.ext.listeners.L2ZoneEnterLeaveListener;
 import l2d.game.ai.Fighter;
 import l2d.game.instancemanager.ZoneManager;
 import l2d.game.model.L2Character;

@@ -9,7 +9,7 @@ import static l2d.game.ai.CtrlIntention.AI_INTENTION_PICK_UP;
 
 import java.util.concurrent.ScheduledFuture;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.cache.Msg;
 import l2d.game.geodata.GeoEngine;
@@ -22,7 +22,7 @@ import l2d.game.model.L2Skill;
 import l2d.game.model.L2Skill.NextAction;
 import l2d.game.model.L2Skill.SkillType;
 import l2d.game.serverpackets.MyTargetSelected;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class L2PlayableAI extends L2CharacterAI
 {

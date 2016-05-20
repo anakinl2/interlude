@@ -2,7 +2,7 @@ package l2d.game.serverpackets;
 
 import l2d.game.model.L2Player;
 import l2d.game.model.PcInventory;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 //dddddSddddQddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhddddddddddddddddddddffffddddSdddcccddhhddddccdccdddddddddd
 public class GMViewCharacterInfo extends L2GameServerPacket

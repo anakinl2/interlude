@@ -1,7 +1,7 @@
 package l2d.game.serverpackets;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Multisell.MultiSellListContainer;
 import l2d.game.model.base.MultiSellEntry;
 import l2d.game.model.base.MultiSellIngredient;

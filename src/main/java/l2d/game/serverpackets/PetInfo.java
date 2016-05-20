@@ -2,7 +2,7 @@ package l2d.game.serverpackets;
 
 import l2d.game.model.L2Summon;
 import l2d.game.tables.PetDataTable;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 /**
  * Дамп пакета с оффа, 828 протокол:

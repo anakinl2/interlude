@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.instancemanager.QuestManager;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2ShortCut;
@@ -25,7 +25,7 @@ import l2d.game.tables.SkillTreeTable;
 import l2d.game.templates.L2CharTemplate;
 import l2d.game.templates.L2Item;
 import l2d.game.templates.L2PlayerTemplate;
-import l2d.util.Util;
+import com.lineage.util.Util;
 
 /**
  * @author Felixx

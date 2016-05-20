@@ -1,7 +1,7 @@
 package l2d.game.serverpackets;
 
 import l2d.game.model.L2Character;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 /**
  * 0000: 01  7a 73 10 4c  b2 0b 00 00  a3 fc 00 00  e8 f1 ff    .zs.L...........

@@ -8,13 +8,13 @@ import static l2d.game.model.L2Zone.ZoneType.offshore;
 
 import java.sql.ResultSet;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.cache.Msg;
@@ -30,7 +30,7 @@ import l2d.game.serverpackets.MagicSkillUse;
 import l2d.game.serverpackets.SetupGauge;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.SkillTable;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class Wedding implements IVoicedCommandHandler, ScriptFile
 {

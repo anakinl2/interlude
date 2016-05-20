@@ -1,10 +1,10 @@
 package commands.admin;
 
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.cache.Msg;
 import l2d.game.handler.AdminCommandHandler;
@@ -19,10 +19,10 @@ import l2d.game.serverpackets.NpcHtmlMessage;
 import l2d.game.tables.NpcTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
-import l2d.util.Log;
-import l2d.util.Rnd;
-import l2d.util.Util;
+import com.lineage.util.Location;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
 
 public class AdminTeleport implements IAdminCommandHandler, ScriptFile
 {

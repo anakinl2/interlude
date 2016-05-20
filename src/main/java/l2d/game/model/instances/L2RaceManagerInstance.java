@@ -2,7 +2,7 @@ package l2d.game.model.instances;
 
 import java.util.ArrayList;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.ThreadPoolManager;
 import l2d.game.cache.Msg;
 import l2d.game.idfactory.IdFactory;
@@ -16,7 +16,7 @@ import l2d.game.serverpackets.NpcHtmlMessage;
 import l2d.game.serverpackets.PlaySound;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class L2RaceManagerInstance extends L2NpcInstance
 {

@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.instancemanager.CastleManager;
 import l2d.game.instancemanager.CastleManorManager;
 import l2d.game.instancemanager.CastleManorManager.CropProcure;

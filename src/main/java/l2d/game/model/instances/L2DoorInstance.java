@@ -3,8 +3,8 @@ package l2d.game.model.instances;
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.ext.scripts.Events;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Events;
 import l2d.game.ThreadPoolManager;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.ai.L2CharacterAI;

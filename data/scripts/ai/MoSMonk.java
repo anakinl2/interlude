@@ -1,11 +1,11 @@
 package ai;
 
 import static l2d.game.ai.CtrlIntention.AI_INTENTION_ACTIVE;
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.ai.Fighter;
 import l2d.game.model.L2Character;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 /**
  * AI монахов в Monastery of Silence<br>

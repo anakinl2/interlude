@@ -9,10 +9,10 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2Clan;
 import l2d.game.model.L2Party;
@@ -30,7 +30,7 @@ import l2d.game.serverpackets.Say2;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ClanTable;
 import l2d.game.templates.StatsSet;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 /**
  * Seven Signs Festival of Darkness Engine

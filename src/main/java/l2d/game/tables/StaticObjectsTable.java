@@ -13,7 +13,7 @@ import l2d.game.idfactory.IdFactory;
 import l2d.game.model.instances.L2StaticObjectInstance;
 import l2d.game.templates.L2NpcTemplate;
 import l2d.game.templates.StatsSet;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class StaticObjectsTable
 {

@@ -1,7 +1,7 @@
 package l2d.game.model.entity.SevenSignsFestival;
 
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class FestivalSpawn
 {

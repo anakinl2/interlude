@@ -3,8 +3,8 @@ package l2d.game.model.instances;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.ext.scripts.Events;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Events;
 import l2d.game.TradeController;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.model.L2Player;

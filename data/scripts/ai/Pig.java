@@ -4,7 +4,7 @@ import l2d.game.ai.Fighter;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.model.L2Character;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class Pig extends Fighter
 {

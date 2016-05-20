@@ -8,7 +8,7 @@ import l2d.game.model.L2TradeList;
 import l2d.game.serverpackets.SendTradeDone;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.GmListTable;
-import l2d.util.Log;
+import com.lineage.util.Log;
 
 public class TradeDone extends L2GameClientPacket
 {

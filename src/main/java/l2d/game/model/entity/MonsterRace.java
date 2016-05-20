@@ -6,7 +6,7 @@ import l2d.game.idfactory.IdFactory;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.NpcTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class MonsterRace
 {

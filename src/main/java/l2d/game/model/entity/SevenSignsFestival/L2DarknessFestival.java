@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2Spawn;
@@ -16,8 +16,8 @@ import l2d.game.serverpackets.MagicSkillUse;
 import l2d.game.serverpackets.Say2;
 import l2d.game.tables.NpcTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.GArray;
-import l2d.util.Rnd;
+import com.lineage.util.GArray;
+import com.lineage.util.Rnd;
 
 /**
  * Each running festival is represented by an L2DarknessFestival class.

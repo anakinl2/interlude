@@ -7,7 +7,7 @@ import l2d.game.model.L2Spawn;
 import l2d.game.model.instances.L2MonsterInstance;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.NpcTable;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class AngerOfSplendor extends Fighter
 {

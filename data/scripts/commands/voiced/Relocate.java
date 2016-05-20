@@ -1,8 +1,8 @@
 package commands.voiced;
 
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.handler.IVoicedCommandHandler;
 import l2d.game.handler.VoicedCommandHandler;

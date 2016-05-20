@@ -18,7 +18,7 @@ import l2d.game.tables.NpcTable;
 import l2d.game.tables.SkillTable;
 import l2d.game.templates.L2NpcTemplate;
 import l2d.game.templates.StatsSet;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class Summon extends L2Skill
 {

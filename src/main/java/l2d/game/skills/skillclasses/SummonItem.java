@@ -10,7 +10,7 @@ import l2d.game.model.instances.L2PetInstance;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
 import l2d.game.templates.StatsSet;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class SummonItem extends L2Skill
 {

@@ -2,7 +2,7 @@ package l2d.game.clientpackets;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Player;
 import l2d.game.model.TradeItem;
 import l2d.game.model.instances.L2ItemInstance;

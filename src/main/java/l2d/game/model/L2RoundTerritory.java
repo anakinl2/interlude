@@ -1,7 +1,7 @@
 package l2d.game.model;
 
-import l2d.util.Rnd;
-import l2d.util.Util;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
 
 /**
  * Создание "круглой" территории

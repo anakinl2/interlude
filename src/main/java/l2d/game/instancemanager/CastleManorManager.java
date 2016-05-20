@@ -5,11 +5,11 @@ import java.util.Calendar;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
 import l2d.game.ThreadPoolManager;
 import l2d.game.model.L2Clan;
 import l2d.game.model.L2Manor;
@@ -19,8 +19,8 @@ import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ClanTable;
 import l2d.game.tables.ItemTable;
-import l2d.util.Log;
-import l2d.util.Rnd;
+import com.lineage.util.Log;
+import com.lineage.util.Rnd;
 
 public class CastleManorManager
 {

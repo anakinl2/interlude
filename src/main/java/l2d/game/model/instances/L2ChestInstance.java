@@ -1,8 +1,8 @@
 package l2d.game.model.instances;
 
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.ai.CtrlEvent;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;
@@ -10,7 +10,7 @@ import l2d.game.model.L2Skill;
 import l2d.game.model.base.ItemToDrop;
 import l2d.game.tables.NpcTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class L2ChestInstance extends L2MonsterInstance
 {

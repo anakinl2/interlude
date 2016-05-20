@@ -5,7 +5,7 @@ import static l2d.game.ai.CtrlIntention.AI_INTENTION_ATTACK;
 import static l2d.game.ai.CtrlIntention.AI_INTENTION_CAST;
 import static l2d.game.ai.CtrlIntention.AI_INTENTION_FOLLOW;
 import static l2d.game.ai.CtrlIntention.AI_INTENTION_IDLE;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.ai.L2PlayableAI.nextAction;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Object;
@@ -13,7 +13,7 @@ import l2d.game.model.L2Playable;
 import l2d.game.model.L2Skill;
 import l2d.game.model.instances.L2BoatInstance;
 import l2d.game.serverpackets.Die;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class L2CharacterAI extends AbstractAI
 {

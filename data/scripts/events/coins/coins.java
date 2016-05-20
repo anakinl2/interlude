@@ -2,8 +2,8 @@ package events.coins;
 
 import java.util.ArrayList;
 
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Object;
@@ -11,8 +11,8 @@ import l2d.game.model.L2Playable;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2Spawn;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Files;
-import l2d.util.Rnd;
+import com.lineage.util.Files;
+import com.lineage.util.Rnd;
 import events.Helper;
 
 public class coins extends Functions implements ScriptFile

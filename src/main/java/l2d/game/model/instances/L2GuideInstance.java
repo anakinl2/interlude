@@ -2,8 +2,8 @@ package l2d.game.model.instances;
 
 import java.util.logging.Logger;
 
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.instancemanager.QuestManager;
 import l2d.game.model.L2Player;
 import l2d.game.model.quest.Quest;

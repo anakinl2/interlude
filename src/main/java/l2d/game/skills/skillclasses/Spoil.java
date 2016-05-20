@@ -1,8 +1,8 @@
 package l2d.game.skills.skillclasses;
 
 import javolution.util.FastList;
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.ai.CtrlEvent;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;
@@ -11,7 +11,7 @@ import l2d.game.model.instances.L2MonsterInstance;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.skills.Formulas;
 import l2d.game.templates.StatsSet;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class Spoil extends L2Skill
 {

@@ -1,6 +1,6 @@
 package l2d.game.model;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.serverpackets.NickNameChanged;
 import l2d.game.serverpackets.StatusUpdate;
 

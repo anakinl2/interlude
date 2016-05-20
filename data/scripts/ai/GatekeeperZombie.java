@@ -1,8 +1,8 @@
 package ai;
 
 import static l2d.game.ai.CtrlIntention.AI_INTENTION_ACTIVE;
-import l2d.Config;
-import l2d.ext.scripts.Functions;
+
+import com.lineage.ext.scripts.Functions;
 import l2d.game.ai.CtrlIntention;
 import l2d.game.ai.Mystic;
 import l2d.game.geodata.GeoEngine;

@@ -2,7 +2,7 @@ package l2d.game.serverpackets;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.templates.L2Item;
 

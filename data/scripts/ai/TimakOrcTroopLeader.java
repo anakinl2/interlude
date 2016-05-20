@@ -1,6 +1,6 @@
 package ai;
 
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.ai.CtrlEvent;
 import l2d.game.ai.Fighter;
 import l2d.game.geodata.GeoEngine;
@@ -8,8 +8,8 @@ import l2d.game.model.L2Character;
 import l2d.game.model.L2Spawn;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.NpcTable;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 /**
  * AI для Timak Orc Troop Leader ID: 20767, кричащего и призывающего братьев по клану при ударе.

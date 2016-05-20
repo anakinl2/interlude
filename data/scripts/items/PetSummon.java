@@ -2,8 +2,8 @@ package items;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ThreadPoolManager;
 import l2d.game.cache.Msg;
 import l2d.game.geodata.GeoEngine;

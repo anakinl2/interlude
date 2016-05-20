@@ -4,7 +4,7 @@ import l2d.game.geodata.GeoEngine;
 import l2d.game.model.L2Effect;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.skills.Env;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class EffectTurner extends L2Effect
 {

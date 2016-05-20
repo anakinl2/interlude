@@ -2,8 +2,8 @@ package l2d.game.model.instances;
 
 import java.util.Calendar;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.model.L2Party;
 import l2d.game.model.L2Player;
 import l2d.game.model.entity.SevenSigns;
@@ -12,7 +12,7 @@ import l2d.game.serverpackets.NpcHtmlMessage;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.templates.L2NpcTemplate;
 import l2d.game.templates.StatsSet;
-import l2d.util.GArray;
+import com.lineage.util.GArray;
 
 /**
  * Festival of Darkness Guide (Seven Signs)

@@ -2,9 +2,9 @@ package commands.admin;
 
 import java.util.StringTokenizer;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ThreadPoolManager;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
@@ -13,11 +13,10 @@ import l2d.game.loginservercon.gspackets.ChangeAccessLevel;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2World;
 import l2d.game.tables.ReflectionTable;
-import l2d.util.AutoBan;
-import l2d.util.GArray;
-import l2d.util.Location;
-import l2d.util.HWID;
-import l2d.util.GCSArray;
+import com.lineage.util.AutoBan;
+import com.lineage.util.GArray;
+import com.lineage.util.Location;
+import com.lineage.util.HWID;
 
 public class AdminBan implements IAdminCommandHandler, ScriptFile
 {

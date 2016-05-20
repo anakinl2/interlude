@@ -5,7 +5,7 @@ import l2d.game.model.L2Player;
 import l2d.game.model.instances.L2BoatInstance;
 import l2d.game.serverpackets.MoveToLocationInVehicle;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class RequestMoveToLocationInVehicle extends L2GameClientPacket
 {

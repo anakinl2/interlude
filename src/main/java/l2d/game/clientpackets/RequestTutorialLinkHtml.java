@@ -1,7 +1,7 @@
 package l2d.game.clientpackets;
 
-import l2d.ext.mods.ClassChange;
-import l2d.ext.mods.balancer.Balancer;
+import com.lineage.ext.mods.ClassChange;
+import com.lineage.ext.mods.balancer.Balancer;
 import l2d.game.model.L2Player;
 import l2d.game.serverpackets.TutorialCloseHtml;
 

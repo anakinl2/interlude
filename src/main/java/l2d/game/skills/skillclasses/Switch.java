@@ -6,8 +6,8 @@ import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;
 import l2d.game.model.L2Skill;
 import l2d.game.templates.StatsSet;
-import l2d.util.GArray;
-import l2d.util.Rnd;
+import com.lineage.util.GArray;
+import com.lineage.util.Rnd;
 
 /**
  * Switch Снимает таргет. Для использования требуется кинжал. От автора: в пве переключает моба на другого игрока поблизости \ снимает таргет если игрока поблизости нет, в пвп просто снимает таргет и

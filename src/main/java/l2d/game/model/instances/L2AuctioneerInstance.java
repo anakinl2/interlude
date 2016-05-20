@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.StringTokenizer;
 
 import javolution.util.FastMap;
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.instancemanager.AuctionManager;
 import l2d.game.instancemanager.ClanHallManager;
 import l2d.game.instancemanager.ServerVariables;

@@ -1,6 +1,6 @@
-import l2d.Config;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.cache.Msg;
 import l2d.game.geodata.GeoEngine;
 import l2d.game.instancemanager.TownManager;
@@ -14,7 +14,7 @@ import l2d.game.model.entity.SevenSigns;
 import l2d.game.model.entity.residence.Castle;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class Util extends Functions implements ScriptFile 
 {

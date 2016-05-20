@@ -1,7 +1,7 @@
 package l2d.game.clientpackets;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.instancemanager.CastleManager;
 import l2d.game.instancemanager.CastleManorManager;
 import l2d.game.instancemanager.CastleManorManager.SeedProduction;

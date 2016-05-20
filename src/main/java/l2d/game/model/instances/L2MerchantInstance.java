@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.TradeController;
 import l2d.game.communitybbs.Manager.TopBBSManager;
 import l2d.game.model.L2Multisell;

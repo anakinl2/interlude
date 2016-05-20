@@ -7,7 +7,7 @@ import javolution.util.FastMap;
 import l2d.game.model.L2Party;
 import l2d.game.model.L2Player;
 import l2d.game.network.L2GameClient;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class PartyMemberPosition extends L2GameServerPacket
 {

@@ -6,12 +6,12 @@ import java.util.HashMap;
 import java.util.Vector;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.db.DatabaseUtils;
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.L2DatabaseFactory;
-import l2d.db.ThreadConnection;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.db.DatabaseUtils;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.L2DatabaseFactory;
+import com.lineage.db.ThreadConnection;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.cache.Msg;
 import l2d.game.instancemanager.ZoneManager;
 import l2d.game.model.Inventory;
@@ -28,7 +28,7 @@ import l2d.game.serverpackets.RecipeShopItemInfo;
 import l2d.game.serverpackets.StatusUpdate;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class RecipeController
 {

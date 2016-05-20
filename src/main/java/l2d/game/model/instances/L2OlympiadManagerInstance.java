@@ -3,7 +3,7 @@ package l2d.game.model.instances;
 import java.util.List;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Multisell;
 import l2d.game.model.L2Player;
 import l2d.game.model.entity.Hero;

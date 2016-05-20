@@ -1,6 +1,6 @@
 package commands.admin;
 
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.clientpackets.Say2C;
 import l2d.game.handler.AdminCommandHandler;

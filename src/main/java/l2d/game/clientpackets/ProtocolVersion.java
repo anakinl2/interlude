@@ -2,13 +2,13 @@ package l2d.game.clientpackets;
 
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.network.L2GameClient;
 import l2d.game.serverpackets.KeyPacket;
 import l2d.game.serverpackets.SendStatus;
-import l2d.util.HWID;
-import l2d.util.Log;
-import l2d.util.Protection;
+import com.lineage.util.HWID;
+import com.lineage.util.Log;
+import com.lineage.util.Protection;
 
 public class ProtocolVersion extends L2GameClientPacket
 {

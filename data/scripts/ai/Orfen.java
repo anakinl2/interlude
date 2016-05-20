@@ -2,14 +2,14 @@ package ai;
 
 import npc.model.OrfenInstance;
 
-import l2d.ext.scripts.Functions;
+import com.lineage.ext.scripts.Functions;
 import l2d.game.ai.Fighter;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Skill;
 import l2d.game.model.L2Skill.SkillType;
-import l2d.util.Location;
-import l2d.util.PrintfFormat;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.PrintfFormat;
+import com.lineage.util.Rnd;
 
 public class Orfen extends Fighter
 {

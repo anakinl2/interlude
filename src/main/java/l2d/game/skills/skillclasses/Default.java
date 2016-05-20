@@ -1,7 +1,7 @@
 package l2d.game.skills.skillclasses;
 
 import javolution.util.FastList;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Skill;
 import l2d.game.templates.StatsSet;

@@ -1,18 +1,15 @@
 package commands.admin;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.AdminCommandHandler;
 import l2d.game.handler.IAdminCommandHandler;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Player;
-import l2d.game.model.L2Zone;
-import l2d.game.model.L2Zone.ZoneType;
 import l2d.game.serverpackets.MagicSkillUse;
 import l2d.game.serverpackets.PlaySound;
 import l2d.game.serverpackets.SystemMessage;
-import l2d.util.Util;
+import com.lineage.util.Util;
 import events.LastManStanding.Lms;
 import events.TeamvsTeam.TeamvsTeam;
 import events.korean.KoreanEvent;

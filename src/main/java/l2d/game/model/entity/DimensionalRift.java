@@ -5,7 +5,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import javolution.util.FastList;
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.instancemanager.DimensionalRiftManager;
 import l2d.game.instancemanager.DimensionalRiftManager.DimensionalRiftRoom;
@@ -17,8 +17,8 @@ import l2d.game.model.Reflection;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.model.quest.Quest;
 import l2d.game.model.quest.QuestState;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class DimensionalRift extends Reflection
 {

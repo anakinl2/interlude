@@ -3,7 +3,7 @@ package l2d.game.model;
 import java.lang.reflect.Constructor;
 import java.util.logging.Logger;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.L2Skill.SkillType;
 import l2d.game.serverpackets.AbnormalStatusUpdate;
 import l2d.game.serverpackets.ExOlympiadSpelledInfo;
@@ -72,7 +72,6 @@ import l2d.game.skills.effects.EffectUltimateDefense;
 import l2d.game.skills.effects.EffectUnAggro;
 import l2d.game.skills.funcs.Func;
 import l2d.game.skills.funcs.FuncTemplate;
-import l2d.game.tables.SkillTable;
 import l2d.game.taskmanager.EffectTaskManager;
 
 @SuppressWarnings("unchecked")

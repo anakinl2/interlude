@@ -1,6 +1,6 @@
 package l2d.game.serverpackets;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.instancemanager.CursedWeaponsManager;
 import l2d.game.instancemanager.PartyRoomManager;
 import l2d.game.model.Inventory;
@@ -9,7 +9,7 @@ import l2d.game.model.L2Skill;
 import l2d.game.model.PcInventory;
 import l2d.game.model.instances.L2CubicInstance;
 import l2d.game.tables.NpcTable;
-import l2d.util.Location;
+import com.lineage.util.Location;
 
 public class UserInfo extends L2GameServerPacket
 {

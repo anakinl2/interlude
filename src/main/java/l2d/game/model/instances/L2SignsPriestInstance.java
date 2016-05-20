@@ -3,8 +3,8 @@ package l2d.game.model.instances;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
 import l2d.game.cache.Msg;
 import l2d.game.model.L2Clan;
 import l2d.game.model.L2Player;
@@ -15,7 +15,7 @@ import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ClanTable;
 import l2d.game.tables.ItemTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Files;
+import com.lineage.util.Files;
 
 /**
  * Dawn/Dusk Seven Signs Priest Instance

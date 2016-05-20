@@ -1,6 +1,6 @@
 package l2d.game.model;
 
-import l2d.Config;
+import com.lineage.Config;
 import l2d.game.model.instances.L2ItemInstance;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.serverpackets.Earthquake;
@@ -9,8 +9,8 @@ import l2d.game.serverpackets.SkillList;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.ItemTable;
 import l2d.game.tables.SkillTable;
-import l2d.util.Location;
-import l2d.util.Rnd;
+import com.lineage.util.Location;
+import com.lineage.util.Rnd;
 
 public class CursedWeapon
 {

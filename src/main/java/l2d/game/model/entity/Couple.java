@@ -3,8 +3,8 @@ package l2d.game.model.entity;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-import l2d.db.FiltredPreparedStatement;
-import l2d.db.ThreadConnection;
+import com.lineage.db.FiltredPreparedStatement;
+import com.lineage.db.ThreadConnection;
 import l2d.game.idfactory.IdFactory;
 import l2d.game.instancemanager.CoupleManager;
 import l2d.game.model.L2Player;

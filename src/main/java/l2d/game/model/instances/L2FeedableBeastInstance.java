@@ -13,7 +13,7 @@ import l2d.game.serverpackets.Say2;
 import l2d.game.serverpackets.SocialAction;
 import l2d.game.tables.NpcTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class L2FeedableBeastInstance extends L2MonsterInstance
 {

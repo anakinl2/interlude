@@ -1,6 +1,6 @@
 package l2d.game.network;
 
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 /**
  * Blowfish keygen for GameServer client connections

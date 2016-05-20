@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import events.Helper;
-import l2d.Config;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.Announcements;
 import l2d.game.model.L2Character;
 import l2d.game.model.L2Object;
@@ -14,10 +14,10 @@ import l2d.game.model.L2Player;
 import l2d.game.model.L2Spawn;
 import l2d.game.model.instances.L2MonsterInstance;
 import l2d.game.model.instances.L2NpcInstance;
-import l2d.util.Files;
-import l2d.util.Rnd;
-import l2d.util.Util;
-import l2d.util.PrintfFormat;
+import com.lineage.util.Files;
+import com.lineage.util.Rnd;
+import com.lineage.util.Util;
+import com.lineage.util.PrintfFormat;
 
 public class heart extends Functions implements ScriptFile
 {

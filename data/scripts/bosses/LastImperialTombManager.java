@@ -5,9 +5,9 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
-import l2d.ext.listeners.L2ZoneEnterLeaveListener;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.ext.listeners.L2ZoneEnterLeaveListener;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.ThreadPoolManager;
 import l2d.game.clientpackets.Say2C;
 import l2d.game.instancemanager.ZoneManager;
@@ -23,7 +23,7 @@ import l2d.game.model.quest.QuestState;
 import l2d.game.serverpackets.Say2;
 import l2d.game.serverpackets.SystemMessage;
 import l2d.game.tables.DoorTable;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class LastImperialTombManager extends Functions implements ScriptFile
 {

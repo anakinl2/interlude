@@ -2,10 +2,10 @@ package events.bountyhunters;
 
 import java.util.ArrayList;
 
-import l2d.Config;
-import l2d.ext.multilang.CustomMessage;
-import l2d.ext.scripts.Functions;
-import l2d.ext.scripts.ScriptFile;
+import com.lineage.Config;
+import com.lineage.ext.multilang.CustomMessage;
+import com.lineage.ext.scripts.Functions;
+import com.lineage.ext.scripts.ScriptFile;
 import l2d.game.handler.IVoicedCommandHandler;
 import l2d.game.handler.VoicedCommandHandler;
 import l2d.game.model.L2Character;
@@ -18,7 +18,7 @@ import l2d.game.tables.ItemTable;
 import l2d.game.tables.NpcTable;
 import l2d.game.tables.SpawnTable;
 import l2d.game.templates.L2NpcTemplate;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class HuntersGuild extends Functions implements ScriptFile, IVoicedCommandHandler
 {

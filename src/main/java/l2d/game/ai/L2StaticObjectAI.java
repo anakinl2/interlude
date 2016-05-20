@@ -11,7 +11,7 @@ import l2d.game.model.instances.L2ArtefactInstance;
 import l2d.game.model.instances.L2DoorInstance;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.model.instances.L2SiegeGuardInstance;
-import l2d.util.Rnd;
+import com.lineage.util.Rnd;
 
 public class L2StaticObjectAI extends L2CharacterAI
 {

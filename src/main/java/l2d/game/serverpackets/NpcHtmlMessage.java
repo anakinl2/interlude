@@ -2,14 +2,14 @@ package l2d.game.serverpackets;
 
 import java.util.ArrayList;
 
-import l2d.ext.scripts.Scripts;
-import l2d.ext.scripts.Scripts.ScriptClassAndMethod;
+import com.lineage.ext.scripts.Scripts;
+import com.lineage.ext.scripts.Scripts.ScriptClassAndMethod;
 import l2d.game.model.L2Player;
 import l2d.game.model.entity.SevenSignsFestival.SevenSignsFestival;
 import l2d.game.model.instances.L2NpcInstance;
 import l2d.game.tables.EpicRespawnTimesHolder;
-import l2d.util.Files;
-import l2d.util.Strings;
+import com.lineage.util.Files;
+import com.lineage.util.Strings;
 
 /**
  * the HTML parser in the client knowns these standard and non-standard tags and attributes
