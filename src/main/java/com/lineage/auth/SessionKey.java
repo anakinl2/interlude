@@ -4,8 +4,8 @@ import com.lineage.Config;
 
 /**
  * <p>This class is used to represent session keys used by the client to authenticate in the gameserver</p>
- * <p>A SessionKey is made up of two 8 bytes keys. One is send in the {@link l2d.auth.serverpacket.LoginOk LoginOk}
- * packet and the other is sent in {@link l2d.auth.serverpacket.PlayOk PlayOk}</p>
+ * <p>A SessionKey is made up of two 8 bytes keys. One is send in the {@link com.lineage.auth.serverpackets.LoginOk LoginOk}
+ * packet and the other is sent in {@link com.lineage.auth.serverpackets.PlayOk PlayOk}</p>
  * @author -Wooden-
  *
  */
