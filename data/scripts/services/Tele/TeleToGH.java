@@ -6,15 +6,15 @@ import com.lineage.Config;
 import com.lineage.ext.listeners.L2ZoneEnterLeaveListener;
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.instancemanager.ZoneManager;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Spawn;
-import l2d.game.model.L2Zone;
-import l2d.game.model.L2Zone.ZoneType;
-import l2d.game.tables.NpcTable;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.instancemanager.ZoneManager;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Spawn;
+import com.lineage.game.model.L2Zone;
+import com.lineage.game.model.L2Zone.ZoneType;
+import com.lineage.game.tables.NpcTable;
+import com.lineage.game.templates.L2NpcTemplate;
 import com.lineage.util.Util;
 
 public class TeleToGH extends Functions implements ScriptFile

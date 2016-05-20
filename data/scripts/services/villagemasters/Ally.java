@@ -2,9 +2,9 @@ package services.villagemasters;
 
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2VillageMasterInstance;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2VillageMasterInstance;
 
 public class Ally extends Functions implements ScriptFile
 {

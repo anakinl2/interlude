@@ -2,10 +2,10 @@ package ai;
 
 import com.lineage.ext.listeners.DayNightChangeListener;
 import com.lineage.ext.listeners.PropertyCollection;
-import l2d.game.GameTimeController;
-import l2d.game.ai.Mystic;
-import l2d.game.model.L2Character;
-import l2d.game.model.instances.L2NpcInstance;
+import com.lineage.game.GameTimeController;
+import com.lineage.game.ai.Mystic;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.instances.L2NpcInstance;
 
 /**
  * АИ для мобов, меняющих агресивность в ночное время.<BR>

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.Announcements;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Spawn;
+import com.lineage.game.Announcements;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Spawn;
 import com.lineage.util.Files;
 import events.Helper;
 

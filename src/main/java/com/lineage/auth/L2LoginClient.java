@@ -14,7 +14,7 @@ import com.lineage.Config;
 import com.lineage.auth.serverpackets.L2LoginServerPacket;
 import com.lineage.ext.network.MMOClient;
 import com.lineage.ext.network.MMOConnection;
-import l2d.game.templates.StatsSet;
+import com.lineage.game.templates.StatsSet;
 
 /**
  * Represents a client connected into the LoginServer

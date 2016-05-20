@@ -2,12 +2,12 @@ package commands.admin;
 
 import com.lineage.Config;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
-import l2d.game.model.entity.olympiad.Olympiad;
-import l2d.game.model.entity.olympiad.OlympiadDatabase;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
+import com.lineage.game.model.entity.olympiad.Olympiad;
+import com.lineage.game.model.entity.olympiad.OlympiadDatabase;
 import com.lineage.util.Log;
 
 @SuppressWarnings("unused")

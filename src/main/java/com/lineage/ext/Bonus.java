@@ -8,7 +8,7 @@ import com.lineage.db.DatabaseUtils;
 import com.lineage.db.FiltredStatement;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.db.ThreadConnection;
-import l2d.game.model.L2Player;
+import com.lineage.game.model.L2Player;
 
 public class Bonus
 {

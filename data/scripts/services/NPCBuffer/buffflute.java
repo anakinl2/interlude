@@ -2,17 +2,17 @@ package services.NPCBuffer;
 
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Effect;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Skill;
-import l2d.game.model.L2Zone.ZoneType;
-import l2d.game.serverpackets.MagicSkillUse;
-import l2d.game.serverpackets.PlaySound;
-import l2d.game.skills.Env;
-import l2d.game.skills.effects.EffectTemplate;
-import l2d.game.tables.SkillTable;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Effect;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.L2Zone.ZoneType;
+import com.lineage.game.serverpackets.MagicSkillUse;
+import com.lineage.game.serverpackets.PlaySound;
+import com.lineage.game.skills.Env;
+import com.lineage.game.skills.effects.EffectTemplate;
+import com.lineage.game.tables.SkillTable;
 import com.lineage.util.Files;
 import com.lineage.util.GArray;
 

@@ -8,7 +8,7 @@ import java.util.logging.LogManager;
 
 import com.lineage.auth.L2LoginServer;
 import com.lineage.db.L2DatabaseFactory;
-import l2d.game.GameServer;
+import com.lineage.game.GameServer;
 import com.lineage.status.Status;
 
 /**

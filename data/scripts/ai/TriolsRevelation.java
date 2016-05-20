@@ -1,11 +1,11 @@
 package ai;
 
-import static l2d.game.ai.CtrlIntention.AI_INTENTION_ACTIVE;
-import l2d.game.ai.CtrlIntention;
-import l2d.game.ai.Mystic;
-import l2d.game.geodata.GeoEngine;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Playable;
+import static com.lineage.game.ai.CtrlIntention.AI_INTENTION_ACTIVE;
+import com.lineage.game.ai.CtrlIntention;
+import com.lineage.game.ai.Mystic;
+import com.lineage.game.geodata.GeoEngine;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Playable;
 
 /**
  * AI Triols Revelation в Pagan Temple.

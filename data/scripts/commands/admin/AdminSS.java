@@ -3,10 +3,10 @@ package commands.admin;
 import java.util.StringTokenizer;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.model.entity.SevenSigns;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.entity.SevenSigns;
 
 @SuppressWarnings("unused")
 public class AdminSS implements IAdminCommandHandler, ScriptFile

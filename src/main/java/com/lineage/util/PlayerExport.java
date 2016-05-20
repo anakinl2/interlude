@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.lineage.db.mysql;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
 
 public abstract class PlayerExport
 {

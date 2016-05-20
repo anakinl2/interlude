@@ -4,10 +4,10 @@ import java.util.HashMap;
 
 import javolution.util.FastMap;
 
-import l2d.game.ai.DefaultAI;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Skill;
-import l2d.game.model.instances.L2NpcInstance;
+import com.lineage.game.ai.DefaultAI;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.instances.L2NpcInstance;
 import com.lineage.util.Rnd;
 import bosses.BaiumManager;
 

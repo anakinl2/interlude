@@ -4,24 +4,24 @@ import java.util.logging.Logger;
 
 import com.lineage.Config;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.ThreadPoolManager;
-import l2d.game.cache.Msg;
-import l2d.game.geodata.GeoEngine;
-import l2d.game.handler.IItemHandler;
-import l2d.game.handler.ItemHandler;
-import l2d.game.instancemanager.SiegeManager;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Skill;
-import l2d.game.model.L2World;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.model.instances.L2PetInstance;
-import l2d.game.serverpackets.MagicSkillLaunched;
-import l2d.game.serverpackets.SystemMessage;
-import l2d.game.tables.NpcTable;
-import l2d.game.tables.PetDataTable;
-import l2d.game.tables.SkillTable;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.ThreadPoolManager;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.geodata.GeoEngine;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.handler.ItemHandler;
+import com.lineage.game.instancemanager.SiegeManager;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.L2World;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.model.instances.L2PetInstance;
+import com.lineage.game.serverpackets.MagicSkillLaunched;
+import com.lineage.game.serverpackets.SystemMessage;
+import com.lineage.game.tables.NpcTable;
+import com.lineage.game.tables.PetDataTable;
+import com.lineage.game.tables.SkillTable;
+import com.lineage.game.templates.L2NpcTemplate;
 
 public class PetSummon implements IItemHandler, ScriptFile
 {

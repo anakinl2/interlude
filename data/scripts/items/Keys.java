@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 import com.lineage.ext.multilang.CustomMessage;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.handler.IItemHandler;
-import l2d.game.handler.ItemHandler;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2DoorInstance;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.serverpackets.SystemMessage;
-import l2d.game.tables.DoorTable;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.handler.ItemHandler;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2DoorInstance;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.serverpackets.SystemMessage;
+import com.lineage.game.tables.DoorTable;
 
 public class Keys implements IItemHandler, ScriptFile
 {

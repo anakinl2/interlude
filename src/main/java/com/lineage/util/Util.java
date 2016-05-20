@@ -20,10 +20,10 @@ import com.lineage.db.DatabaseUtils;
 import com.lineage.db.FiltredPreparedStatement;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.db.ThreadConnection;
-import l2d.game.ThreadPoolManager;
-import l2d.game.model.L2Drop;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
+import com.lineage.game.ThreadPoolManager;
+import com.lineage.game.model.L2Drop;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
 
 public class Util
 {

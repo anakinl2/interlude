@@ -16,7 +16,7 @@ import com.lineage.auth.gameservercon.lspackets.KickPlayer;
 import com.lineage.auth.gameservercon.lspackets.ServerBasePacket;
 import javolution.util.FastList;
 import com.lineage.auth.gameservercon.gspackets.ClientBasePacket;
-import l2d.game.ThreadPoolManager;
+import com.lineage.game.ThreadPoolManager;
 import com.lineage.util.Util;
 
 /**

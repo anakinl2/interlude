@@ -1,10 +1,10 @@
 package com.lineage.debug;
 
 import com.lineage.ext.listeners.StatsChangeListener;
-import l2d.game.model.L2Player;
-import l2d.game.skills.Env;
-import l2d.game.skills.Stats;
-import l2d.game.skills.funcs.Func;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.skills.Env;
+import com.lineage.game.skills.Stats;
+import com.lineage.game.skills.funcs.Func;
 import com.lineage.util.Log;
 
 public class StatsLimitDebugger extends StatsChangeListener

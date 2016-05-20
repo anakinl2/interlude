@@ -9,16 +9,16 @@ import java.util.Calendar;
 import java.util.Date;
 
 import com.lineage.Config;
-import l2d.game.GameTimeController;
-import l2d.game.Shutdown;
-import l2d.game.idfactory.IdFactory;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
-import l2d.game.model.instances.L2DoorInstance;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.model.instances.L2MonsterInstance;
-import l2d.game.tables.GmListTable;
+import com.lineage.game.GameTimeController;
+import com.lineage.game.Shutdown;
+import com.lineage.game.idfactory.IdFactory;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
+import com.lineage.game.model.instances.L2DoorInstance;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.model.instances.L2MonsterInstance;
+import com.lineage.game.tables.GmListTable;
 import com.lineage.util.GsaTr;
 import com.lineage.util.Util;
 

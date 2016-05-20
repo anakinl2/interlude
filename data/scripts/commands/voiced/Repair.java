@@ -5,10 +5,10 @@ import java.util.Map.Entry;
 import com.lineage.db.mysql;
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.IVoicedCommandHandler;
-import l2d.game.handler.VoicedCommandHandler;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
+import com.lineage.game.handler.IVoicedCommandHandler;
+import com.lineage.game.handler.VoicedCommandHandler;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
 
 public class Repair extends Functions implements IVoicedCommandHandler, ScriptFile
 {

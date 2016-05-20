@@ -1,7 +1,7 @@
 package com.lineage.debug.benchmark;
 
 import com.lineage.Config;
-import l2d.game.geodata.GeoEngine;
+import com.lineage.game.geodata.GeoEngine;
 
 public class GeoMatchesGenerator
 {

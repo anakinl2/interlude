@@ -10,7 +10,7 @@ import com.lineage.auth.gameservercon.GameServerInfo;
 import com.lineage.auth.gameservercon.lspackets.AuthResponse;
 import com.lineage.auth.gameservercon.lspackets.BanIPList;
 import com.lineage.auth.gameservercon.lspackets.LoginServerFail;
-import l2d.game.loginservercon.AdvIP;
+import com.lineage.game.loginservercon.AdvIP;
 
 /**
  * Format: cccddbd(sss)

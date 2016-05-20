@@ -3,14 +3,14 @@ package ai;
 import com.lineage.ext.listeners.DayNightChangeListener;
 import com.lineage.ext.listeners.L2ZoneEnterLeaveListener;
 import com.lineage.ext.listeners.PropertyCollection;
-import l2d.game.GameTimeController;
-import l2d.game.ai.Fighter;
-import l2d.game.instancemanager.ZoneManager;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Zone;
-import l2d.game.model.L2Zone.ZoneType;
-import l2d.game.model.instances.L2NpcInstance;
+import com.lineage.game.GameTimeController;
+import com.lineage.game.ai.Fighter;
+import com.lineage.game.instancemanager.ZoneManager;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Zone;
+import com.lineage.game.model.L2Zone.ZoneType;
+import com.lineage.game.model.instances.L2NpcInstance;
 
 /**
  * Индивидуальное АИ эпик боса Zaken.<BR> - неуязвим ночью<BR> - получает 25% пенальти на регены солнечной комнате - зона zaken_sunlight_room, id: 1335

@@ -1,11 +1,11 @@
 package quests._1003_EntertoValakas;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.model.L2Party;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.model.quest.Quest;
-import l2d.game.model.quest.QuestState;
+import com.lineage.game.model.L2Party;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.model.quest.Quest;
+import com.lineage.game.model.quest.QuestState;
 import com.lineage.util.Location;
 import bosses.ValakasManager;
 

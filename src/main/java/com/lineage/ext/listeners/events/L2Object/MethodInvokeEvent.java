@@ -1,7 +1,7 @@
 package com.lineage.ext.listeners.events.L2Object;
 
 import com.lineage.ext.listeners.events.DefaultMethodInvokeEvent;
-import l2d.game.model.L2Object;
+import com.lineage.game.model.L2Object;
 
 /**
  * @author Death

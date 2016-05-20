@@ -2,13 +2,13 @@ package ai;
 
 import java.util.ArrayList;
 
-import l2d.game.ai.CtrlIntention;
-import l2d.game.ai.Fighter;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.model.quest.QuestEventType;
-import l2d.game.model.quest.QuestState;
+import com.lineage.game.ai.CtrlIntention;
+import com.lineage.game.ai.Fighter;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.model.quest.QuestEventType;
+import com.lineage.game.model.quest.QuestState;
 
 /**
  * Квестовый NPC, атакующий мобов. Игнорирует игроков.

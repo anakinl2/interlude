@@ -1,23 +1,23 @@
 package items;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.handler.IItemHandler;
-import l2d.game.handler.ItemHandler;
-import l2d.game.instancemanager.CastleManager;
-import l2d.game.instancemanager.TownManager;
-import l2d.game.model.L2Manor;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Skill;
-import l2d.game.model.L2Skill.NextAction;
-import l2d.game.model.entity.residence.Residence;
-import l2d.game.model.instances.L2ChestInstance;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.model.instances.L2MinionInstance;
-import l2d.game.model.instances.L2MonsterInstance;
-import l2d.game.model.instances.L2RaidBossInstance;
-import l2d.game.tables.SkillTable;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.handler.ItemHandler;
+import com.lineage.game.instancemanager.CastleManager;
+import com.lineage.game.instancemanager.TownManager;
+import com.lineage.game.model.L2Manor;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.L2Skill.NextAction;
+import com.lineage.game.model.entity.residence.Residence;
+import com.lineage.game.model.instances.L2ChestInstance;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.model.instances.L2MinionInstance;
+import com.lineage.game.model.instances.L2MonsterInstance;
+import com.lineage.game.model.instances.L2RaidBossInstance;
+import com.lineage.game.tables.SkillTable;
 
 public class Seed implements IItemHandler, ScriptFile
 {

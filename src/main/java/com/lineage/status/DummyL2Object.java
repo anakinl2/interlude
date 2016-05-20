@@ -1,7 +1,7 @@
 package com.lineage.status;
 
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Object;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Object;
 
 public class DummyL2Object extends L2Object
 {

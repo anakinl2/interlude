@@ -8,14 +8,14 @@ import com.lineage.Config;
 import com.lineage.status.GameStatusThread;
 import com.lineage.ext.scripts.Scripts;
 import com.lineage.ext.scripts.Scripts.ScriptClassAndMethod;
-import l2d.game.Shutdown;
-import l2d.game.loginservercon.LSConnection;
-import l2d.game.model.L2Multisell;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.tables.NpcTable;
-import l2d.game.tables.SkillTable;
+import com.lineage.game.Shutdown;
+import com.lineage.game.loginservercon.LSConnection;
+import com.lineage.game.model.L2Multisell;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.tables.NpcTable;
+import com.lineage.game.tables.SkillTable;
 import com.lineage.util.GsaTr;
 
 public class HandlerWorld

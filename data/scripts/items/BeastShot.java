@@ -1,14 +1,14 @@
 package items;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.IItemHandler;
-import l2d.game.handler.ItemHandler;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Summon;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.serverpackets.MagicSkillUse;
-import l2d.game.serverpackets.SystemMessage;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.handler.ItemHandler;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Summon;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.serverpackets.MagicSkillUse;
+import com.lineage.game.serverpackets.SystemMessage;
 
 public class BeastShot implements IItemHandler, ScriptFile
 {

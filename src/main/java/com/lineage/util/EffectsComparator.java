@@ -2,7 +2,7 @@ package com.lineage.util;
 
 import java.util.Comparator;
 
-import l2d.game.model.L2Effect;
+import com.lineage.game.model.L2Effect;
 
 public class EffectsComparator implements Comparator<L2Effect>
 {

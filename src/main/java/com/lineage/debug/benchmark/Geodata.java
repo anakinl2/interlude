@@ -1,6 +1,6 @@
 package com.lineage.debug.benchmark;
 
-import l2d.game.geodata.GeoEngine;
+import com.lineage.game.geodata.GeoEngine;
 
 public class Geodata
 {

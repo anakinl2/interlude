@@ -1,19 +1,19 @@
 import com.lineage.Config;
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.geodata.GeoEngine;
-import l2d.game.instancemanager.TownManager;
-import l2d.game.instancemanager.ZoneManager;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
-import l2d.game.model.L2Zone;
-import l2d.game.model.L2Zone.ZoneType;
-import l2d.game.model.entity.SevenSigns;
-import l2d.game.model.entity.residence.Castle;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.serverpackets.SystemMessage;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.geodata.GeoEngine;
+import com.lineage.game.instancemanager.TownManager;
+import com.lineage.game.instancemanager.ZoneManager;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
+import com.lineage.game.model.L2Zone;
+import com.lineage.game.model.L2Zone.ZoneType;
+import com.lineage.game.model.entity.SevenSigns;
+import com.lineage.game.model.entity.residence.Castle;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.serverpackets.SystemMessage;
 import com.lineage.util.Location;
 
 public class Util extends Functions implements ScriptFile 

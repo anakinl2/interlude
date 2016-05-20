@@ -2,12 +2,12 @@ package services.villagemasters;
 
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.base.ClassId;
-import l2d.game.model.base.Race;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.model.instances.L2VillageMasterInstance;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.base.ClassId;
+import com.lineage.game.model.base.Race;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.model.instances.L2VillageMasterInstance;
 
 public class Occupation extends Functions implements ScriptFile
 {

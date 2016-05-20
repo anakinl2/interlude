@@ -1,14 +1,14 @@
 package ai;
 
 import com.lineage.ext.listeners.L2ZoneEnterLeaveListener;
-import l2d.game.ai.Fighter;
-import l2d.game.instancemanager.ZoneManager;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Zone;
-import l2d.game.model.L2Zone.ZoneType;
-import l2d.game.model.instances.L2NpcInstance;
+import com.lineage.game.ai.Fighter;
+import com.lineage.game.instancemanager.ZoneManager;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Zone;
+import com.lineage.game.model.L2Zone.ZoneType;
+import com.lineage.game.model.instances.L2NpcInstance;
 
 /**
  * @author PaInKiLlEr

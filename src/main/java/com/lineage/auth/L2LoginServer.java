@@ -6,7 +6,7 @@ import com.lineage.auth.gameservercon.GSConnection;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.ext.network.SelectorConfig;
 import com.lineage.ext.network.SelectorThread;
-import l2d.game.GameServer;
+import com.lineage.game.GameServer;
 import com.lineage.status.Status;
 import com.lineage.util.Log;
 import org.slf4j.LoggerFactory;

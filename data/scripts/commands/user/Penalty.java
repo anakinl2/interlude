@@ -4,10 +4,10 @@ import java.text.SimpleDateFormat;
 
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.IUserCommandHandler;
-import l2d.game.handler.UserCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.serverpackets.SystemMessage;
+import com.lineage.game.handler.IUserCommandHandler;
+import com.lineage.game.handler.UserCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.serverpackets.SystemMessage;
 import com.lineage.util.Files;
 
 /**

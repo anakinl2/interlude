@@ -1,11 +1,11 @@
 package com.lineage;
 
 import javolution.util.FastList;
-import l2d.game.geodata.PathFindBuffers;
-import l2d.game.loginservercon.AdvIP;
-import l2d.game.model.L2Player;
-import l2d.game.model.base.Experience;
-import l2d.game.model.base.PlayerAccess;
+import com.lineage.game.geodata.PathFindBuffers;
+import com.lineage.game.loginservercon.AdvIP;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.base.Experience;
+import com.lineage.game.model.base.PlayerAccess;
 import com.lineage.util.NetList;
 import com.lineage.util.Util;
 import org.w3c.dom.Document;
@@ -18,7 +18,7 @@ import java.math.BigInteger;
 import java.util.*;
 import java.util.logging.Logger;
 
-import static l2d.game.model.L2Zone.ZoneType.peace_zone;
+import static com.lineage.game.model.L2Zone.ZoneType.peace_zone;
 
 public class Config {
     protected static Logger _log = Logger.getLogger(Config.class.getName());

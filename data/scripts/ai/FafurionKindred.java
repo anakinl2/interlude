@@ -1,12 +1,12 @@
 package ai;
 
 import com.lineage.Config;
-import l2d.game.ThreadPoolManager;
-import l2d.game.ai.Fighter;
-import l2d.game.model.L2Character;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.tables.ItemTable;
+import com.lineage.game.ThreadPoolManager;
+import com.lineage.game.ai.Fighter;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.tables.ItemTable;
 import com.lineage.util.Location;
 import com.lineage.util.Rnd;
 

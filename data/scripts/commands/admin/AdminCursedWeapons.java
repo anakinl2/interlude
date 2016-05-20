@@ -1,14 +1,14 @@
 package commands.admin;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.instancemanager.CursedWeaponsManager;
-import l2d.game.model.CursedWeapon;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.tables.ItemTable;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.instancemanager.CursedWeaponsManager;
+import com.lineage.game.model.CursedWeapon;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.tables.ItemTable;
 
 public class AdminCursedWeapons implements IAdminCommandHandler, ScriptFile
 {

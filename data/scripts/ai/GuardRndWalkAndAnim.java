@@ -1,7 +1,7 @@
 package ai;
 
-import l2d.game.ai.Guard;
-import l2d.game.model.L2Character;
+import com.lineage.game.ai.Guard;
+import com.lineage.game.model.L2Character;
 
 public class GuardRndWalkAndAnim extends Guard
 {

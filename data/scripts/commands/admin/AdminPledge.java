@@ -7,18 +7,18 @@ import com.lineage.db.FiltredPreparedStatement;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.db.ThreadConnection;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.instancemanager.CastleSiegeManager;
-import l2d.game.instancemanager.SiegeManager;
-import l2d.game.model.L2Clan;
-import l2d.game.model.L2Player;
-import l2d.game.serverpackets.PledgeShowInfoUpdate;
-import l2d.game.serverpackets.PledgeStatusChanged;
-import l2d.game.serverpackets.SystemMessage;
-import l2d.game.serverpackets.UserInfo;
-import l2d.game.tables.ClanTable;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.instancemanager.CastleSiegeManager;
+import com.lineage.game.instancemanager.SiegeManager;
+import com.lineage.game.model.L2Clan;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.serverpackets.PledgeShowInfoUpdate;
+import com.lineage.game.serverpackets.PledgeStatusChanged;
+import com.lineage.game.serverpackets.SystemMessage;
+import com.lineage.game.serverpackets.UserInfo;
+import com.lineage.game.tables.ClanTable;
 
 /**
  * Pledge Manipulation //pledge <create|dismiss|setlevel|resetcreate|resetwait|addrep>

@@ -1,13 +1,13 @@
 package ai;
 
 import com.lineage.ext.scripts.Functions;
-import l2d.game.ai.CtrlEvent;
-import l2d.game.ai.Fighter;
-import l2d.game.geodata.GeoEngine;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Spawn;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.tables.NpcTable;
+import com.lineage.game.ai.CtrlEvent;
+import com.lineage.game.ai.Fighter;
+import com.lineage.game.geodata.GeoEngine;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Spawn;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.tables.NpcTable;
 import com.lineage.util.Location;
 import com.lineage.util.Rnd;
 

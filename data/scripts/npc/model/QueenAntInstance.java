@@ -3,14 +3,14 @@ package npc.model;
 import java.util.ArrayList;
 
 import events.Helper;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Spawn;
-import l2d.game.model.instances.L2BossInstance;
-import l2d.game.model.instances.L2MinionInstance;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.serverpackets.PlaySound;
-import l2d.game.tables.NpcTable;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Spawn;
+import com.lineage.game.model.instances.L2BossInstance;
+import com.lineage.game.model.instances.L2MinionInstance;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.serverpackets.PlaySound;
+import com.lineage.game.tables.NpcTable;
+import com.lineage.game.templates.L2NpcTemplate;
 import com.lineage.util.Location;
 import com.lineage.util.Rnd;
 

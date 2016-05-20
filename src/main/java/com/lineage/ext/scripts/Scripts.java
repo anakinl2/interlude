@@ -11,11 +11,11 @@ import java.util.logging.Logger;
 import com.lineage.Config;
 import com.lineage.ext.scripts.jarloader.JarClassLoader;
 import com.lineage.ext.scripts.Compiler.MemoryClassLoader;
-import l2d.game.GameServer;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.instancemanager.QuestManager;
-import l2d.game.model.L2Object;
-import l2d.game.model.quest.Quest;
+import com.lineage.game.GameServer;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.instancemanager.QuestManager;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.quest.Quest;
 
 public class Scripts
 {

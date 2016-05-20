@@ -2,8 +2,8 @@ package services;
 
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
 import com.lineage.util.Files;
 import com.lineage.util.GArray;
 import com.lineage.util.Location;

@@ -2,8 +2,8 @@ package com.lineage.ext.listeners;
 
 import com.lineage.ext.listeners.events.MethodEvent;
 import com.lineage.ext.listeners.events.AbstractAI.AbstractAINotifyEvent;
-import l2d.game.ai.AbstractAI;
-import l2d.game.ai.CtrlEvent;
+import com.lineage.game.ai.AbstractAI;
+import com.lineage.game.ai.CtrlEvent;
 
 /**
  * @Author: Diamond

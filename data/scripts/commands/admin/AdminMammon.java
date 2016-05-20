@@ -3,13 +3,13 @@ package commands.admin;
 import java.util.ArrayList;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.serverpackets.SystemMessage;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.serverpackets.SystemMessage;
 
 @SuppressWarnings("unused")
 public class AdminMammon implements IAdminCommandHandler, ScriptFile

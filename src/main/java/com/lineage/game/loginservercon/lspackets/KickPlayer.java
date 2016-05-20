@@ -1,0 +1,17 @@
+package com.lineage.game.loginservercon.lspackets;
+
+import com.lineage.game.loginservercon.AttLS;
+
+public class KickPlayer extends LoginServerBasePacket
+{
+	public KickPlayer(byte[] decrypt, AttLS loginserver)
+	{
+		super(decrypt, loginserver);
+	}
+
+	@Override
+	public void read()
+	{
+		getLoginServer().getCon().kickAccountInGame(readS());
+	}
+}

@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.logging.Logger;
 
 import com.lineage.Config;
-import l2d.game.model.L2Player;
+import com.lineage.game.model.L2Player;
 
 public class Files
 {

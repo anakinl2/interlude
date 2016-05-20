@@ -1,19 +1,19 @@
 package events.christmas;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.ThreadPoolManager;
-import l2d.game.handler.IItemHandler;
-import l2d.game.handler.ItemHandler;
-import l2d.game.idfactory.IdFactory;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Spawn;
-import l2d.game.model.L2World;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.serverpackets.SystemMessage;
-import l2d.game.tables.NpcTable;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.ThreadPoolManager;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.handler.ItemHandler;
+import com.lineage.game.idfactory.IdFactory;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Spawn;
+import com.lineage.game.model.L2World;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.serverpackets.SystemMessage;
+import com.lineage.game.tables.NpcTable;
+import com.lineage.game.templates.L2NpcTemplate;
 
 public class Seed implements IItemHandler, ScriptFile
 {

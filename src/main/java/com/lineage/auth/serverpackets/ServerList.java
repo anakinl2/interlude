@@ -9,7 +9,7 @@ import com.lineage.auth.gameservercon.gspackets.ServerStatus;
 import javolution.util.FastList;
 import com.lineage.auth.L2LoginClient;
 import com.lineage.auth.gameservercon.GameServerInfo;
-import l2d.game.loginservercon.AdvIP;
+import com.lineage.game.loginservercon.AdvIP;
 import com.lineage.util.Util;
 
 /**

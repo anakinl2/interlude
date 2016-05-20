@@ -3,11 +3,11 @@ package com.lineage.util;
 import java.util.List;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import l2d.game.idfactory.IdFactory;
-import l2d.game.model.L2MinionData;
-import l2d.game.model.instances.L2MinionInstance;
-import l2d.game.model.instances.L2MonsterInstance;
-import l2d.game.tables.NpcTable;
+import com.lineage.game.idfactory.IdFactory;
+import com.lineage.game.model.L2MinionData;
+import com.lineage.game.model.instances.L2MinionInstance;
+import com.lineage.game.model.instances.L2MonsterInstance;
+import com.lineage.game.tables.NpcTable;
 
 public class MinionList
 {

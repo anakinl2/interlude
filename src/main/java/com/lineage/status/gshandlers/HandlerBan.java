@@ -5,11 +5,11 @@ import java.net.Socket;
 
 import javolution.util.FastList;
 import com.lineage.Config;
-import l2d.game.loginservercon.LSConnection;
-import l2d.game.loginservercon.gspackets.BanIP;
-import l2d.game.loginservercon.gspackets.UnbanIP;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
+import com.lineage.game.loginservercon.LSConnection;
+import com.lineage.game.loginservercon.gspackets.BanIP;
+import com.lineage.game.loginservercon.gspackets.UnbanIP;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
 import com.lineage.util.BannedIp;
 import com.lineage.util.HWID;
 

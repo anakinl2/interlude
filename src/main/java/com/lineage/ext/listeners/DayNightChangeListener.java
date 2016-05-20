@@ -1,7 +1,7 @@
 package com.lineage.ext.listeners;
 
 import com.lineage.ext.listeners.events.PropertyEvent;
-import l2d.game.GameTimeController;
+import com.lineage.game.GameTimeController;
 
 /**
  * @Author: Death

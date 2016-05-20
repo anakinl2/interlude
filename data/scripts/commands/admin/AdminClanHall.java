@@ -3,18 +3,18 @@ package commands.admin;
 import java.util.logging.Logger;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.instancemanager.AuctionManager;
-import l2d.game.instancemanager.ClanHallManager;
-import l2d.game.model.L2Clan;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Zone;
-import l2d.game.model.entity.residence.ClanHall;
-import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.game.tables.ClanTable;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.instancemanager.AuctionManager;
+import com.lineage.game.instancemanager.ClanHallManager;
+import com.lineage.game.model.L2Clan;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Zone;
+import com.lineage.game.model.entity.residence.ClanHall;
+import com.lineage.game.serverpackets.NpcHtmlMessage;
+import com.lineage.game.tables.ClanTable;
 
 public class AdminClanHall implements IAdminCommandHandler, ScriptFile
 {

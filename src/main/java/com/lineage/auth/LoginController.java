@@ -30,7 +30,7 @@ import com.lineage.db.FiltredPreparedStatement;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.db.ThreadConnection;
 import com.lineage.db.mysql;
-import l2d.game.templates.StatsSet;
+import com.lineage.game.templates.StatsSet;
 import com.lineage.util.Log;
 import com.lineage.util.NetList;
 import com.lineage.util.Rnd;

@@ -1,12 +1,12 @@
 package com.lineage.ext.mods;
 
-import l2d.game.model.L2Player;
-import l2d.game.model.base.ClassId;
-import l2d.game.serverpackets.SocialAction;
-import l2d.game.serverpackets.SystemMessage;
-import l2d.game.serverpackets.TutorialCloseHtml;
-import l2d.game.serverpackets.TutorialShowHtml;
-import l2d.game.tables.CharTemplateTable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.base.ClassId;
+import com.lineage.game.serverpackets.SocialAction;
+import com.lineage.game.serverpackets.SystemMessage;
+import com.lineage.game.serverpackets.TutorialCloseHtml;
+import com.lineage.game.serverpackets.TutorialShowHtml;
+import com.lineage.game.tables.CharTemplateTable;
 import com.lineage.util.Files;
 
 /**

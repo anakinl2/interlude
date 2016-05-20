@@ -2,13 +2,13 @@ package ai;
 
 import java.util.HashMap;
 
-import l2d.game.ai.CtrlEvent;
-import l2d.game.ai.Fighter;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Spawn;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.model.instances.L2NpcInstance.AggroInfo;
-import l2d.game.tables.NpcTable;
+import com.lineage.game.ai.CtrlEvent;
+import com.lineage.game.ai.Fighter;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Spawn;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.model.instances.L2NpcInstance.AggroInfo;
+import com.lineage.game.tables.NpcTable;
 
 /**
  * AI полиморфных ангелов. После смерти заспавненного респится его двойник, за которого дают и экспу и дроп.

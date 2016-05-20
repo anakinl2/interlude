@@ -2,8 +2,8 @@ package com.lineage.util;
 
 import com.lineage.Config;
 import com.lineage.ext.multilang.CustomMessage;
-import l2d.game.model.L2Player;
-import l2d.game.tables.GmListTable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.tables.GmListTable;
 
 public final class IllegalPlayerAction implements Runnable
 {

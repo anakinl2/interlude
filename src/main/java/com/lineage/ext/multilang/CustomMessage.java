@@ -7,14 +7,14 @@ import java.net.URLClassLoader;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Skill;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.tables.ItemTable;
-import l2d.game.tables.SkillTable;
-import l2d.game.templates.L2Item;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.tables.ItemTable;
+import com.lineage.game.tables.SkillTable;
+import com.lineage.game.templates.L2Item;
 
 /**
  * Даный класс является обработчиком интернациональных сообщений.

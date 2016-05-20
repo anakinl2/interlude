@@ -1,9 +1,9 @@
 package com.lineage.ext.scripts;
 
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.model.quest.Quest;
-import l2d.game.model.quest.QuestState;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.quest.Quest;
+import com.lineage.game.model.quest.QuestState;
 
 public class AdminScripts implements IAdminCommandHandler
 {

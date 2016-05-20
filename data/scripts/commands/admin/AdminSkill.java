@@ -5,22 +5,22 @@ import java.util.Collection;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Effect;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Skill;
-import l2d.game.model.L2SkillLearn;
-import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.game.serverpackets.SkillList;
-import l2d.game.skills.Calculator;
-import l2d.game.skills.Env;
-import l2d.game.skills.funcs.Func;
-import l2d.game.tables.SkillTable;
-import l2d.game.tables.SkillTreeTable;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Effect;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.L2SkillLearn;
+import com.lineage.game.serverpackets.NpcHtmlMessage;
+import com.lineage.game.serverpackets.SkillList;
+import com.lineage.game.skills.Calculator;
+import com.lineage.game.skills.Env;
+import com.lineage.game.skills.funcs.Func;
+import com.lineage.game.tables.SkillTable;
+import com.lineage.game.tables.SkillTreeTable;
 import com.lineage.util.Log;
 
 public class AdminSkill implements IAdminCommandHandler, ScriptFile

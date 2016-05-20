@@ -6,12 +6,12 @@ import com.lineage.Config;
 import com.lineage.db.mysql;
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.tables.ItemTable;
-import l2d.game.templates.L2Item;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.tables.ItemTable;
+import com.lineage.game.templates.L2Item;
 import com.lineage.util.Files;
 
 public class RateBonus extends Functions implements ScriptFile

@@ -3,14 +3,14 @@ package events.christmas;
 import java.util.Calendar;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.Announcements;
-import l2d.game.ThreadPoolManager;
-import l2d.game.instancemanager.ServerVariables;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Skill;
-import l2d.game.model.L2World;
-import l2d.game.serverpackets.MagicSkillUse;
-import l2d.game.tables.SkillTable;
+import com.lineage.game.Announcements;
+import com.lineage.game.ThreadPoolManager;
+import com.lineage.game.instancemanager.ServerVariables;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.L2World;
+import com.lineage.game.serverpackets.MagicSkillUse;
+import com.lineage.game.tables.SkillTable;
 
 public class NewYearTimer implements ScriptFile
 {

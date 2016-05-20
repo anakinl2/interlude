@@ -9,7 +9,7 @@ import com.lineage.auth.Watchdog;
 import com.lineage.auth.gameservercon.gspackets.ServerStatus;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
-import l2d.game.loginservercon.AdvIP;
+import com.lineage.game.loginservercon.AdvIP;
 
 /**
  * @Author: Death

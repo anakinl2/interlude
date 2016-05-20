@@ -29,7 +29,7 @@ import com.lineage.db.DatabaseUtils;
 import com.lineage.db.FiltredPreparedStatement;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.db.ThreadConnection;
-import l2d.game.loginservercon.AdvIP;
+import com.lineage.game.loginservercon.AdvIP;
 import com.lineage.util.Rnd;
 
 public class GameServerTable

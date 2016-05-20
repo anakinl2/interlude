@@ -1,11 +1,11 @@
 package npc.model;
 
-import l2d.game.ai.CtrlIntention;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Skill;
-import l2d.game.model.instances.L2BossInstance;
-import l2d.game.serverpackets.PlaySound;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.ai.CtrlIntention;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.instances.L2BossInstance;
+import com.lineage.game.serverpackets.PlaySound;
+import com.lineage.game.templates.L2NpcTemplate;
 import com.lineage.util.Location;
 import com.lineage.util.Rnd;
 

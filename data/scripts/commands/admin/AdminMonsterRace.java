@@ -1,16 +1,16 @@
 package commands.admin;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.ThreadPoolManager;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.model.entity.MonsterRace;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.serverpackets.DeleteObject;
-import l2d.game.serverpackets.MonRaceInfo;
-import l2d.game.serverpackets.PlaySound;
-import l2d.game.serverpackets.SystemMessage;
+import com.lineage.game.ThreadPoolManager;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.entity.MonsterRace;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.serverpackets.DeleteObject;
+import com.lineage.game.serverpackets.MonRaceInfo;
+import com.lineage.game.serverpackets.PlaySound;
+import com.lineage.game.serverpackets.SystemMessage;
 import com.lineage.util.Location;
 
 @SuppressWarnings("unused")

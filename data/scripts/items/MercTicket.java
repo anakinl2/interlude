@@ -2,15 +2,15 @@ package items;
 
 import com.lineage.ext.multilang.CustomMessage;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.IItemHandler;
-import l2d.game.handler.ItemHandler;
-import l2d.game.instancemanager.CastleManager;
-import l2d.game.instancemanager.MercTicketManager;
-import l2d.game.model.L2Clan;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.entity.residence.Residence;
-import l2d.game.model.instances.L2ItemInstance;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.handler.ItemHandler;
+import com.lineage.game.instancemanager.CastleManager;
+import com.lineage.game.instancemanager.MercTicketManager;
+import com.lineage.game.model.L2Clan;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.entity.residence.Residence;
+import com.lineage.game.model.instances.L2ItemInstance;
 
 public class MercTicket implements IItemHandler, ScriptFile
 {

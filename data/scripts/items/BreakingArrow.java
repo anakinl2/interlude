@@ -1,13 +1,13 @@
 package items;
 
-import l2d.game.handler.IItemHandler;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2BossInstance;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.serverpackets.SocialAction;
-import l2d.game.serverpackets.SystemMessage;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2BossInstance;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.serverpackets.SocialAction;
+import com.lineage.game.serverpackets.SystemMessage;
 
 /**
  * @author PaInKiLlEr

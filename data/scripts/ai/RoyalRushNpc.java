@@ -2,9 +2,9 @@ package ai;
 
 import java.util.Calendar;
 
-import l2d.game.ai.DefaultAI;
-import l2d.game.model.L2Character;
-import l2d.game.model.instances.L2NpcInstance;
+import com.lineage.game.ai.DefaultAI;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.instances.L2NpcInstance;
 
 public class RoyalRushNpc extends DefaultAI
 {

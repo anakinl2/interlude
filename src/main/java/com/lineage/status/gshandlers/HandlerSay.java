@@ -5,12 +5,12 @@ import java.net.Socket;
 
 import com.lineage.status.GameStatusThread;
 import com.lineage.status.Status;
-import l2d.game.Announcements;
-import l2d.game.clientpackets.Say2C;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
-import l2d.game.serverpackets.Say2;
-import l2d.game.tables.GmListTable;
+import com.lineage.game.Announcements;
+import com.lineage.game.clientpackets.Say2C;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
+import com.lineage.game.serverpackets.Say2;
+import com.lineage.game.tables.GmListTable;
 import com.lineage.util.Util;
 
 public class HandlerSay

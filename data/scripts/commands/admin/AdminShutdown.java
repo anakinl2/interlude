@@ -5,13 +5,13 @@ import java.util.Calendar;
 
 import com.lineage.Config;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.GameTimeController;
-import l2d.game.Shutdown;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
-import l2d.game.serverpackets.NpcHtmlMessage;
+import com.lineage.game.GameTimeController;
+import com.lineage.game.Shutdown;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
+import com.lineage.game.serverpackets.NpcHtmlMessage;
 
 public class AdminShutdown implements IAdminCommandHandler, ScriptFile
 {

@@ -1,13 +1,13 @@
 package commands.admin;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.serverpackets.ItemList;
-import l2d.game.serverpackets.SystemMessage;
-import l2d.game.tables.ItemTable;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.serverpackets.ItemList;
+import com.lineage.game.serverpackets.SystemMessage;
+import com.lineage.game.tables.ItemTable;
 import com.lineage.util.Log;
 import com.lineage.util.Rnd;
 

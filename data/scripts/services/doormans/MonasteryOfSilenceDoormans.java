@@ -2,9 +2,9 @@ package services.doormans;
 
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2DoorInstance;
-import l2d.game.tables.DoorTable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2DoorInstance;
+import com.lineage.game.tables.DoorTable;
 
 /**
  * @author PaInKiLlEr

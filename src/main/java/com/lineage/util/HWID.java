@@ -11,8 +11,8 @@ import com.lineage.db.FiltredPreparedStatement;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.db.ThreadConnection;
 import com.lineage.db.mysql;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2World;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2World;
 
 public class HWID
 {

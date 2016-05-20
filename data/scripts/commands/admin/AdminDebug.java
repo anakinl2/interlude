@@ -7,12 +7,12 @@ import java.util.HashMap;
 import java.util.TreeSet;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2MonsterInstance;
-import l2d.game.tables.NpcTable;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2MonsterInstance;
+import com.lineage.game.tables.NpcTable;
+import com.lineage.game.templates.L2NpcTemplate;
 
 
 public class AdminDebug implements IAdminCommandHandler, ScriptFile

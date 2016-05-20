@@ -3,20 +3,20 @@ package items;
 import java.util.ArrayList;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.handler.IItemHandler;
-import l2d.game.handler.ItemHandler;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Skill;
-import l2d.game.model.L2SkillLearn;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.serverpackets.ExStorageMaxCount;
-import l2d.game.serverpackets.SkillList;
-import l2d.game.serverpackets.SystemMessage;
-import l2d.game.tables.SkillSpellbookTable;
-import l2d.game.tables.SkillTable;
-import l2d.game.tables.SkillTreeTable;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.handler.ItemHandler;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.L2SkillLearn;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.serverpackets.ExStorageMaxCount;
+import com.lineage.game.serverpackets.SkillList;
+import com.lineage.game.serverpackets.SystemMessage;
+import com.lineage.game.tables.SkillSpellbookTable;
+import com.lineage.game.tables.SkillTable;
+import com.lineage.game.tables.SkillTreeTable;
 
 public class Spellbooks implements IItemHandler, ScriptFile
 {

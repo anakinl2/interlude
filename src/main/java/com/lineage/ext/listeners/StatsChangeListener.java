@@ -1,8 +1,8 @@
 package com.lineage.ext.listeners;
 
-import l2d.game.skills.Calculator;
-import l2d.game.skills.Env;
-import l2d.game.skills.Stats;
+import com.lineage.game.skills.Calculator;
+import com.lineage.game.skills.Env;
+import com.lineage.game.skills.Stats;
 
 public abstract class StatsChangeListener
 {

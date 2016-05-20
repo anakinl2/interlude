@@ -1,9 +1,9 @@
 package ai;
 
 import com.lineage.ext.scripts.Functions;
-import l2d.game.ai.Ranger;
-import l2d.game.model.L2Character;
-import l2d.game.model.instances.L2NpcInstance;
+import com.lineage.game.ai.Ranger;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.instances.L2NpcInstance;
 import com.lineage.util.Rnd;
 
 public class DeluLizardmanSpecialCommander extends Ranger 

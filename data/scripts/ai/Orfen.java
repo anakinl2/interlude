@@ -3,10 +3,10 @@ package ai;
 import npc.model.OrfenInstance;
 
 import com.lineage.ext.scripts.Functions;
-import l2d.game.ai.Fighter;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Skill;
-import l2d.game.model.L2Skill.SkillType;
+import com.lineage.game.ai.Fighter;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.L2Skill.SkillType;
 import com.lineage.util.Location;
 import com.lineage.util.PrintfFormat;
 import com.lineage.util.Rnd;

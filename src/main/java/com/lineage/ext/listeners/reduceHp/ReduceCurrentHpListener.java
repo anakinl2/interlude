@@ -3,8 +3,8 @@ package com.lineage.ext.listeners.reduceHp;
 import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.events.MethodEvent;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Skill;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Skill;
 
 /**
  * User: Death

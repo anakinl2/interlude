@@ -1,9 +1,9 @@
 package npc.model;
 
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Skill;
-import l2d.game.model.instances.L2MonsterInstance;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.instances.L2MonsterInstance;
+import com.lineage.game.templates.L2NpcTemplate;
 
 public class QueenAntLarvaInstance extends L2MonsterInstance
 {

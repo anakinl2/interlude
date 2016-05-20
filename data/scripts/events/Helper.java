@@ -2,11 +2,11 @@ package events;
 
 import java.util.AbstractList;
 
-import l2d.game.instancemanager.ServerVariables;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Spawn;
-import l2d.game.tables.NpcTable;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.instancemanager.ServerVariables;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Spawn;
+import com.lineage.game.tables.NpcTable;
+import com.lineage.game.templates.L2NpcTemplate;
 
 public class Helper
 {

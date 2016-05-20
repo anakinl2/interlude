@@ -5,12 +5,12 @@ import java.util.Map.Entry;
 
 import javolution.util.FastList;
 import com.lineage.Config;
-import l2d.game.model.L2Drop;
-import l2d.game.model.L2DropData;
-import l2d.game.model.L2DropGroup;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2MonsterInstance;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.model.L2Drop;
+import com.lineage.game.model.L2DropData;
+import com.lineage.game.model.L2DropGroup;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2MonsterInstance;
+import com.lineage.game.templates.L2NpcTemplate;
 
 public abstract class DropList
 {

@@ -12,7 +12,7 @@ do
 	mv log/java0.log.0 "log/`date +%Y-%m-%d_%H-%M-%S`_java.log"
 	mv log/stdout.log "log/`date +%Y-%m-%d_%H-%M-%S`_stdout.log"
 	mv log/chat.log "log/`date +%Y-%m-%d_%H:%M:%S`-chat.log"
-	nice -n -2 java -Dfile.encoding=UTF-8 -Xms1024m -Xmx1024m -cp lib/*: l2d.game.GameServer > log/stdout.log 2>&1
+	nice -n -2 java -Dfile.encoding=UTF-8 -Xms1024m -Xmx1024m -cp lib/*: com.lineage.game.GameServer > log/stdout.log 2>&1
 	[ $? -ne 2 ] && break
 	sleep 10;
 done

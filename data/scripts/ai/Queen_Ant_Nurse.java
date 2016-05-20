@@ -2,13 +2,13 @@ package ai;
 
 import npc.model.QueenAntInstance;
 
-import l2d.game.ThreadPoolManager;
-import l2d.game.ai.Priest;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Skill;
-import l2d.game.model.instances.L2MinionInstance;
-import l2d.game.model.instances.L2NpcInstance;
-import l2d.game.serverpackets.MagicSkillUse;
+import com.lineage.game.ThreadPoolManager;
+import com.lineage.game.ai.Priest;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Skill;
+import com.lineage.game.model.instances.L2MinionInstance;
+import com.lineage.game.model.instances.L2NpcInstance;
+import com.lineage.game.serverpackets.MagicSkillUse;
 import com.lineage.util.Rnd;
 import com.lineage.util.Location;
 

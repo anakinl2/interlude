@@ -2,21 +2,21 @@ package commands.admin;
 
 import javolution.util.FastList;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.idfactory.IdFactory;
-import l2d.game.model.L2Character;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2Spawn;
-import l2d.game.model.L2Territory;
-import l2d.game.model.L2World;
-import l2d.game.model.L2WorldRegion;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.game.tables.ReflectionTable;
-import l2d.game.tables.SpawnTable;
-import l2d.game.tables.TerritoryTable;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.idfactory.IdFactory;
+import com.lineage.game.model.L2Character;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2Spawn;
+import com.lineage.game.model.L2Territory;
+import com.lineage.game.model.L2World;
+import com.lineage.game.model.L2WorldRegion;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.serverpackets.NpcHtmlMessage;
+import com.lineage.game.tables.ReflectionTable;
+import com.lineage.game.tables.SpawnTable;
+import com.lineage.game.tables.TerritoryTable;
 import com.lineage.util.GArray;
 
 public class AdminZone implements IAdminCommandHandler, ScriptFile

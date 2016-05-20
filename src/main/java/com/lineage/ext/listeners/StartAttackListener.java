@@ -1,7 +1,7 @@
 package com.lineage.ext.listeners;
 
 import com.lineage.ext.listeners.events.MethodEvent;
-import l2d.game.model.L2Character;
+import com.lineage.game.model.L2Character;
 
 /**
  * User: Death

@@ -1,10 +1,10 @@
 package commands.admin;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.ThreadPoolManager;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
+import com.lineage.game.ThreadPoolManager;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
 
 public class AdminThreadPool implements IAdminCommandHandler, ScriptFile
 {

@@ -10,7 +10,7 @@ rem Minimal size with geodata is 1.5G, w/o geo 1G
 rem Make sure -Xmn value is always 1/4 the size of -Xms and -Xmx.
 rem -Xms and -Xmx should always be equal.
 rem ==========================================
-java  -Dfile.encoding=UTF-8 -Xmn128m -Xms512m -Xmx1024m -cp lib/*; l2d.game.GameServer
+java  -Dfile.encoding=UTF-8 -Xmn128m -Xms512m -Xmx1024m -cp lib/*; com.lineage.game.GameServer
 if ERRORLEVEL 2 goto restart
 if ERRORLEVEL 1 goto error
 goto end

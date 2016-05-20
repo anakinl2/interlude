@@ -3,7 +3,7 @@ package com.lineage.status.gshandlers;
 import java.io.PrintWriter;
 
 import com.lineage.Config;
-import l2d.game.ThreadPoolManager;
+import com.lineage.game.ThreadPoolManager;
 
 public class HandlerPerfomance
 {

@@ -1,13 +1,13 @@
 package commands.admin;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.TradeController;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.model.L2Player;
-import l2d.game.model.L2TradeList;
-import l2d.game.model.L2World;
-import l2d.game.serverpackets.BuyList;
+import com.lineage.game.TradeController;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.L2TradeList;
+import com.lineage.game.model.L2World;
+import com.lineage.game.serverpackets.BuyList;
 
 @SuppressWarnings("unused")
 public class AdminShop implements IAdminCommandHandler, ScriptFile

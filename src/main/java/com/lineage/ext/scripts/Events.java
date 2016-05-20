@@ -1,8 +1,8 @@
 package com.lineage.ext.scripts;
 
 import com.lineage.ext.scripts.Scripts.ScriptClassAndMethod;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
 import com.lineage.util.Strings;
 
 public final class Events

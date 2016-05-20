@@ -1,12 +1,12 @@
 package items;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.IItemHandler;
-import l2d.game.handler.ItemHandler;
-import l2d.game.model.L2Playable;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2ItemInstance;
-import l2d.game.serverpackets.ShowMiniMap;
+import com.lineage.game.handler.IItemHandler;
+import com.lineage.game.handler.ItemHandler;
+import com.lineage.game.model.L2Playable;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2ItemInstance;
+import com.lineage.game.serverpackets.ShowMiniMap;
 
 public class WorldMap implements IItemHandler, ScriptFile
 {

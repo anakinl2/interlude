@@ -6,16 +6,16 @@ import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import com.lineage.Config;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.handler.AdminCommandHandler;
-import l2d.game.handler.IAdminCommandHandler;
-import l2d.game.instancemanager.CastleManager;
-import l2d.game.instancemanager.CastleManorManager;
-import l2d.game.instancemanager.ServerVariables;
-import l2d.game.instancemanager.CastleManorManager.CropProcure;
-import l2d.game.instancemanager.CastleManorManager.SeedProduction;
-import l2d.game.model.L2Player;
-import l2d.game.model.entity.residence.Castle;
-import l2d.game.serverpackets.NpcHtmlMessage;
+import com.lineage.game.handler.AdminCommandHandler;
+import com.lineage.game.handler.IAdminCommandHandler;
+import com.lineage.game.instancemanager.CastleManager;
+import com.lineage.game.instancemanager.CastleManorManager;
+import com.lineage.game.instancemanager.ServerVariables;
+import com.lineage.game.instancemanager.CastleManorManager.CropProcure;
+import com.lineage.game.instancemanager.CastleManorManager.SeedProduction;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.entity.residence.Castle;
+import com.lineage.game.serverpackets.NpcHtmlMessage;
 
 /**
  * Admin comand handler for Manor System

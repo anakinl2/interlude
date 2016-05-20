@@ -4,8 +4,8 @@ import java.util.Collection;
 
 import com.lineage.ext.listeners.PropertyCollection;
 import com.lineage.ext.listeners.events.PropertyEvent;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Territory;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Territory;
 
 /**
  * @author Death

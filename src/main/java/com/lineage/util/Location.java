@@ -2,9 +2,9 @@ package com.lineage.util;
 
 import java.io.Serializable;
 
-import l2d.game.geodata.GeoEngine;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2World;
+import com.lineage.game.geodata.GeoEngine;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2World;
 
 @SuppressWarnings("serial")
 public class Location implements Serializable

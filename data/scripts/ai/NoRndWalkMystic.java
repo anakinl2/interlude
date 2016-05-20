@@ -1,7 +1,7 @@
 package ai;
 
-import l2d.game.ai.Mystic;
-import l2d.game.model.L2Character;
+import com.lineage.game.ai.Mystic;
+import com.lineage.game.model.L2Character;
 
 /**
  * Моб Mystic не использует рандом валк

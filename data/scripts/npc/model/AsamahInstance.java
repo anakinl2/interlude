@@ -1,11 +1,11 @@
 package npc.model;
 
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.model.L2Player;
-import l2d.game.model.instances.L2MerchantInstance;
-import l2d.game.model.quest.QuestState;
-import l2d.game.serverpackets.NpcHtmlMessage;
-import l2d.game.templates.L2NpcTemplate;
+import com.lineage.game.model.L2Player;
+import com.lineage.game.model.instances.L2MerchantInstance;
+import com.lineage.game.model.quest.QuestState;
+import com.lineage.game.serverpackets.NpcHtmlMessage;
+import com.lineage.game.templates.L2NpcTemplate;
 import com.lineage.util.Files;
 
 /**

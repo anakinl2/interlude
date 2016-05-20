@@ -11,9 +11,9 @@ import com.lineage.db.ThreadConnection;
 import com.lineage.ext.multilang.CustomMessage;
 import com.lineage.ext.scripts.Functions;
 import com.lineage.ext.scripts.ScriptFile;
-import l2d.game.cache.Msg;
-import l2d.game.model.L2Object;
-import l2d.game.model.L2Player;
+import com.lineage.game.cache.Msg;
+import com.lineage.game.model.L2Object;
+import com.lineage.game.model.L2Player;
 import com.lineage.util.Log;
 
 public class bonus extends Functions implements ScriptFile
