@@ -19,27 +19,27 @@ public interface ListenerEngine<T>
 	 * Добавляет слушатель свойсв в общую коллекцию.
 	 * @param listener слушатель
 	 */
-	public void addPropertyChangeListener(PropertyChangeListener listener);
+	void addPropertyChangeListener(PropertyChangeListener listener);
 
 	/**
 	 * Убирает слушаеть свойств с общей коллекции.
 	 * @param listener слушаетль
 	 */
-	public void removePropertyChangeListener(PropertyChangeListener listener);
+	void removePropertyChangeListener(PropertyChangeListener listener);
 
 	/**
 	 * Добавляет слушатель свойств определенному свойсву
 	 * @param value свойство
 	 * @param listener слушатель
 	 */
-	public void addPropertyChangeListener(String value, PropertyChangeListener listener);
+	void addPropertyChangeListener(String value, PropertyChangeListener listener);
 
 	/**
 	 * Убирает слушатель свойств у определенного свойства
 	 * @param value свойство
 	 * @param listener слушатель
 	 */
-	public void removePropertyChangeListener(String value, PropertyChangeListener listener);
+	void removePropertyChangeListener(String value, PropertyChangeListener listener);
 
 	/**
 	 * Запускает уведомление всех слушателей об изменении свойства
@@ -49,65 +49,65 @@ public interface ListenerEngine<T>
 	 * @param oldValue старое значение
 	 * @param newValue новое значение
 	 */
-	public void firePropertyChanged(String value, T source, Object oldValue, Object newValue);
+	void firePropertyChanged(String value, T source, Object oldValue, Object newValue);
 
 	/**
 	 * Запускает уведомление всех слушателей об изменении свойства
 	 * @param event Определенный ивенд для передачи.
 	 */
-	public void firePropertyChanged(PropertyEvent event);
+	void firePropertyChanged(PropertyEvent event);
 
 	/**
 	 * Добавляет свойство в коллекцию.
 	 * @param property свойство
 	 * @param value значение
 	 */
-	public void addProperty(String property, Object value);
+	void addProperty(String property, Object value);
 
 	/**
 	 * Возвращает значение свойства
 	 * @param property свойство
 	 * @return значение
 	 */
-	public Object getProperty(String property);
+	Object getProperty(String property);
 
 	/**
 	 * Возвращает обьект - владельца даного движка слушателей
 	 * @return владелец инстанса слушаетелей
 	 */
-	public T getOwner();
+	T getOwner();
 
 	/**
 	 * Добавляет слушатель на вызов определенный метод
 	 * @param listener слушатель
 	 */
-	public void addMethodInvokedListener(MethodInvokeListener listener);
+	void addMethodInvokedListener(MethodInvokeListener listener);
 
 	/**
 	 * Убирает определенный слушатель методов
 	 * @param listener слушатель
 	 */
-	public void removeMethodInvokedListener(MethodInvokeListener listener);
+	void removeMethodInvokedListener(MethodInvokeListener listener);
 
 	/**
 	 * Добавляет слушатель на вызов определенный метод
 	 * @param listener слушатель
 	 * @param methodName имя метода
 	 */
-	public void addMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener);
+	void addMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener);
 
 	/**
 	 * Убирает определенный слушатель методов
 	 * @param listener слушатель
 	 * @param methodName имя метода
 	 */
-	public void removeMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener);
+	void removeMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener);
 
 	/**
 	 * Вызывает слушатели и делает им нотифай события
 	 * @param event событие
 	 */
-	public void fireMethodInvoked(MethodEvent event);
+	void fireMethodInvoked(MethodEvent event);
 
 	/**
 	 * Запускает нотифай слушателям что был вызван метод.
@@ -115,5 +115,5 @@ public interface ListenerEngine<T>
 	 * @param source источник у кого он был вызван
 	 * @param args аргументы метода
 	 */
-	public void fireMethodInvoked(MethodCollection methodName, T source, Object[] args);
+	void fireMethodInvoked(MethodCollection methodName, T source, Object[] args);
 }
