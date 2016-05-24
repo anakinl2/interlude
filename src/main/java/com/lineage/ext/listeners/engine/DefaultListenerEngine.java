@@ -1,9 +1,5 @@
 package com.lineage.ext.listeners.engine;
 
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.LinkedBlockingQueue;
-
 import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.PropertyChangeListener;
@@ -11,6 +7,10 @@ import com.lineage.ext.listeners.events.DefaultMethodInvokeEvent;
 import com.lineage.ext.listeners.events.DefaultPropertyChangeEvent;
 import com.lineage.ext.listeners.events.MethodEvent;
 import com.lineage.ext.listeners.events.PropertyEvent;
+
+import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @author Death
@@ -24,12 +24,18 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	protected LinkedBlockingQueue<MethodInvokeListener> methodInvokedListeners;
 	protected ConcurrentHashMap<MethodCollection, LinkedBlockingQueue<MethodInvokeListener>> mappedMethodInvokedListeners;
 
+	private final T owner;
+
 	public DefaultListenerEngine(T owner)
 	{
 		this.owner = owner;
 	}
 
-	private final T owner;
+	@Override
+	public T getOwner()
+	{
+		return owner;
+	}
 
 	@Override
 	public void addPropertyChangeListener(PropertyChangeListener listener)
@@ -53,13 +59,13 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	public void addPropertyChangeListener(String value, PropertyChangeListener listener)
 	{
 		if(mappedPropertyChangeListeners == null)
-			mappedPropertyChangeListeners = new ConcurrentHashMap<String, LinkedBlockingQueue<PropertyChangeListener>>();
+			mappedPropertyChangeListeners = new ConcurrentHashMap<>();
 
 		LinkedBlockingQueue<PropertyChangeListener> listeners = mappedPropertyChangeListeners.get(value);
 
 		if(listeners == null)
 		{
-			listeners = new LinkedBlockingQueue<PropertyChangeListener>();
+			listeners = new LinkedBlockingQueue<>();
 			mappedPropertyChangeListeners.put(value, listeners);
 		}
 
@@ -110,7 +116,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	public void addProperty(String property, Object value)
 	{
 		if(properties == null)
-			properties = new HashMap<String, Object>();
+			properties = new HashMap<>();
 
 		Object old = properties.get(property);
 		properties.put(property, value);
@@ -128,16 +134,10 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public T getOwner()
-	{
-		return owner;
-	}
-
-	@Override
 	public void addMethodInvokedListener(MethodInvokeListener listener)
 	{
 		if(methodInvokedListeners == null)
-			methodInvokedListeners = new LinkedBlockingQueue<MethodInvokeListener>();
+			methodInvokedListeners = new LinkedBlockingQueue<>();
 
 		methodInvokedListeners.add(listener);
 	}
