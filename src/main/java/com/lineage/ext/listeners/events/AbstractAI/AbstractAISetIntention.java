@@ -1,5 +1,6 @@
 package com.lineage.ext.listeners.events.AbstractAI;
 
+import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.events.DefaultMethodInvokeEvent;
 import com.lineage.game.ai.AbstractAI;
 
@@ -10,7 +11,7 @@ import com.lineage.game.ai.AbstractAI;
  */
 public class AbstractAISetIntention extends DefaultMethodInvokeEvent
 {
-	public AbstractAISetIntention(String methodName, AbstractAI owner, Object[] args)
+	public AbstractAISetIntention(MethodCollection methodName, AbstractAI owner, Object[] args)
 	{
 		super(methodName, owner, args);
 	}

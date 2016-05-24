@@ -7,7 +7,7 @@ import com.lineage.game.model.L2Skill;
 /**
  * User: Death
  */
-public abstract class StartCastListener implements MethodInvokeListener, MethodCollection
+public abstract class StartCastListener implements MethodInvokeListener
 {
 	@Override
 	public final void methodInvoked(MethodEvent e)
@@ -19,7 +19,7 @@ public abstract class StartCastListener implements MethodInvokeListener, MethodC
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		return event.getMethodName().equals(onStartCast);
+		return event.getMethodName().equals(MethodCollection.onStartCast);
 	}
 
 	public abstract void onCastStart(L2Skill skill, L2Character target, boolean forceUse);

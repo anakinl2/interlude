@@ -10,7 +10,7 @@ import com.lineage.game.model.L2Object;
  * @Date: 18/9/2007
  * @Time: 9:34:56
  */
-public abstract class L2ZoneEnterLeaveListener implements MethodInvokeListener, MethodCollection
+public abstract class L2ZoneEnterLeaveListener implements MethodInvokeListener
 {
 	/**
 	 * Вызывается при входе/выходе из зоны. После необходимых операций вызывает нужный
@@ -26,7 +26,7 @@ public abstract class L2ZoneEnterLeaveListener implements MethodInvokeListener, 
 		L2ZoneEnterLeaveEvent event = (L2ZoneEnterLeaveEvent) e;
 		L2Zone owner = event.getOwner();
 		L2Object actor = event.getArgs()[0];
-		if(e.getMethodName().equals(L2ZoneObjectEnter))
+		if(e.getMethodName().equals(MethodCollection.L2ZoneObjectEnter))
 			objectEntered(owner, actor);
 		else
 			objectLeaved(owner, actor);
@@ -35,8 +35,8 @@ public abstract class L2ZoneEnterLeaveListener implements MethodInvokeListener, 
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		String method = event.getMethodName();
-		return event instanceof L2ZoneEnterLeaveEvent && (method.equals(L2ZoneObjectEnter) || method.equals(L2ZoneObjectLeave));
+		MethodCollection method = event.getMethodName();
+		return event instanceof L2ZoneEnterLeaveEvent && (method.equals(MethodCollection.L2ZoneObjectEnter) || method.equals(MethodCollection.L2ZoneObjectLeave));
 	}
 
 	/**

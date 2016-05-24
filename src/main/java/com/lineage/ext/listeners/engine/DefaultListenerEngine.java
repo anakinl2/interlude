@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.PropertyChangeListener;
 import com.lineage.ext.listeners.events.DefaultMethodInvokeEvent;
@@ -21,7 +22,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	protected HashMap<String, Object> properties;
 
 	protected LinkedBlockingQueue<MethodInvokeListener> methodInvokedListeners;
-	protected ConcurrentHashMap<String, LinkedBlockingQueue<MethodInvokeListener>> mappedMethodInvokedListeners;
+	protected ConcurrentHashMap<MethodCollection, LinkedBlockingQueue<MethodInvokeListener>> mappedMethodInvokedListeners;
 
 	public DefaultListenerEngine(T owner)
 	{
@@ -151,10 +152,10 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void addMethodInvokedListener(String methodName, MethodInvokeListener listener)
+	public void addMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener)
 	{
 		if(mappedMethodInvokedListeners == null)
-			mappedMethodInvokedListeners = new ConcurrentHashMap<String, LinkedBlockingQueue<MethodInvokeListener>>();
+			mappedMethodInvokedListeners = new ConcurrentHashMap<>();
 
 		LinkedBlockingQueue<MethodInvokeListener> listeners = mappedMethodInvokedListeners.get(methodName);
 
@@ -168,7 +169,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void removeMethodInvokedListener(String methodName, MethodInvokeListener listener)
+	public void removeMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener)
 	{
 		if(mappedMethodInvokedListeners == null)
 			return;
@@ -203,7 +204,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void fireMethodInvoked(String methodName, T source, Object[] args)
+	public void fireMethodInvoked(MethodCollection methodName, T source, Object[] args)
 	{
 		fireMethodInvoked(new DefaultMethodInvokeEvent(methodName, source, args));
 	}

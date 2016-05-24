@@ -2,6 +2,7 @@ package com.lineage.game.model;
 
 import java.util.logging.Logger;
 
+import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.PropertyChangeListener;
 import com.lineage.ext.listeners.engine.DefaultListenerEngine;
@@ -100,7 +101,7 @@ public abstract class L2Object
 		getListenerEngine().addMethodInvokedListener(listener);
 	}
 
-	public void addMethodInvokeListener(String methodName, MethodInvokeListener listener)
+	public void addMethodInvokeListener(MethodCollection methodName, MethodInvokeListener listener)
 	{
 		getListenerEngine().addMethodInvokedListener(methodName, listener);
 	}
@@ -297,7 +298,7 @@ public abstract class L2Object
 		getListenerEngine().fireMethodInvoked(event);
 	}
 
-	void fireMethodInvoked(String methodName, Object[] args)
+	void fireMethodInvoked(MethodCollection methodName, Object[] args)
 	{
 		getListenerEngine().fireMethodInvoked(methodName, this, args);
 	}
@@ -822,7 +823,7 @@ public abstract class L2Object
 		getListenerEngine().removeMethodInvokedListener(listener);
 	}
 
-	public void removeMethodInvokeListener(String methodName, MethodInvokeListener listener)
+	public void removeMethodInvokeListener(MethodCollection methodName, MethodInvokeListener listener)
 	{
 		getListenerEngine().removeMethodInvokedListener(methodName, listener);
 	}

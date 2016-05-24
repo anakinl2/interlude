@@ -6,7 +6,7 @@ import com.lineage.game.model.L2Character;
 /**
  * User: Death
  */
-public abstract class StartAttackListener implements MethodInvokeListener, MethodCollection
+public abstract class StartAttackListener implements MethodInvokeListener
 {
 	@Override
 	public final void methodInvoked(MethodEvent e)
@@ -17,7 +17,7 @@ public abstract class StartAttackListener implements MethodInvokeListener, Metho
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		return event.getMethodName().equals(onStartAttack);
+		return event.getMethodName().equals(MethodCollection.onStartAttack);
 	}
 
 	public abstract void onAttackStart(L2Character target);

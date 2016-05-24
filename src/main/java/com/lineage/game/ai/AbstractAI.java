@@ -291,7 +291,7 @@ public abstract class AbstractAI
 	public ListenerEngine<AbstractAI> getListenerEngine()
 	{
 		if(listenerEngine == null)
-			listenerEngine = new DefaultListenerEngine<AbstractAI>(this);
+			listenerEngine = new DefaultListenerEngine<>(this);
 		return listenerEngine;
 	}
 }

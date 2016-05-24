@@ -10,7 +10,7 @@ import com.lineage.game.ai.CtrlIntention;
  * @Date: 08/11/2007
  * @Time: 7:17:24
  */
-public abstract class AbstractAISetIntentionListener implements MethodInvokeListener, MethodCollection
+public abstract class AbstractAISetIntentionListener implements MethodInvokeListener
 {
 	@Override
 	public final void methodInvoked(MethodEvent e)
@@ -26,8 +26,8 @@ public abstract class AbstractAISetIntentionListener implements MethodInvokeList
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		String method = event.getMethodName();
-		return event instanceof AbstractAISetIntention && method.equals(AbstractAIsetIntention);
+		MethodCollection method = event.getMethodName();
+		return event instanceof AbstractAISetIntention && method.equals(MethodCollection.AbstractAIsetIntention);
 	}
 
 	public abstract void SetIntention(AbstractAI ai, CtrlIntention intention, Object arg0, Object arg1);

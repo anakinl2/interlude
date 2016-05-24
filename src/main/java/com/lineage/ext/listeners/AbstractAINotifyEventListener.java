@@ -10,7 +10,7 @@ import com.lineage.game.ai.CtrlEvent;
  * @Date: 08/11/2007
  * @Time: 7:17:24
  */
-public abstract class AbstractAINotifyEventListener implements MethodInvokeListener, MethodCollection
+public abstract class AbstractAINotifyEventListener implements MethodInvokeListener
 {
 	@Override
 	public final void methodInvoked(MethodEvent e)
@@ -24,8 +24,8 @@ public abstract class AbstractAINotifyEventListener implements MethodInvokeListe
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		String method = event.getMethodName();
-		return event instanceof AbstractAINotifyEvent && method.equals(AbstractAInotifyEvent);
+		MethodCollection method = event.getMethodName();
+		return event instanceof AbstractAINotifyEvent && method.equals(MethodCollection.AbstractAInotifyEvent);
 	}
 
 	public abstract void NotifyEvent(AbstractAI ai, CtrlEvent evt, Object[] args);

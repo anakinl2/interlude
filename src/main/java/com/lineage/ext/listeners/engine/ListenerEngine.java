@@ -1,5 +1,6 @@
 package com.lineage.ext.listeners.engine;
 
+import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.PropertyChangeListener;
 import com.lineage.ext.listeners.events.MethodEvent;
 import com.lineage.ext.listeners.MethodInvokeListener;
@@ -93,14 +94,14 @@ public interface ListenerEngine<T>
 	 * @param listener слушатель
 	 * @param methodName имя метода
 	 */
-	public void addMethodInvokedListener(String methodName, MethodInvokeListener listener);
+	public void addMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener);
 
 	/**
 	 * Убирает определенный слушатель методов
 	 * @param listener слушатель
 	 * @param methodName имя метода
 	 */
-	public void removeMethodInvokedListener(String methodName, MethodInvokeListener listener);
+	public void removeMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener);
 
 	/**
 	 * Вызывает слушатели и делает им нотифай события
@@ -114,5 +115,5 @@ public interface ListenerEngine<T>
 	 * @param source источник у кого он был вызван
 	 * @param args аргументы метода
 	 */
-	public void fireMethodInvoked(String methodName, T source, Object[] args);
+	public void fireMethodInvoked(MethodCollection methodName, T source, Object[] args);
 }

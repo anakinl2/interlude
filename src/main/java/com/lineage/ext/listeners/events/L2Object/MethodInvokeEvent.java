@@ -1,5 +1,6 @@
 package com.lineage.ext.listeners.events.L2Object;
 
+import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.events.DefaultMethodInvokeEvent;
 import com.lineage.game.model.L2Object;
 
@@ -8,7 +9,7 @@ import com.lineage.game.model.L2Object;
  */
 public class MethodInvokeEvent extends DefaultMethodInvokeEvent
 {
-	public MethodInvokeEvent(String methodName, L2Object owner, Object[] args)
+	public MethodInvokeEvent(MethodCollection methodName, L2Object owner, Object[] args)
 	{
 		super(methodName, owner, args);
 	}
