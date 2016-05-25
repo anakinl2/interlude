@@ -14,7 +14,7 @@ public interface PropertyChangeListener
 	 * Возвращает свойство даного листенера
 	 * @return свойство
 	 */
-	public PropertyCollection getPropery();
+	public PropertyType getPropery();
 
 	/**
 	 * Простенький фильтр, если лень добавлят по группам.
@@ -31,5 +31,5 @@ public interface PropertyChangeListener
 	 * @param property свойство
 	 * @return принимать ли
 	 */
-	public boolean accept(PropertyCollection property);
+	public boolean accept(PropertyType property);
 }

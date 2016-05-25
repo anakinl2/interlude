@@ -50,7 +50,7 @@ public class L2RaidBossInstance extends L2MonsterInstance
 	 * 
 	 * @param objectId
 	 *            Identifier of the object to initialized
-	 * @param L2NpcTemplate
+
 	 *            Template to apply to the NPC
 	 */
 	public L2RaidBossInstance(final int objectId, final L2NpcTemplate template)

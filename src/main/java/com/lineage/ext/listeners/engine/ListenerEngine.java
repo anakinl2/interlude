@@ -1,8 +1,8 @@
 package com.lineage.ext.listeners.engine;
 
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 import com.lineage.ext.listeners.PropertyChangeListener;
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.ext.listeners.events.MethodEvent;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.events.PropertyEvent;
@@ -33,14 +33,14 @@ public interface ListenerEngine<T>
 	 * @param value свойство
 	 * @param listener слушатель
 	 */
-	void addPropertyChangeListener(PropertyCollection value, PropertyChangeListener listener);
+	void addPropertyChangeListener(PropertyType value, PropertyChangeListener listener);
 
 	/**
 	 * Убирает слушатель свойств у определенного свойства
 	 * @param value свойство
 	 * @param listener слушатель
 	 */
-	void removePropertyChangeListener(PropertyCollection value, PropertyChangeListener listener);
+	void removePropertyChangeListener(PropertyType value, PropertyChangeListener listener);
 
 	/**
 	 * Запускает уведомление всех слушателей об изменении свойства
@@ -50,7 +50,7 @@ public interface ListenerEngine<T>
 	 * @param oldValue старое значение
 	 * @param newValue новое значение
 	 */
-	void firePropertyChanged(PropertyCollection value, T source, Object oldValue, Object newValue);
+	void firePropertyChanged(PropertyType value, T source, Object oldValue, Object newValue);
 
 	/**
 	 * Запускает уведомление всех слушателей об изменении свойства
@@ -63,14 +63,14 @@ public interface ListenerEngine<T>
 	 * @param property свойство
 	 * @param value значение
 	 */
-	void addProperty(PropertyCollection property, Object value);
+	void addProperty(PropertyType property, Object value);
 
 	/**
 	 * Возвращает значение свойства
 	 * @param property свойство
 	 * @return значение
 	 */
-	Object getProperty(PropertyCollection property);
+	Object getProperty(PropertyType property);
 
 	/**
 	 * Возвращает обьект - владельца даного движка слушателей
@@ -95,14 +95,14 @@ public interface ListenerEngine<T>
 	 * @param listener слушатель
 	 * @param methodName имя метода
 	 */
-	void addMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener);
+	void addMethodInvokedListener(MethodType methodName, MethodInvokeListener listener);
 
 	/**
 	 * Убирает определенный слушатель методов
 	 * @param listener слушатель
 	 * @param methodName имя метода
 	 */
-	void removeMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener);
+	void removeMethodInvokedListener(MethodType methodName, MethodInvokeListener listener);
 
 	/**
 	 * Вызывает слушатели и делает им нотифай события
@@ -116,5 +116,5 @@ public interface ListenerEngine<T>
 	 * @param source источник у кого он был вызван
 	 * @param args аргументы метода
 	 */
-	void fireMethodInvoked(MethodCollection methodName, T source, Object[] args);
+	void fireMethodInvoked(MethodType methodName, T source, Object[] args);
 }

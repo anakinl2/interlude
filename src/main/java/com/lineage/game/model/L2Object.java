@@ -2,10 +2,10 @@ package com.lineage.game.model;
 
 import java.util.logging.Logger;
 
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.PropertyChangeListener;
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.ext.listeners.engine.DefaultListenerEngine;
 import com.lineage.ext.listeners.engine.ListenerEngine;
 import com.lineage.ext.listeners.events.MethodEvent;
@@ -102,12 +102,12 @@ public abstract class L2Object
 		getListenerEngine().addMethodInvokedListener(listener);
 	}
 
-	public void addMethodInvokeListener(MethodCollection methodName, MethodInvokeListener listener)
+	public void addMethodInvokeListener(MethodType methodName, MethodInvokeListener listener)
 	{
 		getListenerEngine().addMethodInvokedListener(methodName, listener);
 	}
 
-	public void addProperty(PropertyCollection property, Object value)
+	public void addProperty(PropertyType property, Object value)
 	{
 		getListenerEngine().addProperty(property, value);
 	}
@@ -117,7 +117,7 @@ public abstract class L2Object
 		getListenerEngine().addPropertyChangeListener(listener);
 	}
 
-	public void addPropertyChangeListener(PropertyCollection value, PropertyChangeListener listener)
+	public void addPropertyChangeListener(PropertyType value, PropertyChangeListener listener)
 	{
 		getListenerEngine().addPropertyChangeListener(value, listener);
 	}
@@ -299,12 +299,12 @@ public abstract class L2Object
 		getListenerEngine().fireMethodInvoked(event);
 	}
 
-	void fireMethodInvoked(MethodCollection methodName, Object[] args)
+	void fireMethodInvoked(MethodType methodName, Object[] args)
 	{
 		getListenerEngine().fireMethodInvoked(methodName, this, args);
 	}
 
-	void firePropertyChanged(PropertyCollection value, Object oldValue, Object newValue)
+	void firePropertyChanged(PropertyType value, Object oldValue, Object newValue)
 	{
 		getListenerEngine().firePropertyChanged(value, this, oldValue, newValue);
 	}
@@ -416,7 +416,7 @@ public abstract class L2Object
 		return _poly_id >> 24;
 	}
 
-	public Object getProperty(PropertyCollection property)
+	public Object getProperty(PropertyType property)
 	{
 		return getListenerEngine().getProperty(property);
 	}
@@ -824,7 +824,7 @@ public abstract class L2Object
 		getListenerEngine().removeMethodInvokedListener(listener);
 	}
 
-	public void removeMethodInvokeListener(MethodCollection methodName, MethodInvokeListener listener)
+	public void removeMethodInvokeListener(MethodType methodName, MethodInvokeListener listener)
 	{
 		getListenerEngine().removeMethodInvokedListener(methodName, listener);
 	}
@@ -834,7 +834,7 @@ public abstract class L2Object
 		getListenerEngine().removePropertyChangeListener(listener);
 	}
 
-	public void removePropertyChangeListener(PropertyCollection value, PropertyChangeListener listener)
+	public void removePropertyChangeListener(PropertyType value, PropertyChangeListener listener)
 	{
 		getListenerEngine().removePropertyChangeListener(value, listener);
 	}

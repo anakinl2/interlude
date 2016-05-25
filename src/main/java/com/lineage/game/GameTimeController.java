@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.logging.Logger;
 
 import com.lineage.Config;
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.ext.listeners.engine.DefaultListenerEngine;
 import com.lineage.ext.listeners.engine.ListenerEngine;
 import com.lineage.game.instancemanager.DayNightSpawnManager;
@@ -149,7 +149,7 @@ public class GameTimeController
 
 			DayNightSpawnManager.getInstance().notifyChangeMode();
 
-			getListenerEngine().firePropertyChanged(PropertyCollection.GameTimeControllerDayNightChange, getInstance(), !_isNight, _isNight);
+			getListenerEngine().firePropertyChanged(PropertyType.GAME_TIME_CONTROLLER_DAY_NIGHT_CHANGE, getInstance(), !_isNight, _isNight);
 
 			for(L2Player player : L2World.getAllPlayers())
 			{

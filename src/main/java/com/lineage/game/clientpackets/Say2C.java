@@ -11,7 +11,7 @@ import com.lineage.db.DatabaseUtils;
 import com.lineage.db.FiltredPreparedStatement;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.db.ThreadConnection;
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.ext.multilang.CustomMessage;
 import com.lineage.game.cache.Msg;
 import com.lineage.game.handler.VoicedCommandHandler;
@@ -268,7 +268,7 @@ public class Say2C extends L2GameClientPacket
 					return;
 				}
 
-				final Long lastShoutTime = (Long) activeChar.getProperty(PropertyCollection.ShoutChatLaunched);
+				final Long lastShoutTime = (Long) activeChar.getProperty(PropertyType.SHOUT_CHAT_LAUNCHED);
 				if(lastShoutTime != null && lastShoutTime + Config.SAYTOSHOUTLIMIT2 > curTime)
 				{
 					if(activeChar.getLang("ru"))
@@ -277,7 +277,7 @@ public class Say2C extends L2GameClientPacket
 						activeChar.sendMessage("Shout chat is allowed once per " + Config.SAYTOSHOUTLIMIT + " seconds.");
 					return;
 				}
-				activeChar.addProperty(PropertyCollection.ShoutChatLaunched, curTime);
+				activeChar.addProperty(PropertyType.SHOUT_CHAT_LAUNCHED, curTime);
 
 				for(final L2Player player : L2World.getAllPlayers())
 					if(!player.isInBlockList(activeChar) && !player.isBlockAll())
@@ -306,7 +306,7 @@ public class Say2C extends L2GameClientPacket
 					return;
 				}
 
-				final Long lastTradeTime = (Long) activeChar.getProperty(PropertyCollection.TradeChatLaunched);
+				final Long lastTradeTime = (Long) activeChar.getProperty(PropertyType.TRADE_CHAT_LAUNCHED);
 				if(lastTradeTime != null && lastTradeTime + Config.SAYTOTRADELIMIT2 > curTime)
 				{
 					if(activeChar.getLang("ru"))
@@ -315,7 +315,7 @@ public class Say2C extends L2GameClientPacket
 						activeChar.sendMessage("Trade chat is allowed once per " + Config.SAYTOTRADELIMIT + " seconds.");
 					return;
 				}
-				activeChar.addProperty(PropertyCollection.TradeChatLaunched, curTime);
+				activeChar.addProperty(PropertyType.TRADE_CHAT_LAUNCHED, curTime);
 				for(final L2Player player : L2World.getAllPlayers())
 					if(MapRegion.getInstance().getMapRegion(player.getX(), player.getY()) == mapregion && !player.isInBlockList(activeChar) && !player.isBlockAll() && player != activeChar)
 						player.sendPacket(cs);
@@ -399,7 +399,7 @@ public class Say2C extends L2GameClientPacket
 					// Ограничение только для героев, гм-мы пускай говорят.
 					if(!activeChar.getPlayerAccess().CanAnnounce)
 					{
-						final Long lastHeroTime = (Long) activeChar.getProperty(PropertyCollection.HeroChatLaunched);
+						final Long lastHeroTime = (Long) activeChar.getProperty(PropertyType.HERO_CHAT_LAUNCHED);
 						if(lastHeroTime != null && lastHeroTime + 10000L > curTime)
 						{
 							String _str;
@@ -407,7 +407,7 @@ public class Say2C extends L2GameClientPacket
 							activeChar.sendMessage(_str);
 							return;
 						}
-						activeChar.addProperty(PropertyCollection.HeroChatLaunched, curTime);
+						activeChar.addProperty(PropertyType.HERO_CHAT_LAUNCHED, curTime);
 					}
 
 					for(final L2Player player : L2World.getAllPlayers())

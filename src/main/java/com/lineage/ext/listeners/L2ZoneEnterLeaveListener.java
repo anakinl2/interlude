@@ -26,7 +26,7 @@ public abstract class L2ZoneEnterLeaveListener implements MethodInvokeListener
 		L2ZoneEnterLeaveEvent event = (L2ZoneEnterLeaveEvent) e;
 		L2Zone owner = event.getOwner();
 		L2Object actor = event.getArgs()[0];
-		if(e.getMethodName().equals(MethodCollection.L2ZoneObjectEnter))
+		if(e.getMethodName().equals(MethodType.ZONE_OBJECT_ENTER))
 			objectEntered(owner, actor);
 		else
 			objectLeaved(owner, actor);
@@ -35,8 +35,8 @@ public abstract class L2ZoneEnterLeaveListener implements MethodInvokeListener
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		MethodCollection method = event.getMethodName();
-		return event instanceof L2ZoneEnterLeaveEvent && (method.equals(MethodCollection.L2ZoneObjectEnter) || method.equals(MethodCollection.L2ZoneObjectLeave));
+		MethodType method = event.getMethodName();
+		return event instanceof L2ZoneEnterLeaveEvent && (method.equals(MethodType.ZONE_OBJECT_ENTER) || method.equals(MethodType.ZONE_OBJECT_LEAVE));
 	}
 
 	/**

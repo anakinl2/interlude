@@ -26,9 +26,9 @@ public abstract class DayNightChangeListener implements PropertyChangeListener
 	}
 
 	@Override
-	public final boolean accept(PropertyCollection property)
+	public final boolean accept(PropertyType property)
 	{
-		return PropertyCollection.GameTimeControllerDayNightChange.equals(property);
+		return PropertyType.GAME_TIME_CONTROLLER_DAY_NIGHT_CHANGE.equals(property);
 	}
 
 	/**
@@ -37,9 +37,9 @@ public abstract class DayNightChangeListener implements PropertyChangeListener
 	 * @return свойство
 	 */
 	@Override
-	public final PropertyCollection getPropery()
+	public final PropertyType getPropery()
 	{
-		return PropertyCollection.GameTimeControllerDayNightChange;
+		return PropertyType.GAME_TIME_CONTROLLER_DAY_NIGHT_CHANGE;
 	}
 
 	/**

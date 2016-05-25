@@ -1,6 +1,6 @@
 package com.lineage.ext.listeners.events.L2Object;
 
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.ext.listeners.events.DefaultPropertyChangeEvent;
 import com.lineage.game.model.L2Object;
 
@@ -11,7 +11,7 @@ import com.lineage.game.model.L2Object;
  */
 public class PropertyChangeEvent extends DefaultPropertyChangeEvent
 {
-	public PropertyChangeEvent(PropertyCollection event, L2Object actor, Object oldV, Object newV)
+	public PropertyChangeEvent(PropertyType event, L2Object actor, Object oldV, Object newV)
 	{
 		super(event, actor, oldV, newV);
 	}

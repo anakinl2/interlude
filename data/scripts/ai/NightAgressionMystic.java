@@ -1,7 +1,7 @@
 package ai;
 
 import com.lineage.ext.listeners.DayNightChangeListener;
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.game.GameTimeController;
 import com.lineage.game.ai.Mystic;
 import com.lineage.game.model.L2Character;
@@ -16,7 +16,7 @@ public class NightAgressionMystic extends Mystic
 	public NightAgressionMystic(L2Character actor)
 	{
 		super(actor);
-		GameTimeController.getInstance().getListenerEngine().addPropertyChangeListener(PropertyCollection.GameTimeControllerDayNightChange, new NightAgressionDayNightListener());
+		GameTimeController.getInstance().getListenerEngine().addPropertyChangeListener(PropertyType.GAME_TIME_CONTROLLER_DAY_NIGHT_CHANGE, new NightAgressionDayNightListener());
 	}
 
 	private class NightAgressionDayNightListener extends DayNightChangeListener

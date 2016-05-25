@@ -1,9 +1,9 @@
 package com.lineage.ext.listeners.engine;
 
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.PropertyChangeListener;
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.ext.listeners.events.DefaultMethodInvokeEvent;
 import com.lineage.ext.listeners.events.DefaultPropertyChangeEvent;
 import com.lineage.ext.listeners.events.MethodEvent;
@@ -19,11 +19,11 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class DefaultListenerEngine<T> implements ListenerEngine<T>
 {
 	protected LinkedBlockingQueue<PropertyChangeListener> propertyChangeListeners;
-	protected ConcurrentHashMap<PropertyCollection, LinkedBlockingQueue<PropertyChangeListener>> mappedPropertyChangeListeners;
-	protected HashMap<PropertyCollection, Object> properties;
+	protected ConcurrentHashMap<PropertyType, LinkedBlockingQueue<PropertyChangeListener>> mappedPropertyChangeListeners;
+	protected HashMap<PropertyType, Object> properties;
 
 	protected LinkedBlockingQueue<MethodInvokeListener> methodInvokedListeners;
-	protected ConcurrentHashMap<MethodCollection, LinkedBlockingQueue<MethodInvokeListener>> mappedMethodInvokedListeners;
+	protected ConcurrentHashMap<MethodType, LinkedBlockingQueue<MethodInvokeListener>> mappedMethodInvokedListeners;
 
 	private final T owner;
 
@@ -57,7 +57,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void addPropertyChangeListener(PropertyCollection value, PropertyChangeListener listener)
+	public void addPropertyChangeListener(PropertyType value, PropertyChangeListener listener)
 	{
 		if(mappedPropertyChangeListeners == null)
 			mappedPropertyChangeListeners = new ConcurrentHashMap<>();
@@ -74,7 +74,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void removePropertyChangeListener(PropertyCollection value, PropertyChangeListener listener)
+	public void removePropertyChangeListener(PropertyType value, PropertyChangeListener listener)
 	{
 		if(mappedPropertyChangeListeners == null)
 			return;
@@ -88,7 +88,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void firePropertyChanged(PropertyCollection value, T source, Object oldValue, Object newValue)
+	public void firePropertyChanged(PropertyType value, T source, Object oldValue, Object newValue)
 	{
 		firePropertyChanged(new DefaultPropertyChangeEvent(value, source, oldValue, newValue));
 	}
@@ -114,7 +114,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void addProperty(PropertyCollection property, Object value)
+	public void addProperty(PropertyType property, Object value)
 	{
 		if(properties == null)
 			properties = new HashMap<>();
@@ -126,7 +126,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public Object getProperty(PropertyCollection property)
+	public Object getProperty(PropertyType property)
 	{
 		if(properties == null)
 			return null;
@@ -153,7 +153,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void addMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener)
+	public void addMethodInvokedListener(MethodType methodName, MethodInvokeListener listener)
 	{
 		if(mappedMethodInvokedListeners == null)
 			mappedMethodInvokedListeners = new ConcurrentHashMap<>();
@@ -170,7 +170,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void removeMethodInvokedListener(MethodCollection methodName, MethodInvokeListener listener)
+	public void removeMethodInvokedListener(MethodType methodName, MethodInvokeListener listener)
 	{
 		if(mappedMethodInvokedListeners == null)
 			return;
@@ -205,7 +205,7 @@ public class DefaultListenerEngine<T> implements ListenerEngine<T>
 	}
 
 	@Override
-	public void fireMethodInvoked(MethodCollection methodName, T source, Object[] args)
+	public void fireMethodInvoked(MethodType methodName, T source, Object[] args)
 	{
 		fireMethodInvoked(new DefaultMethodInvokeEvent(methodName, source, args));
 	}

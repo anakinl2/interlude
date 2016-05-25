@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 import com.lineage.game.model.base.Race;
 import javolution.util.FastList;
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 import com.lineage.ext.listeners.engine.DefaultListenerEngine;
 import com.lineage.ext.listeners.engine.ListenerEngine;
 import com.lineage.ext.listeners.events.L2Zone.L2ZoneEnterLeaveEvent;
@@ -312,7 +312,7 @@ public class L2Zone
 	 */
 	private void onZoneEnter(L2Object object)
 	{
-		getListenerEngine().fireMethodInvoked(new L2ZoneEnterLeaveEvent(MethodCollection.L2ZoneObjectEnter, this, new L2Object[] { object }));
+		getListenerEngine().fireMethodInvoked(new L2ZoneEnterLeaveEvent(MethodType.ZONE_OBJECT_ENTER, this, new L2Object[] { object }));
 
 		checkEffects(object, true);
 
@@ -328,7 +328,7 @@ public class L2Zone
 	 */
 	private void onZoneLeave(L2Object object)
 	{
-		getListenerEngine().fireMethodInvoked(new L2ZoneEnterLeaveEvent(MethodCollection.L2ZoneObjectLeave, this, new L2Object[] { object }));
+		getListenerEngine().fireMethodInvoked(new L2ZoneEnterLeaveEvent(MethodType.ZONE_OBJECT_LEAVE, this, new L2Object[] { object }));
 
 		checkEffects(object, false);
 

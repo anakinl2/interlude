@@ -54,10 +54,10 @@ public class Baium extends DefaultAI
 			if(actor == null || attacker == null)
 				return;
 			if(attacker.isPlayer() && attacker.getPet() != null)
-				attacker.getPet().doDie(actor);
+				attacker.getPet().DO_DIE(actor);
 			else if((attacker.isSummon() || attacker.isPet()) && attacker.getPlayer() != null)
-				attacker.getPlayer().doDie(actor);
-			attacker.doDie(actor);
+				attacker.getPlayer().DO_DIE(actor);
+			attacker.DO_DIE(actor);
 		}
 
 		super.onEvtAttacked(attacker, damage);

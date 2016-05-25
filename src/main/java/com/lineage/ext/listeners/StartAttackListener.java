@@ -17,7 +17,7 @@ public abstract class StartAttackListener implements MethodInvokeListener
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		return event.getMethodName().equals(MethodCollection.onStartAttack);
+		return event.getMethodName().equals(MethodType.ON_START_ATTACK);
 	}
 
 	public abstract void onAttackStart(L2Character target);

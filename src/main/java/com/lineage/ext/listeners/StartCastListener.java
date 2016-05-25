@@ -19,7 +19,7 @@ public abstract class StartCastListener implements MethodInvokeListener
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		return event.getMethodName().equals(MethodCollection.onStartCast);
+		return event.getMethodName().equals(MethodType.ON_START_CAST);
 	}
 
 	public abstract void onCastStart(L2Skill skill, L2Character target, boolean forceUse);

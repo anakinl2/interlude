@@ -1,6 +1,6 @@
 package com.lineage.ext.listeners.events;
 
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 
 /**
  * @author Death
@@ -9,9 +9,9 @@ public class DefaultMethodInvokeEvent implements MethodEvent
 {
 	private final Object owner;
 	private final Object[] args;
-	private final MethodCollection methodName;
+	private final MethodType methodName;
 
-	public DefaultMethodInvokeEvent(MethodCollection methodName, Object owner, Object[] args)
+	public DefaultMethodInvokeEvent(MethodType methodName, Object owner, Object[] args)
 	{
 		this.methodName = methodName;
 		this.owner = owner;
@@ -31,7 +31,7 @@ public class DefaultMethodInvokeEvent implements MethodEvent
 	}
 
 	@Override
-	public MethodCollection getMethodName()
+	public MethodType getMethodName()
 	{
 		return methodName;
 	}

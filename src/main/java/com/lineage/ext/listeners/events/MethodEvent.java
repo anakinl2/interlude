@@ -1,6 +1,6 @@
 package com.lineage.ext.listeners.events;
 
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 
 /**
  * @author Death
@@ -8,6 +8,6 @@ import com.lineage.ext.listeners.MethodCollection;
 public interface MethodEvent {
     public Object[] getArgs();
 
-    public MethodCollection getMethodName();
+    public MethodType getMethodName();
     public Object getOwner();
 }

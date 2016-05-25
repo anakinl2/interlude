@@ -24,8 +24,8 @@ public abstract class AbstractAINotifyEventListener implements MethodInvokeListe
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		MethodCollection method = event.getMethodName();
-		return event instanceof AbstractAINotifyEvent && method.equals(MethodCollection.AbstractAInotifyEvent);
+		MethodType method = event.getMethodName();
+		return event instanceof AbstractAINotifyEvent && method.equals(MethodType.ABSTRACT_AI_NOTIFY_EVENT);
 	}
 
 	public abstract void NotifyEvent(AbstractAI ai, CtrlEvent evt, Object[] args);

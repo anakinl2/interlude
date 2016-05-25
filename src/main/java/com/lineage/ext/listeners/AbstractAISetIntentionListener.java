@@ -26,8 +26,8 @@ public abstract class AbstractAISetIntentionListener implements MethodInvokeList
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		MethodCollection method = event.getMethodName();
-		return event instanceof AbstractAISetIntention && method.equals(MethodCollection.AbstractAIsetIntention);
+		MethodType method = event.getMethodName();
+		return event instanceof AbstractAISetIntention && method.equals(MethodType.ABSTRACT_AI_SET_INTENTION);
 	}
 
 	public abstract void SetIntention(AbstractAI ai, CtrlIntention intention, Object arg0, Object arg1);

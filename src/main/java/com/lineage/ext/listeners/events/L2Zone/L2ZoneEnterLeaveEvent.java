@@ -1,6 +1,6 @@
 package com.lineage.ext.listeners.events.L2Zone;
 
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 import com.lineage.ext.listeners.events.DefaultMethodInvokeEvent;
 import com.lineage.game.model.L2Object;
 import com.lineage.game.model.L2Zone;
@@ -12,7 +12,7 @@ import com.lineage.game.model.L2Zone;
  */
 public class L2ZoneEnterLeaveEvent extends DefaultMethodInvokeEvent
 {
-	public L2ZoneEnterLeaveEvent(MethodCollection methodName, L2Zone owner, L2Object[] args)
+	public L2ZoneEnterLeaveEvent(MethodType methodName, L2Zone owner, L2Object[] args)
 	{
 		super(methodName, owner, args);
 	}

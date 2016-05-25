@@ -20,8 +20,8 @@ import java.util.logging.Logger;
 import javolution.util.FastList;
 import javolution.util.FastTable;
 import com.lineage.Config;
-import com.lineage.ext.listeners.MethodCollection;
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.MethodType;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.ext.listeners.StatsChangeListener;
 import com.lineage.ext.mods.balancer.Balancer;
 import com.lineage.ext.mods.balancer.Balancer.bflag;
@@ -1086,7 +1086,7 @@ public abstract class L2Character extends L2Object
 		if(target == null || isAMuted() || isAttackingNow() || isAlikeDead() || target.isAlikeDead() || !isInRange(target, 2000))
 			return;
 
-		fireMethodInvoked(MethodCollection.onStartAttack, new Object[] { target });
+		fireMethodInvoked(MethodType.ON_START_ATTACK, new Object[] { target });
 
 		// Get the Attack Speed of the L2Character (delay (in milliseconds) before next attack)
 		// лимит в 0.2 секунды означает скорость атаки 2500
@@ -1358,7 +1358,7 @@ public abstract class L2Character extends L2Object
 			startForceBuff(target, skill);
 		}
 
-		fireMethodInvoked(MethodCollection.onStartCast, new Object[] { skill, target, forceUse });
+		fireMethodInvoked(MethodType.ON_START_CAST, new Object[] { skill, target, forceUse });
 
 		setHeading(target, true);
 
@@ -1504,7 +1504,7 @@ public abstract class L2Character extends L2Object
 
 	public void doDie(final L2Character killer)
 	{
-		fireMethodInvoked(MethodCollection.doDie, new Object[] { killer });
+		fireMethodInvoked(MethodType.DO_DIE, new Object[] { killer });
 
 		setTarget(null);
 		stopMove();
@@ -2747,7 +2747,7 @@ public abstract class L2Character extends L2Object
 	public void onDecay()
 	{
 		decayMe();
-		fireMethodInvoked(MethodCollection.onDecay, null);
+		fireMethodInvoked(MethodType.ON_DECAY, null);
 	}
 
 	@Override
@@ -3028,7 +3028,7 @@ public abstract class L2Character extends L2Object
 
 	public void reduceCurrentHp(double i, final L2Character attacker, final L2Skill skill, final boolean awake, final boolean standUp, final boolean directHp, final boolean canReflect)
 	{
-		fireMethodInvoked(MethodCollection.ReduceCurrentHp, new Object[] { i, attacker, skill, awake, standUp, directHp, });
+		fireMethodInvoked(MethodType.REDUCE_CURRENT_HP, new Object[] { i, attacker, skill, awake, standUp, directHp, });
 
 		if(attacker == null || isInvul() || isDead() || attacker.isDead())
 			return;
@@ -3337,7 +3337,7 @@ public abstract class L2Character extends L2Object
 
 		startRegeneration();
 
-		firePropertyChanged(PropertyCollection.HitPoints, hpStart, _currentHp);
+		firePropertyChanged(PropertyType.HIT_POINTS, hpStart, _currentHp);
 
 		checkHpMessages(hpStart, newHp);
 		broadcastStatusUpdate();
@@ -3391,7 +3391,7 @@ public abstract class L2Character extends L2Object
 		// }
 
 		startRegeneration();
-		firePropertyChanged(PropertyCollection.HitPoints, hpStart, _currentHp);
+		firePropertyChanged(PropertyType.HIT_POINTS, hpStart, _currentHp);
 		checkHpMessages(hpStart, newHp);
 		broadcastStatusUpdate();
 	}
@@ -3649,7 +3649,7 @@ public abstract class L2Character extends L2Object
 			if(isPlayer())
 				_currentCp = Math.min(getMaxCp(), Math.max(0, _currentCp + Formulas.calcCpRegen(L2Character.this)));
 
-			firePropertyChanged(PropertyCollection.HitPoints, hpStart, _currentHp);
+			firePropertyChanged(PropertyType.HIT_POINTS, hpStart, _currentHp);
 			checkHpMessages(hpStart, _currentHp);
 			broadcastStatusUpdate();
 			startRegeneration();

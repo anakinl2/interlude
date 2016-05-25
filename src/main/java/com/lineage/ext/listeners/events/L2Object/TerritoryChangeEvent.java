@@ -2,7 +2,7 @@ package com.lineage.ext.listeners.events.L2Object;
 
 import java.util.Collection;
 
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.ext.listeners.events.PropertyEvent;
 import com.lineage.game.model.L2Object;
 import com.lineage.game.model.L2Territory;
@@ -52,8 +52,8 @@ public class TerritoryChangeEvent implements PropertyEvent
 	}
 
 	@Override
-	public PropertyCollection getProperty()
+	public PropertyType getProperty()
 	{
-		return PropertyCollection.TerritoryChanged;
+		return PropertyType.TERRITORY_CHANGED;
 	}
 }

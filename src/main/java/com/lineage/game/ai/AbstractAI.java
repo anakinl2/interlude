@@ -1,7 +1,7 @@
 package com.lineage.game.ai;
 
 import com.lineage.Config;
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 import com.lineage.ext.listeners.engine.DefaultListenerEngine;
 import com.lineage.ext.listeners.engine.ListenerEngine;
 import com.lineage.ext.listeners.events.AbstractAI.AbstractAINotifyEvent;
@@ -56,7 +56,7 @@ public abstract class AbstractAI {
             intention = AI_INTENTION_IDLE;
         }
 
-        getListenerEngine().fireMethodInvoked(new AbstractAISetIntention(MethodCollection.AbstractAIsetIntention, this, new Object[]{
+        getListenerEngine().fireMethodInvoked(new AbstractAISetIntention(MethodType.ABSTRACT_AI_SET_INTENTION, this, new Object[]{
                 intention,
                 arg0,
                 arg1}));
@@ -106,7 +106,7 @@ public abstract class AbstractAI {
         if (actor == null || !actor.isVisible() || !actor.hasAI())
             return;
 
-        getListenerEngine().fireMethodInvoked(new AbstractAINotifyEvent(MethodCollection.AbstractAInotifyEvent, this, new Object[]{evt, args}));
+        getListenerEngine().fireMethodInvoked(new AbstractAINotifyEvent(MethodType.ABSTRACT_AI_NOTIFY_EVENT, this, new Object[]{evt, args}));
 
         switch (evt) {
             case EVT_THINK:

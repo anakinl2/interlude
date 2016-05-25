@@ -1,6 +1,6 @@
 package com.lineage.ext.listeners.reduceHp;
 
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.events.MethodEvent;
 import com.lineage.game.model.L2Character;
@@ -29,7 +29,7 @@ public abstract class ReduceCurrentHpListener implements MethodInvokeListener
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		return event.getMethodName().equals(MethodCollection.ReduceCurrentHp);
+		return event.getMethodName().equals(MethodType.REDUCE_CURRENT_HP);
 	}
 
 	public abstract void onReduceCurrentHp(L2Character actor, double damage, L2Character attacker, L2Skill skill, boolean awake, boolean standUp, boolean directHp);

@@ -25,7 +25,7 @@ public abstract class DoDieListener implements MethodInvokeListener
 	@Override
 	public final boolean accept(MethodEvent event)
 	{
-		return event.getMethodName().equals(MethodCollection.onDecay);
+		return event.getMethodName().equals(MethodType.ON_DECAY);
 	}
 
 	public abstract void onDie(L2Character cha);

@@ -1,6 +1,6 @@
 package com.lineage.ext.listeners.events;
 
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 
 public interface PropertyEvent
 {
@@ -10,5 +10,5 @@ public interface PropertyEvent
 
 	public Object getNewValue();
 
-	public PropertyCollection getProperty();
+	public PropertyType getProperty();
 }

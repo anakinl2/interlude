@@ -1,6 +1,6 @@
 package com.lineage.game.skills.effects;
 
-import com.lineage.ext.listeners.MethodCollection;
+import com.lineage.ext.listeners.MethodType;
 import com.lineage.ext.listeners.reduceHp.ReduceCurrentHpListener;
 import com.lineage.game.model.L2Character;
 import com.lineage.game.model.L2Effect;
@@ -24,14 +24,14 @@ public final class EffectCurseOfLifeFlow extends L2Effect
 	{
 		super.onStart();
 		_listener = new CurseOfLifeFlowListener();
-		_effected.addMethodInvokeListener(MethodCollection.ReduceCurrentHp, _listener);
+		_effected.addMethodInvokeListener(MethodType.REDUCE_CURRENT_HP, _listener);
 	}
 
 	@Override
 	public void onExit()
 	{
 		super.onExit();
-		_effected.removeMethodInvokeListener(MethodCollection.ReduceCurrentHp, _listener);
+		_effected.removeMethodInvokeListener(MethodType.REDUCE_CURRENT_HP, _listener);
 		_listener = null;
 	}
 

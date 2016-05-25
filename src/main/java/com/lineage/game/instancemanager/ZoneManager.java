@@ -13,7 +13,7 @@ import com.lineage.db.FiltredPreparedStatement;
 import com.lineage.db.L2DatabaseFactory;
 import com.lineage.db.ThreadConnection;
 import com.lineage.ext.listeners.L2ZoneEnterLeaveListener;
-import com.lineage.ext.listeners.PropertyCollection;
+import com.lineage.ext.listeners.PropertyType;
 import com.lineage.game.ThreadPoolManager;
 import com.lineage.game.model.L2Object;
 import com.lineage.game.model.L2Player;
@@ -324,7 +324,7 @@ public class ZoneManager
 					player.stopMove();
 					player.sendPacket(new SystemMessage(SystemMessage.THIS_AREA_CANNOT_BE_ENTERED_WHILE_MOUNTED_ATOP_OF_A_WYVERN_YOU_WILL_BE_DISMOUNTED_FROM_YOUR_WYVERN_IF_YOU_DO_NOT_LEAVE));
 
-					Integer enterCount = (Integer) player.getProperty(PropertyCollection.ZoneEnteredNoLandingFlying);
+					Integer enterCount = (Integer) player.getProperty(PropertyType.ZONE_ENTERED_NO_LANDING_FLYING);
 					if(enterCount == null)
 						enterCount = 0;
 
@@ -332,12 +332,12 @@ public class ZoneManager
 					if(loc == null || enterCount >= 5)
 					{
 						player.setMount(0, 0, 0);
-						player.addProperty(PropertyCollection.ZoneEnteredNoLandingFlying, 0);
+						player.addProperty(PropertyType.ZONE_ENTERED_NO_LANDING_FLYING, 0);
 						return;
 					}
 
 					player.teleToLocation(loc);
-					player.addProperty(PropertyCollection.ZoneEnteredNoLandingFlying, enterCount + 1);
+					player.addProperty(PropertyType.ZONE_ENTERED_NO_LANDING_FLYING, enterCount + 1);
 				}
 				else if(Config.ALT_DONT_ALLOW_PETS_ON_SIEGE && player.getPet() != null)
 				{
