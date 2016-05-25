@@ -11,12 +11,12 @@ import com.lineage.game.model.instances.L2NpcInstance;
  * АИ для мобов, меняющих агресивность в ночное время.<BR>
  * Наследуется на прямую от Mystic.
  */
-public class NightAgressionMystic extends Mystic implements PropertyCollection
+public class NightAgressionMystic extends Mystic
 {
 	public NightAgressionMystic(L2Character actor)
 	{
 		super(actor);
-		GameTimeController.getInstance().getListenerEngine().addPropertyChangeListener(GameTimeControllerDayNightChange, new NightAgressionDayNightListener());
+		GameTimeController.getInstance().getListenerEngine().addPropertyChangeListener(PropertyCollection.GameTimeControllerDayNightChange, new NightAgressionDayNightListener());
 	}
 
 	private class NightAgressionDayNightListener extends DayNightChangeListener

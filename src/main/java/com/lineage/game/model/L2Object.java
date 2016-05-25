@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.PropertyChangeListener;
+import com.lineage.ext.listeners.PropertyCollection;
 import com.lineage.ext.listeners.engine.DefaultListenerEngine;
 import com.lineage.ext.listeners.engine.ListenerEngine;
 import com.lineage.ext.listeners.events.MethodEvent;
@@ -106,7 +107,7 @@ public abstract class L2Object
 		getListenerEngine().addMethodInvokedListener(methodName, listener);
 	}
 
-	public void addProperty(String property, Object value)
+	public void addProperty(PropertyCollection property, Object value)
 	{
 		getListenerEngine().addProperty(property, value);
 	}
@@ -116,7 +117,7 @@ public abstract class L2Object
 		getListenerEngine().addPropertyChangeListener(listener);
 	}
 
-	public void addPropertyChangeListener(String value, PropertyChangeListener listener)
+	public void addPropertyChangeListener(PropertyCollection value, PropertyChangeListener listener)
 	{
 		getListenerEngine().addPropertyChangeListener(value, listener);
 	}
@@ -303,7 +304,7 @@ public abstract class L2Object
 		getListenerEngine().fireMethodInvoked(methodName, this, args);
 	}
 
-	void firePropertyChanged(String value, Object oldValue, Object newValue)
+	void firePropertyChanged(PropertyCollection value, Object oldValue, Object newValue)
 	{
 		getListenerEngine().firePropertyChanged(value, this, oldValue, newValue);
 	}
@@ -415,7 +416,7 @@ public abstract class L2Object
 		return _poly_id >> 24;
 	}
 
-	public Object getProperty(String property)
+	public Object getProperty(PropertyCollection property)
 	{
 		return getListenerEngine().getProperty(property);
 	}
@@ -833,7 +834,7 @@ public abstract class L2Object
 		getListenerEngine().removePropertyChangeListener(listener);
 	}
 
-	public void removePropertyChangeListener(String value, PropertyChangeListener listener)
+	public void removePropertyChangeListener(PropertyCollection value, PropertyChangeListener listener)
 	{
 		getListenerEngine().removePropertyChangeListener(value, listener);
 	}

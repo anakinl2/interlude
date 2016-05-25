@@ -8,7 +8,7 @@ import com.lineage.game.GameTimeController;
  * @Date: 23/11/2007
  * @Time: 8:56:19
  */
-public abstract class DayNightChangeListener implements PropertyChangeListener, PropertyCollection
+public abstract class DayNightChangeListener implements PropertyChangeListener
 {
 
 	/**
@@ -26,9 +26,9 @@ public abstract class DayNightChangeListener implements PropertyChangeListener, 
 	}
 
 	@Override
-	public final boolean accept(String property)
+	public final boolean accept(PropertyCollection property)
 	{
-		return GameTimeControllerDayNightChange.equals(property);
+		return PropertyCollection.GameTimeControllerDayNightChange.equals(property);
 	}
 
 	/**
@@ -37,9 +37,9 @@ public abstract class DayNightChangeListener implements PropertyChangeListener, 
 	 * @return свойство
 	 */
 	@Override
-	public final String getPropery()
+	public final PropertyCollection getPropery()
 	{
-		return GameTimeControllerDayNightChange;
+		return PropertyCollection.GameTimeControllerDayNightChange;
 	}
 
 	/**

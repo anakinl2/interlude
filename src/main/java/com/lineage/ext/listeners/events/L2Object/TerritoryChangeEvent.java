@@ -52,7 +52,7 @@ public class TerritoryChangeEvent implements PropertyEvent
 	}
 
 	@Override
-	public String getProperty()
+	public PropertyCollection getProperty()
 	{
 		return PropertyCollection.TerritoryChanged;
 	}

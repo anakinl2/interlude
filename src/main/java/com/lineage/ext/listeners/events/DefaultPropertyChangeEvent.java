@@ -1,13 +1,15 @@
 package com.lineage.ext.listeners.events;
 
+import com.lineage.ext.listeners.PropertyCollection;
+
 public class DefaultPropertyChangeEvent implements PropertyEvent
 {
-	private final String event;
+	private final PropertyCollection event;
 	private final Object actor;
 	private final Object oldV;
 	private final Object newV;
 
-	public DefaultPropertyChangeEvent(String event, Object actor, Object oldV, Object newV)
+	public DefaultPropertyChangeEvent(PropertyCollection event, Object actor, Object oldV, Object newV)
 	{
 		this.event = event;
 		this.actor = actor;
@@ -34,7 +36,7 @@ public class DefaultPropertyChangeEvent implements PropertyEvent
 	}
 
 	@Override
-	public String getProperty()
+	public PropertyCollection getProperty()
 	{
 		return event;
 	}

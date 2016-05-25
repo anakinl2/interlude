@@ -15,7 +15,7 @@ import com.lineage.game.model.instances.L2NpcInstance;
 /**
  * Индивидуальное АИ эпик боса Zaken.<BR> - неуязвим ночью<BR> - получает 25% пенальти на регены солнечной комнате - зона zaken_sunlight_room, id: 1335
  */
-public class Zaken extends Fighter implements PropertyCollection
+public class Zaken extends Fighter
 {
 	private static final L2Zone _zone = ZoneManager.getInstance().getZoneById(ZoneType.no_restart, 1335, true);
 	private ZoneListener _zoneListener = new ZoneListener();
@@ -25,7 +25,7 @@ public class Zaken extends Fighter implements PropertyCollection
 	public Zaken(L2Character actor)
 	{
 		super(actor);
-		GameTimeController.getInstance().getListenerEngine().addPropertyChangeListener(GameTimeControllerDayNightChange, new NightInvulDayNightListener());
+		GameTimeController.getInstance().getListenerEngine().addPropertyChangeListener(PropertyCollection.GameTimeControllerDayNightChange, new NightInvulDayNightListener());
 		_zone.getListenerEngine().addMethodInvokedListener(_zoneListener);
 		_baseHpReg = actor.getTemplate().baseHpReg;
 		_baseMpReg = actor.getTemplate().baseMpReg;

@@ -1,12 +1,17 @@
 package com.lineage.ext.listeners;
 
-public interface PropertyCollection
-{
-	public static final String HitPoints = "L2Character.HitPoints";
-	public static final String TerritoryChanged = "L2Object.TerritoryChangeEvent";
-	public static final String HeroChatLaunched = "Say2.HeroChatLaunched";
-	public static final String ShoutChatLaunched = "Say2.ShoutChatLaunched";
-	public static final String TradeChatLaunched = "Say2.TradeChatLaunched";
-	public static final String ZoneEnteredNoLandingFlying = "L2Zone.EnteredNoLandingOnWywern";
-	public static final String GameTimeControllerDayNightChange = "GameTimeController.DayNightChange";
+public enum PropertyCollection {
+    HitPoints("L2Character.HitPoints"),
+    TerritoryChanged("L2Object.TerritoryChangeEvent"),
+    HeroChatLaunched("Say2.HeroChatLaunched"),
+    ShoutChatLaunched("Say2.ShoutChatLaunched"),
+    TradeChatLaunched("Say2.TradeChatLaunched"),
+    ZoneEnteredNoLandingFlying("L2Zone.EnteredNoLandingOnWywern"),
+    GameTimeControllerDayNightChange("GameTimeController.DayNightChange");
+
+    String command;
+
+    PropertyCollection(String command) {
+        this.command = command;
+    }
 }

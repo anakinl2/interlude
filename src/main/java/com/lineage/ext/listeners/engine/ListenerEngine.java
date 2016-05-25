@@ -2,6 +2,7 @@ package com.lineage.ext.listeners.engine;
 
 import com.lineage.ext.listeners.MethodCollection;
 import com.lineage.ext.listeners.PropertyChangeListener;
+import com.lineage.ext.listeners.PropertyCollection;
 import com.lineage.ext.listeners.events.MethodEvent;
 import com.lineage.ext.listeners.MethodInvokeListener;
 import com.lineage.ext.listeners.events.PropertyEvent;
@@ -32,14 +33,14 @@ public interface ListenerEngine<T>
 	 * @param value свойство
 	 * @param listener слушатель
 	 */
-	void addPropertyChangeListener(String value, PropertyChangeListener listener);
+	void addPropertyChangeListener(PropertyCollection value, PropertyChangeListener listener);
 
 	/**
 	 * Убирает слушатель свойств у определенного свойства
 	 * @param value свойство
 	 * @param listener слушатель
 	 */
-	void removePropertyChangeListener(String value, PropertyChangeListener listener);
+	void removePropertyChangeListener(PropertyCollection value, PropertyChangeListener listener);
 
 	/**
 	 * Запускает уведомление всех слушателей об изменении свойства
@@ -49,7 +50,7 @@ public interface ListenerEngine<T>
 	 * @param oldValue старое значение
 	 * @param newValue новое значение
 	 */
-	void firePropertyChanged(String value, T source, Object oldValue, Object newValue);
+	void firePropertyChanged(PropertyCollection value, T source, Object oldValue, Object newValue);
 
 	/**
 	 * Запускает уведомление всех слушателей об изменении свойства
@@ -62,14 +63,14 @@ public interface ListenerEngine<T>
 	 * @param property свойство
 	 * @param value значение
 	 */
-	void addProperty(String property, Object value);
+	void addProperty(PropertyCollection property, Object value);
 
 	/**
 	 * Возвращает значение свойства
 	 * @param property свойство
 	 * @return значение
 	 */
-	Object getProperty(String property);
+	Object getProperty(PropertyCollection property);
 
 	/**
 	 * Возвращает обьект - владельца даного движка слушателей
