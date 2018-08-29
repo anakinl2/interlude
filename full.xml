@@ -41,8 +41,8 @@
 	</target>
 
 	<target name="compile" depends="init" description="Compile the source.">
-		<javac destdir="${build.classes}" optimize="on" debug="on" source="1.7" target="1.7" encoding="UTF-8" nowarn="off">
-			<compilerarg value="-Xlint:all"></compilerarg>
+		<javac destdir="${build.classes}" optimize="on" debug="on" source="1.8" target="1.8" encoding="UTF-8" nowarn="off">
+
 			<src path="${src}"/>
 			<classpath refid="classpath"/>
 		</javac>
@@ -57,8 +57,8 @@
 
 		<mkdir dir="${build.scripts}"/>
 
-		<javac destdir="${build.scripts}" optimize="on" debug="on" source="1.7" target="1.7" encoding="UTF-8" nowarn="off">
-			<compilerarg value="-Xlint:all"></compilerarg>
+		<javac destdir="${build.scripts}" optimize="on" debug="on" source="1.8" target="1.8" encoding="UTF-8" nowarn="off">
+
 			<src path="data"/>
 			<classpath refid="classpath"/>
 		</javac>
@@ -67,8 +67,8 @@
 	</target>
 
 	<target name="debug" depends="init" description="Compile the source with debug info.">
-		<javac destdir="${build.classes}" optimize="on" debug="on" source="1.7" target="1.7" encoding="UTF-8" nowarn="off">
-			<compilerarg value="-Xlint:all"></compilerarg>
+		<javac destdir="${build.classes}" optimize="on" debug="on" source="1.8" target="1.8" encoding="UTF-8" nowarn="off">
+
 			<src path="${src}"/>
 			<classpath refid="classpath"/>
 		</javac>
